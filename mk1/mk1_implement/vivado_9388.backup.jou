@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Dec 21 15:40:36 2021
+# Process ID: 9388
+# Current directory: F:/projet_m2/mk1/mk1_implement
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20192 F:\projet_m2\mk1\mk1_implement\mk1_implement.xpr
+# Log file: F:/projet_m2/mk1/mk1_implement/vivado.log
+# Journal file: F:/projet_m2/mk1/mk1_implement\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project F:/projet_m2/mk1/mk1_implement/mk1_implement.xprupdate_compile_ordeupdate_compile_order -fileset sources_1

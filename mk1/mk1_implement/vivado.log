@@ -1,0 +1,669 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Dec 21 15:41:52 2021
+# Process ID: 15516
+# Current directory: F:/projet_m2/mk1/mk1_implement
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6740 F:\projet_m2\mk1\mk1_implement\mk1_implement.xpr
+# Log file: F:/projet_m2/mk1/mk1_implement/vivado.log
+# Journal file: F:/projet_m2/mk1/mk1_implement\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/projet_m2/mk1/mk1_implement/mk1_implement.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/mk1/mk1/solution1/impl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1484.250 ; gain = 261.066
+update_compile_order -fileset sources_1
+open_bd_design {F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_1
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_2
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_2
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_3
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_4
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_5
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_2
+Adding component instance block -- xilinx.com:hls:test_scalaire:1.1 - test_scalaire_0
+Adding component instance block -- xilinx.com:module_ref:comp_32:1.0 - comp_32_0
+Successfully read diagram <design_1> from block design file <F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1696.383 ; gain = 141.520
+update_module_reference design_1_comp_32_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/mk1/mk1/solution1/impl'.
+Upgrading 'F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_comp_32_0_0 from comp_32_v1_0 1.0 to comp_32_v1_0 1.0
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'clk' (xilinx.com:signal:clock:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_comp_32_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'inA'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'inB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_comp_32_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_comp_32_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <F:\projet_m2\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+set_property location {6.5 2254 380} [get_bd_cells comp_32_0]
+connect_bd_net [get_bd_ports led_0] [get_bd_pins comp_32_0/res]
+connect_bd_net [get_bd_pins comp_32_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins comp_32_0/rst] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+regenerate_bd_layout
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+disconnect_bd_net /proc_sys_reset_0_peripheral_aresetn [get_bd_pins comp_32_0/rst]
+connect_bd_net [get_bd_pins comp_32_0/rst] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <F:\projet_m2\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 125000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block comp_32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Dec 21 16:16:00 2021] Launched synth_1...
+Run output will be captured here: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Tue Dec 21 16:16:00 2021] Launched impl_1...
+Run output will be captured here: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2146.113 ; gain = 275.410
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2021 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2161.047 ; gain = 7.938
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279653926A
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3930.781 ; gain = 1769.734
+set_property PROGRAM.FILE {F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+file mkdir F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sim_1/new/test_comp.vhd w ]
+add_files -fileset sim_1 F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sim_1/new/test_comp.vhd
+update_compile_order -fileset sim_1
+set_property top test_comp [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.runtime} -value {5000ms} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_comp'
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'test_comp'...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [SIM-utils-54] Inspecting design source files for 'test_comp' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_1_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_2_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_10 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_12 -L xilinx_vip -prj test_comp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj test_comp_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/new/comp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'comp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sim_1/new/test_comp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_comp'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xelab -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.comp_32 [comp_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_comp
+Built simulation snapshot test_comp_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/xsim.dir/test_comp_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 21 16:36:02 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_comp_behav -key {Behavioral:sim_1:Functional:test_comp} -tclbatch {test_comp.tcl} -protoinst "protoinst_files/bd_afc3.protoinst" -protoinst "protoinst_files/bd_a878.protoinst" -protoinst "protoinst_files/bd_a888.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_afc3.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_afc3.protoinst for the following reason(s):
+There are no instances of module "bd_afc3" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a878.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a878.protoinst for the following reason(s):
+There are no instances of module "bd_a878" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a888.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a888.protoinst for the following reason(s):
+There are no instances of module "bd_a888" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source test_comp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 4035.570 ; gain = 13.109
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 4035.570 ; gain = 14.879
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 4035.570 ; gain = 16.848
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property -name {xsim.simulate.runtime} -value {5000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_comp'
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'test_comp'...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [SIM-utils-54] Inspecting design source files for 'test_comp' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_1_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_2_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_10 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_12 -L xilinx_vip -prj test_comp_vlog.prj"
+"xvhdl --incr --relax -prj test_comp_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sim_1/new/test_comp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_comp'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xelab -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.comp_32 [comp_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_comp
+Built simulation snapshot test_comp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_comp_behav -key {Behavioral:sim_1:Functional:test_comp} -tclbatch {test_comp.tcl} -protoinst "protoinst_files/bd_afc3.protoinst" -protoinst "protoinst_files/bd_a878.protoinst" -protoinst "protoinst_files/bd_a888.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_afc3.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_afc3.protoinst for the following reason(s):
+There are no instances of module "bd_afc3" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a878.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a878.protoinst for the following reason(s):
+There are no instances of module "bd_a878" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a888.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a888.protoinst for the following reason(s):
+There are no instances of module "bd_a888" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source test_comp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_comp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 4043.293 ; gain = 7.723
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_comp'
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'test_comp'...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [SIM-utils-54] Inspecting design source files for 'test_comp' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_1_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_2_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_10 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_12 -L xilinx_vip -prj test_comp_vlog.prj"
+"xvhdl --incr --relax -prj test_comp_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sim_1/new/test_comp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_comp'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xelab -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.comp_32 [comp_32_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_comp
+Built simulation snapshot test_comp_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_comp_behav -key {Behavioral:sim_1:Functional:test_comp} -tclbatch {test_comp.tcl} -protoinst "protoinst_files/bd_afc3.protoinst" -protoinst "protoinst_files/bd_a878.protoinst" -protoinst "protoinst_files/bd_a888.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_afc3.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_afc3.protoinst for the following reason(s):
+There are no instances of module "bd_afc3" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a878.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a878.protoinst for the following reason(s):
+There are no instances of module "bd_a878" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a888.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a888.protoinst for the following reason(s):
+There are no instances of module "bd_a888" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source test_comp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_comp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 4231.414 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {50000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test_comp'
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'test_comp'...
+Generating merged BMM file for the design top 'test_comp'...
+INFO: [SIM-utils-54] Inspecting design source files for 'test_comp' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_1_0.mem'
+INFO: [SIM-utils-43] Exported 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim/sc_xtlm_design_1_axi_smc_2_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_10 -L smartconnect_v1_0 -L processing_system7_vip_v1_0_12 -L xilinx_vip -prj test_comp_vlog.prj"
+"xvhdl --incr --relax -prj test_comp_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+"xelab -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 24375c3fde6e442f859ab5fedeb8d223 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_comp_behav xil_defaultlib.test_comp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/projet_m2/mk1/mk1_implement/mk1_implement.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_comp_behav -key {Behavioral:sim_1:Functional:test_comp} -tclbatch {test_comp.tcl} -protoinst "protoinst_files/bd_afc3.protoinst" -protoinst "protoinst_files/bd_a878.protoinst" -protoinst "protoinst_files/bd_a888.protoinst" -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_afc3.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_afc3.protoinst for the following reason(s):
+There are no instances of module "bd_afc3" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a878.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a878.protoinst for the following reason(s):
+There are no instances of module "bd_a878" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a888.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_a888.protoinst for the following reason(s):
+There are no instances of module "bd_a888" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source test_comp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_comp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 4246.289 ; gain = 14.875
+open_bd_design {F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets proc_sys_reset_0_peripheral_reset]
+connect_bd_net [get_bd_pins comp_32_0/rst] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+save_bd_design
+Wrote  : <F:\projet_m2\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 125000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Dec 21 16:42:29 2021] Launched synth_1...
+Run output will be captured here: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Tue Dec 21 16:42:29 2021] Launched impl_1...
+Run output will be captured here: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 4303.785 ; gain = 57.496
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279653926A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279653926A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Dec 21 17:26:36 2021] Launched synth_1...
+Run output will be captured here: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Tue Dec 21 17:26:36 2021] Launched impl_1...
+Run output will be captured here: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7z010_1] 0] [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x1-single}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z010_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7z010_1 ]]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 21 19:06:33 2021...

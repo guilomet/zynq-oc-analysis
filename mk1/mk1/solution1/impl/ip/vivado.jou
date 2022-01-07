@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Dec 30 15:03:33 2021
+# Process ID: 30024
+# Current directory: F:/projet_m2/mk1/mk1/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: F:/projet_m2/mk1/mk1/solution1/impl/ip/vivado.log
+# Journal file: F:/projet_m2/mk1/mk1/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

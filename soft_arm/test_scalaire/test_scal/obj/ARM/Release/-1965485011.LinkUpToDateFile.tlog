@@ -1,0 +1,1 @@
+g++ -o "/home/projects/test_scal/bin/ARM/Release/test_scal.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/projects/test_scal/obj/ARM/Release/clk_wizard.o /home/projects/test_scal/obj/ARM/Release/main.o

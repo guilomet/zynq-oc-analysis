@@ -1,0 +1,67 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'glome' on host 'glomet-fixe' (Windows NT_amd64 version 6.2) on Thu Dec 30 15:03:29 +0100 2021
+INFO: [HLS 200-10] In directory 'F:/projet_m2/mk1'
+Sourcing Tcl script 'F:/projet_m2/mk1/mk1/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project mk1 
+INFO: [HLS 200-10] Opening project 'F:/projet_m2/mk1/mk1'.
+INFO: [HLS 200-1510] Running: set_top test_scalaire 
+INFO: [HLS 200-1510] Running: add_files mk1/test4.c 
+INFO: [HLS 200-10] Adding design file 'mk1/test4.c' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'F:/projet_m2/mk1/mk1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_compile -complex-mul-dsp=0
+INFO: [HLS 200-1464] Running solution command: config_compile -unsafe_math_optimizations=1
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=test_scalaire
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -ipname=test_scalaire
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.2
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_unroll -tripcount_threshold=2
+INFO: [XFORM 203-502] Automatic unrolling enabled: cut-off trip count is 2.
+INFO: [HLS 200-1510] Running: set_part xc7z010-clg400-1 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_compile -unsafe_math_optimizations 
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [HLS 200-1510] Running: config_export -display_name test_scalaire -format ip_catalog -ipname test_scalaire -rtl verilog -version 1.2 -vivado_clock 10 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_unroll -tripcount_threshold 2 
+INFO: [XFORM 203-502] Automatic unrolling enabled: cut-off trip count is 2.
+INFO: [HLS 200-1510] Running: set_directive_top -name test_scalaire test_scalaire 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -version 1.1 -display_name test_scalaire 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 30 15:03:45 2021...
+INFO: [HLS 200-802] Generated output file mk1/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 14.803 seconds; current allocated memory: 194.297 MB.

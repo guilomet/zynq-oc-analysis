@@ -1,0 +1,36 @@
+﻿  Validation des sources
+  Copie des sources à distance vers '192.168.1.11'
+  Validation de l'architecture
+  Validation de l'architecture
+  Démarrage de la build distante
+  Compilation des sources :
+  main.cpp
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(74,54): warning : conversion to ‘float’ from ‘double’ may alter its value [-Wfloat-conversion]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(74,54): warning :          for (freq = min_freq; freq <= max_freq; freq += 0.2)
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(74,54): warning :                                                       ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(103,21): warning : suggest braces around empty body in an ‘else’ statement [-Wempty-body]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(103,21): warning :                      ;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(103,21): warning :                      ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(108,39): warning : conversion to ‘float’ from ‘u32 {aka long int}’ may alter its value [-Wconversion]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(108,39): warning :              error_rate = error_rate / nb_traitement;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(108,39): warning :                                        ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,11): warning : unused variable ‘m’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,11): warning :      float m, d, o, freq, min_freq, max_freq;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,11): warning :            ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,14): warning : unused variable ‘d’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,14): warning :      float m, d, o, freq, min_freq, max_freq;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,14): warning :               ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,17): warning : unused variable ‘o’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,17): warning :      float m, d, o, freq, min_freq, max_freq;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(14,17): warning :                  ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(28,15): warning : unused variable ‘test’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(28,15): warning :      u32 mask, test;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(28,15): warning :                ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(30,11): warning : unused variable ‘test_bram0’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(30,11): warning :      float test_bram0, * bram0_vptr, * bram1_vptr, * bram2_vptr;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(30,11): warning :            ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(32,13): warning : unused variable ‘fd_b0’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(32,13): warning :      int fd, fd_b0;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(32,13): warning :              ^
+  Liaison des objets
+  test_scal.vcxproj -> F:\projet_m2\soft_arm\test_scalaire\test_scal\bin\ARM\Debug\test_scal.out

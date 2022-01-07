@@ -1,0 +1,34 @@
+﻿  Validation des sources
+  Copie des sources à distance vers '192.168.0.6'
+  Validation de l'architecture
+  Validation de l'architecture
+  Démarrage de la build distante
+  Compilation des sources :
+  clk_wizard.cpp
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(13,17): warning : conversion to ‘float’ alters ‘double’ constant value [-Wfloat-conversion]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(13,17): warning :   float minerr = 0.1;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(13,17): warning :                  ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(16,31): warning : conversion to ‘float’ from ‘double’ may alter its value [-Wfloat-conversion]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(16,31): warning :   for (m = M_MIN; m <= M_MAX; m+=0.125)
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(16,31): warning :                                ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(24,34): warning : conversion to ‘float’ from ‘double’ may alter its value [-Wfloat-conversion]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(24,34): warning :      for (o = O_MIN; o <= O_MAX; o+=0.125)
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(24,34): warning :                                   ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(30,21): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(30,21): warning :        diff = freq - setRate;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(30,21): warning :                      ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(33,24): warning : conversion to ‘float’ from ‘int’ may alter its value [-Wconversion]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(33,24): warning :        diff = setRate - freq;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(33,24): warning :                         ^
+  main.cpp
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(21,15): warning : unused variable ‘test’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(21,15): warning :      u32 mask, test;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(21,15): warning :                ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(23,11): warning : unused variable ‘test_bram0’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(23,11): warning :      float test_bram0, * bram0_vptr, * bram1_vptr, * bram2_vptr;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(23,11): warning :            ^
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(25,13): warning : unused variable ‘fd_b0’ [-Wunused-variable]
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(25,13): warning :      int fd, fd_b0;
+F:\projet_m2\soft_arm\test_scalaire\test_scal\main.cpp(25,13): warning :              ^
+  Liaison des objets
+  test_scal.vcxproj -> F:\projet_m2\soft_arm\test_scalaire\test_scal\bin\ARM\Release\test_scal.out

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="test4.c" path="F:\projet_m2\mk1\mk1\test4.c"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

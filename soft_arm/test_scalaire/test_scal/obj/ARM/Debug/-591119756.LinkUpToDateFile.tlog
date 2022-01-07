@@ -1,0 +1,1 @@
+g++ -o "/test_scal/test_scal/bin/ARM/Debug/test_scal.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /test_scal/test_scal/obj/ARM/Debug/clk_wizard.o /test_scal/test_scal/obj/ARM/Debug/gestion_json.o /test_scal/test_scal/obj/ARM/Debug/main.o
