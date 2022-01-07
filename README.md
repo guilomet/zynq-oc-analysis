@@ -5,6 +5,12 @@
 
 <h2>Tools</h2>
 
+|    Logiciel   | Version |
+|:-------------:|:-------:|
+| Vitis HLS     |  2021.1 |
+| Vivado        |  2021.1 |
+| Visual Studio |   2019  |
+
 <h2>HLS Design</h2>
 
 Go to [the HLS directory](/mk1/mk1/)
