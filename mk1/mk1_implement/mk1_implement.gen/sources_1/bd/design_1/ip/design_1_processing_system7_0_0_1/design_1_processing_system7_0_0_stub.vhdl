@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
--- Date        : Fri Dec 31 01:08:19 2021
+-- Date        : Mon Jan 24 20:49:31 2022
 -- Host        : glomet-fixe running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0_1/design_1_processing_system7_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_processing_system7_0_0 -prefix
+--               design_1_processing_system7_0_0_ design_1_processing_system7_0_0_stub.vhdl
 -- Design      : design_1_processing_system7_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

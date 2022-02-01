@@ -86,30 +86,34 @@
     "FlowTarget": "vivado",
     "ConfigTcl": [
       "config_compile -complex-mul-dsp=0",
+      "config_compile -name_max_length=120",
       "config_compile -unsafe_math_optimizations=1",
       "config_export -display_name=test_scalaire",
-      "config_export -format=ip_catalog",
       "config_export -ipname=test_scalaire",
       "config_export -rtl=verilog",
       "config_export -version=1.1",
-      "config_export -vivado_clock=10",
+      "config_export -vivado_clock=5",
+      "config_export -format=ip_catalog",
       "config_interface -m_axi_addr64=0",
       "config_unroll -tripcount_threshold=2"
     ],
-    "DirectiveTcl": ["set_directive_top test_scalaire -name test_scalaire"],
+    "DirectiveTcl": [
+      "set_directive_top test_scalaire -name test_scalaire",
+      "set_directive_unroll test_scalaire\/test_scalaire_label0 -factor 2"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "test_scalaire"
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
-    "ClockPeriod": "10",
-    "Uncertainty": "2.7",
+    "ClockPeriod": "5",
+    "Uncertainty": "1.35",
     "IsCombinational": "0",
-    "II": "1559",
-    "Latency": "1558"
+    "II": "2345",
+    "Latency": "2344"
   },
-  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 5.000 [get_ports ap_clk]"]},
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
@@ -144,6 +148,9 @@
       "impl\/vhdl\/test_scalaire_mul_mul_9ns_10ns_19_4_1.vhd",
       "impl\/vhdl\/test_scalaire_mux_49_32_1_1.vhd",
       "impl\/vhdl\/test_scalaire_regslice_both.vhd",
+      "impl\/vhdl\/test_scalaire_sitofp_32ns_32_6_no_dsp_1.vhd",
+      "impl\/vhdl\/test_scalaire_sitofp_32ns_32_7_no_dsp_1.vhd",
+      "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_main_loop.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_11_1.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_12_1.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_14_1.vhd",
@@ -155,7 +162,13 @@
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_18_2.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_19_1.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_20_1.vhd",
+      "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_21_1.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_21_2.vhd",
+      "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_22_1.vhd",
+      "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_22_2.vhd",
+      "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_23_1.vhd",
+      "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_24_1.vhd",
+      "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_25_1.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_26_1.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_26_2.vhd",
       "impl\/vhdl\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_30_1.vhd",
@@ -185,6 +198,9 @@
       "impl\/verilog\/test_scalaire_mul_mul_9ns_10ns_19_4_1.v",
       "impl\/verilog\/test_scalaire_mux_49_32_1_1.v",
       "impl\/verilog\/test_scalaire_regslice_both.v",
+      "impl\/verilog\/test_scalaire_sitofp_32ns_32_6_no_dsp_1.v",
+      "impl\/verilog\/test_scalaire_sitofp_32ns_32_7_no_dsp_1.v",
+      "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_main_loop.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_11_1.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_12_1.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_14_1.v",
@@ -196,7 +212,13 @@
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_18_2.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_19_1.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_20_1.v",
+      "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_21_1.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_21_2.v",
+      "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_22_1.v",
+      "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_22_2.v",
+      "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_23_1.v",
+      "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_24_1.v",
+      "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_25_1.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_26_1.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_26_2.v",
       "impl\/verilog\/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_30_1.v",
@@ -222,7 +244,9 @@
       "impl\/misc\/test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip.tcl",
       "impl\/misc\/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.tcl",
       "impl\/misc\/test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip.tcl",
-      "impl\/misc\/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.tcl"
+      "impl\/misc\/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.tcl",
+      "impl\/misc\/test_scalaire_sitofp_32ns_32_6_no_dsp_1_ip.tcl",
+      "impl\/misc\/test_scalaire_sitofp_32ns_32_7_no_dsp_1_ip.tcl"
     ],
     "CsynthXml": "syn\/report\/csynth.xml",
     "DebugDir": ".debug",
@@ -262,6 +286,16 @@
         "Name": "test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip",
         "Vlnv": "xilinx.com:ip:floating_point:7.1",
         "Params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 6 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "test_scalaire_sitofp_32ns_32_6_no_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name test_scalaire_sitofp_32ns_32_6_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "Name": "test_scalaire_sitofp_32ns_32_7_no_dsp_1_ip",
+        "Vlnv": "xilinx.com:ip:floating_point:7.1",
+        "Params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 5 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name test_scalaire_sitofp_32ns_32_7_no_dsp_1_ip CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
       }
     ]
   },
@@ -1478,13 +1512,26 @@
   "ModuleInfo": {
     "Hierarchy": {
       "ModuleName": "test_scalaire",
-      "Instances": [{
-          "ModuleName": "test_scalaire_Pipeline_VITIS_LOOP_14_1",
-          "InstanceName": "grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126"
-        }]
+      "Instances": [
+        {
+          "ModuleName": "test_scalaire_Pipeline_main_loop",
+          "InstanceName": "grp_test_scalaire_Pipeline_main_loop_fu_147"
+        },
+        {
+          "ModuleName": "test_scalaire_Pipeline_VITIS_LOOP_21_1",
+          "InstanceName": "grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158"
+        }
+      ]
     },
     "Info": {
-      "test_scalaire_Pipeline_VITIS_LOOP_14_1": {
+      "test_scalaire_Pipeline_main_loop": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "test_scalaire_Pipeline_VITIS_LOOP_21_1": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "1",
@@ -1500,37 +1547,37 @@
       }
     },
     "Metrics": {
-      "test_scalaire_Pipeline_VITIS_LOOP_14_1": {
+      "test_scalaire_Pipeline_main_loop": {
         "Latency": {
-          "LatencyBest": "1543",
-          "LatencyAvg": "1543",
-          "LatencyWorst": "1543",
-          "PipelineII": "1543",
+          "LatencyBest": "2316",
+          "LatencyAvg": "2316",
+          "LatencyWorst": "2316",
+          "PipelineII": "2316",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.70",
-          "Estimate": "7.300"
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "4.944"
         },
         "Loops": [{
-            "Name": "VITIS_LOOP_14_1",
+            "Name": "main_loop",
             "TripCount": "256",
-            "Latency": "1541",
-            "PipelineII": "6",
-            "PipelineDepth": "12"
+            "Latency": "2314",
+            "PipelineII": "9",
+            "PipelineDepth": "20"
           }],
         "Area": {
           "DSP": "5",
           "AVAIL_DSP": "80",
           "UTIL_DSP": "6",
-          "FF": "527",
+          "FF": "717",
           "AVAIL_FF": "35200",
-          "UTIL_FF": "1",
-          "LUT": "851",
+          "UTIL_FF": "2",
+          "LUT": "928",
           "AVAIL_LUT": "17600",
-          "UTIL_LUT": "4",
+          "UTIL_LUT": "5",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "120",
           "UTIL_BRAM": "0",
@@ -1539,19 +1586,58 @@
           "UTIL_URAM": "0"
         }
       },
-      "test_scalaire": {
+      "test_scalaire_Pipeline_VITIS_LOOP_21_1": {
         "Latency": {
-          "LatencyBest": "1558",
-          "LatencyAvg": "1558",
-          "LatencyWorst": "1558",
-          "PipelineII": "1559",
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "10",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.70",
-          "Estimate": "7.300"
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "3.650"
+        },
+        "Loops": [{
+            "Name": "VITIS_LOOP_21_1",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          }],
+        "Area": {
+          "FF": "7",
+          "AVAIL_FF": "35200",
+          "UTIL_FF": "~0",
+          "LUT": "71",
+          "AVAIL_LUT": "17600",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "120",
+          "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "80",
+          "UTIL_DSP": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      },
+      "test_scalaire": {
+        "Latency": {
+          "LatencyBest": "2344",
+          "LatencyAvg": "2344",
+          "LatencyWorst": "2344",
+          "PipelineII": "2345",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "4.944"
         },
         "Area": {
           "BRAM_18K": "12",
@@ -1560,12 +1646,12 @@
           "DSP": "5",
           "AVAIL_DSP": "80",
           "UTIL_DSP": "6",
-          "FF": "2320",
+          "FF": "2583",
           "AVAIL_FF": "35200",
-          "UTIL_FF": "6",
-          "LUT": "3215",
+          "UTIL_FF": "7",
+          "LUT": "3639",
           "AVAIL_LUT": "17600",
-          "UTIL_LUT": "18",
+          "UTIL_LUT": "20",
           "URAM": "0",
           "AVAIL_URAM": "0",
           "UTIL_URAM": "0"
@@ -1576,7 +1662,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-12-30 15:03:31 +0100",
+    "Time": "2022-01-24 01:57:12 +0100",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.1"
   }

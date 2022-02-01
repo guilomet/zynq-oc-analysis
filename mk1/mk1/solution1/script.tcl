@@ -8,9 +8,9 @@ set_top test_scalaire
 add_files mk1/test4.c
 open_solution "solution1" -flow_target vivado
 set_part {xc7z010-clg400-1}
-create_clock -period 10 -name default
-config_compile -unsafe_math_optimizations
-config_export -display_name test_scalaire -format ip_catalog -ipname test_scalaire -rtl verilog -version 1.2 -vivado_clock 10
+create_clock -period 5 -name default
+config_compile -name_max_length 120 -unsafe_math_optimizations
+config_export -display_name test_scalaire -ipname test_scalaire -rtl vhdl -version 2.0 -vivado_clock 5
 config_interface -m_axi_addr64=0
 config_unroll -tripcount_threshold 2
 source "./mk1/solution1/directives.tcl"

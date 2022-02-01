@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'test_scalaire'" level="0">
-<item name = "Date">Thu Dec 30 15:01:42 2021
+<item name = "Date">Mon Jan 24 01:56:49 2022
 </item>
 <item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)</item>
 <item name = "Project">mk1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 4.944 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1558, 1558, 15.580 us, 15.580 us, 1559, 1559, no</column>
+<column name="">2344, 2344, 11.720 us, 11.720 us, 2345, 2345, no</column>
 </table>
 </item>
 <item name = "Detail">

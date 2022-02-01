@@ -1,10 +1,10 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-// Date        : Thu Dec 30 15:25:29 2021
+// Date        : Tue Jan 25 13:02:35 2022
 // Host        : glomet-fixe running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_stub.v
+//               f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_stub.v
 // Design      : design_1_proc_sys_reset_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

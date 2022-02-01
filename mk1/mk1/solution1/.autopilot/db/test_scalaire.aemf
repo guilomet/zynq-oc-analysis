@@ -1,62 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1640872903477">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1642985810209">
   <ports id="1" name="bus_A" type="PortType" coreId="1953391988" bitwidth="32" iftype="IfTypeFifo">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="bus_B" type="PortType" coreId="100" bitwidth="32" iftype="IfTypeFifo">
+  <ports id="2" name="bus_B" type="PortType" coreId="130" bitwidth="32" iftype="IfTypeFifo">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="3" name="bus_res" type="PortType" coreId="1" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
+  <ports id="3" name="bus_res" type="PortType" coreId="1699560457" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
-  <ports id="4" name="A" type="PortType" originalName="A" coreId="4294967295" bitwidth="32">
+  <ports id="4" name="A" type="PortType" originalName="A" coreId="1431323424" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="B" type="PortType" originalName="B" coreId="100" bitwidth="32">
+  <ports id="5" name="B" type="PortType" originalName="B" coreId="1953391988" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="6" name="res" type="PortType" originalName="res" coreId="29" bitwidth="32">
+  <ports id="6" name="res" type="PortType" originalName="res" coreId="7237481" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <edges id="46" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
-  <edges id="48" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.1"/>
-  <edges id="50" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.2"/>
-  <edges id="55" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
-  <edges id="60" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="61" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="62" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="65" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
-  <edges id="69" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
-  <edges id="72" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
-  <edges id="73" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.10"/>
-  <edges id="74" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
-  <edges id="76" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
-  <edges id="80" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.12"/>
-  <edges id="81" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.12"/>
-  <edges id="82" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.12"/>
-  <edges id="83" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.12"/>
-  <edges id="84" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.12"/>
-  <edges id="85" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.13"/>
-  <edges id="86" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
-  <edges id="88" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.15"/>
-  <edges id="91" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
-  <edges id="92" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@ports.2"/>
-  <edges id="93" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
-  <edges id="96" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.18"/>
-  <edges id="100" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.19"/>
-  <edges id="101" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.19"/>
-  <edges id="106" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.20"/>
-  <edges id="304" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
-  <edges id="305" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
-  <edges id="306" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
-  <edges id="307" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
-  <edges id="308" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.12"/>
-  <blocks id="43" name="test_scalaire" type="BlockType">
+  <edges id="53" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="55" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="57" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="68" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="80" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="81" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="83" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="87" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="89" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="94" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@ports.2"/>
+  <edges id="99" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="102" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@ports.2"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="114" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@ports.2"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="335" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="336" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="337" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="338" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="339" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="340" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="341" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="342" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="343" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.12"/>
+  <blocks id="50" name="test_scalaire" type="BlockType">
     <node_objs xsi:type="cdfg:CdfgNode" id="7" name="res_read" originalName="res" coreName="s_axilite" implIndex="UNSUPPORTED" control="no" coreId="114" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataInputObjs>res</dataInputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
     <node_objs xsi:type="cdfg:CdfgNode" id="8" name="B_read" originalName="B" coreName="s_axilite" implIndex="UNSUPPORTED" control="no" coreId="114" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataInputObjs>B</dataInputObjs>
@@ -71,111 +87,153 @@
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="trunc_ln" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." rtlName="trunc_ln_reg_211" coreId="0" contextFuncName="test_scalaire" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="trunc_ln" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." rtlName="trunc_ln_reg_266" coreId="543517801" contextFuncName="test_scalaire" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="sext_ln14" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." rtlName="sext_ln14_fu_167_p1" coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="sext_ln13" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." rtlName="sext_ln13_fu_212_p1" coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="bus_A_addr" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="bus_A_addr" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." coreId="37" contextFuncName="test_scalaire" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>bus_A</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>readreq</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="empty" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="readreq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="empty" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="readreq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="3.65" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="trunc_ln14_1" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." rtlName="trunc_ln14_1_reg_217" coreId="0" contextFuncName="test_scalaire" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="trunc_ln13_1" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." rtlName="trunc_ln13_1_reg_272" coreId="0" contextFuncName="test_scalaire" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="sext_ln14_1" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." rtlName="sext_ln14_1_fu_177_p1" coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="sext_ln13_1" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." rtlName="sext_ln13_1_fu_222_p1" coreId="3006" contextFuncName="test_scalaire" bitwidth="32" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="bus_B_addr" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="bus_B_addr" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>bus_B</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>readreq</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="empty_19" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="readreq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="7.3" m_topoIndex="13" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="empty_20" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="readreq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="readreq" nodeLabel="1.0" nodeLatency="6" m_display="0" m_delay="3.65" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln14" lineNumber="14" fileName="mk1/test4.c" fileDirectory=".." rtlName="grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126" coreId="0" contextFuncName="test_scalaire" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="14" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln13" lineNumber="13" fileName="mk1/test4.c" fileDirectory=".." rtlName="grp_test_scalaire_Pipeline_main_loop_fu_147" coreId="0" contextFuncName="test_scalaire" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="13" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>bus_B</dataInputObjs>
       <dataInputObjs>partselect</dataInputObjs>
       <dataInputObjs>bus_A</dataInputObjs>
       <dataInputObjs>partselect</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
-      <constName>test_scalaire_Pipeline_VITIS_LOOP_14_1</constName>
+      <constName>test_scalaire_Pipeline_main_loop</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp1_loc_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp1_loc_load" coreId="1852262690" bitwidth="32" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="bitcast_ln20" lineNumber="20" fileName="mk1/test4.c" fileDirectory=".." rtlName="bus_res_WDATA" coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="bitcast" nodeLabel="10.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="20" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
-      <dataInputObjs>load</dataInputObjs>
-      <dataOutputObjs>write</dataOutputObjs>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="trunc_ln1" lineNumber="20" fileName="mk1/test4.c" fileDirectory=".." rtlName="trunc_ln1_reg_223" coreId="0" contextFuncName="test_scalaire" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="20" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="trunc_ln1" lineNumber="21" fileName="mk1/test4.c" fileDirectory=".." rtlName="trunc_ln1_reg_278" coreId="1931502951" contextFuncName="test_scalaire" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="21" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="sext_ln20" lineNumber="20" fileName="mk1/test4.c" fileDirectory=".." rtlName="sext_ln20_fu_187_p1" coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="sext" nodeLabel="9.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="20" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="sext_ln21" lineNumber="21" fileName="mk1/test4.c" fileDirectory=".." rtlName="sext_ln21_fu_232_p1" coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="sext" nodeLabel="9.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="21" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="bus_res_addr" lineNumber="20" fileName="mk1/test4.c" fileDirectory=".." coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="20" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="bus_res_addr" lineNumber="21" fileName="mk1/test4.c" fileDirectory=".." coreId="0" contextFuncName="test_scalaire" bitwidth="32" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="21" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>bus_res</dataOutputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="empty_21" lineNumber="21" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="writereq" nodeLabel="9.0" m_display="0" m_delay="3.65" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="21" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="bitcast_ln23" lineNumber="23" fileName="mk1/test4.c" fileDirectory=".." rtlName="bitcast_ln23_fu_245_p1" coreId="574453865" contextFuncName="test_scalaire" bitwidth="32" opcode="bitcast" nodeLabel="10.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="23" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln21" lineNumber="21" fileName="mk1/test4.c" fileDirectory=".." rtlName="grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158" coreId="171847458" contextFuncName="test_scalaire" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="21" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>bus_res</dataOutputObjs>
+      <constName>test_scalaire_Pipeline_VITIS_LOOP_21_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="empty_22" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="writeresp" nodeLabel="12.0" nodeLatency="4" m_display="0" m_delay="3.65" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="add_ln25" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." rtlName="add_ln25_fu_196_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="test_scalaire" bitwidth="32" opcode="add" m_display="0" m_delay="2.55" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="trunc_ln2" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." rtlName="trunc_ln2_reg_284" coreId="1663070063" contextFuncName="test_scalaire" bitwidth="30" opcode="partselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sext_ln25" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." rtlName="sext_ln25_fu_250_p1" coreId="1816469550" contextFuncName="test_scalaire" bitwidth="32" opcode="sext" nodeLabel="12.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="bus_res_addr_1" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." coreId="1663972468" contextFuncName="test_scalaire" bitwidth="32" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>bus_res</dataOutputObjs>
       <dataOutputObjs>writereq</dataOutputObjs>
       <dataOutputObjs>write</dataOutputObjs>
       <dataOutputObjs>writeresp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="bus_res_addr_req" lineNumber="20" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="writereq" nodeLabel="9.0" m_display="0" m_delay="7.3" m_topoIndex="17" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="20" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="bus_res_addr_1_req" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="writereq" nodeLabel="12.0" m_display="0" m_delay="3.65" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="bus_res_addr_write_ln20" lineNumber="20" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="no" coreId="113" contextFuncName="test_scalaire" opcode="write" nodeLabel="10.0" m_display="0" m_delay="7.3" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="20" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="bus_res_addr_1_write_ln25" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="no" coreId="113" contextFuncName="test_scalaire" opcode="write" nodeLabel="13.0" m_display="0" m_delay="3.65" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>getelementptr</dataInputObjs>
-      <dataInputObjs>bitcast</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="bus_res_addr_resp" lineNumber="20" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="writeresp" nodeLabel="11.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="21" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="20" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="bus_res_addr_1_resp" lineNumber="25" fileName="mk1/test4.c" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="writereq" coreId="113" contextFuncName="test_scalaire" bitwidth="1" opcode="writeresp" nodeLabel="14.0" nodeLatency="4" m_display="0" m_delay="3.65" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="25" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
       <dataInputObjs>getelementptr</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="_ln21" lineNumber="21" fileName="mk1/test4.c" fileDirectory=".." coreId="0" contextFuncName="test_scalaire" opcode="ret" nodeLabel="15.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="mk1/test4.c" linenumber="21" fileDirectory="F:\projet_m2\mk1" functionName="test_scalaire"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln26" lineNumber="26" fileName="mk1/test4.c" fileDirectory=".." coreId="0" contextFuncName="test_scalaire" opcode="ret" nodeLabel="18.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="mk1/test4.c" linenumber="26" fileDirectory="F:\projet_m2\git\zynq-oc-analysis\mk1" functionName="test_scalaire"/>
     </node_objs>
     <fileValidLineNumbers fileName="mk1/test4.c">
-      <validLinenumbers>14</validLinenumbers>
-      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>13</validLinenumbers>
       <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>23</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
@@ -194,87 +252,118 @@
   <ScheduleInfo time="13"/>
   <ScheduleInfo time="14"/>
   <ScheduleInfo time="15"/>
-  <regnodes realName="bus_B_addr_reg_233">
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <regnodes realName="bus_B_addr_reg_294">
     <nodeIds>31</nodeIds>
   </regnodes>
-  <regnodes realName="tmp1_loc_reg_205">
+  <regnodes realName="tmp1_loc_reg_260">
     <nodeIds>10</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln1_reg_223">
-    <nodeIds>36</nodeIds>
-  </regnodes>
-  <regnodes realName="bus_res_addr_reg_238">
-    <nodeIds>38</nodeIds>
-  </regnodes>
-  <regnodes realName="trunc_ln_reg_211">
-    <nodeIds>25</nodeIds>
-  </regnodes>
-  <regnodes realName="bus_A_addr_reg_228">
+  <regnodes realName="bus_A_addr_reg_289">
     <nodeIds>27</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln14_1_reg_217">
+  <regnodes realName="bus_res_addr_reg_299">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1_reg_278">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="bus_res_addr_1_reg_309">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln2_reg_284">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln23_reg_304">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln13_1_reg_272">
     <nodeIds>29</nodeIds>
   </regnodes>
-  <expressionNodes realName="bus_res_addr_fu_190">
-    <nodeIds>38</nodeIds>
+  <regnodes realName="trunc_ln_reg_266">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <expressionNodes realName="bus_A_addr_fu_215">
+    <nodeIds>27</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln14_1_fu_147">
-    <nodeIds>29</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="bus_B_addr_fu_180">
-    <nodeIds>31</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="bitcast_ln20_fu_200">
+  <expressionNodes realName="trunc_ln1_fu_186">
     <nodeIds>35</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln14_1_fu_177">
-    <nodeIds>30</nodeIds>
+  <expressionNodes realName="trunc_ln2_fu_202">
+    <nodeIds>43</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln1_fu_157">
-    <nodeIds>36</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="sext_ln20_fu_187">
-    <nodeIds>37</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="tmp1_loc_fu_74">
+  <expressionNodes realName="tmp1_loc_fu_86">
     <nodeIds>10</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln_fu_137">
-    <nodeIds>25</nodeIds>
+  <expressionNodes realName="bus_B_addr_fu_225">
+    <nodeIds>31</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="bus_A_addr_fu_170">
-    <nodeIds>27</nodeIds>
+  <expressionNodes realName="bus_res_addr_1_fu_253">
+    <nodeIds>45</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln14_fu_167">
+  <expressionNodes realName="bitcast_ln23_fu_245">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln13_1_fu_176">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln25_fu_196">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln21_fu_232">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bus_res_addr_fu_235">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln25_fu_250">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln13_1_fu_222">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln13_fu_212">
     <nodeIds>26</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126">
+  <expressionNodes realName="trunc_ln_fu_166">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_test_scalaire_Pipeline_main_loop_fu_147">
     <nodeIds>33</nodeIds>
   </moduleNodes>
-  <ioNodes realName="res_read_read_fu_78">
-    <nodeIds>7</nodeIds>
+  <moduleNodes realName="grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158">
+    <nodeIds>40</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="B_read_read_fu_96">
+    <nodeIds>8</nodeIds>
   </ioNodes>
-  <ioNodes realName="grp_readreq_fu_103">
+  <ioNodes realName="grp_readreq_fu_115">
     <nodeIds>32</nodeIds>
   </ioNodes>
-  <ioNodes realName="write_ln20_write_fu_117">
-    <nodeIds>40</nodeIds>
-  </ioNodes>
-  <ioNodes realName="tmp1_loc_load_load_fu_197">
-    <nodeIds>34</nodeIds>
-  </ioNodes>
-  <ioNodes realName="grp_readreq_fu_96">
+  <ioNodes realName="grp_readreq_fu_108">
     <nodeIds>28</nodeIds>
   </ioNodes>
-  <ioNodes realName="grp_writeresp_fu_110">
-    <nodeIds>39</nodeIds>
-    <nodeIds>41</nodeIds>
+  <ioNodes realName="res_read_read_fu_90">
+    <nodeIds>7</nodeIds>
   </ioNodes>
-  <ioNodes realName="A_read_read_fu_90">
+  <ioNodes realName="A_read_read_fu_102">
     <nodeIds>9</nodeIds>
   </ioNodes>
-  <ioNodes realName="B_read_read_fu_84">
-    <nodeIds>8</nodeIds>
+  <ioNodes realName="grp_writeresp_fu_122">
+    <nodeIds>38</nodeIds>
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln25_write_fu_137">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp1_loc_load_load_fu_242">
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_130">
+    <nodeIds>46</nodeIds>
+    <nodeIds>48</nodeIds>
   </ioNodes>
   <ioPorts name="A">
     <contents name="read">
@@ -303,14 +392,19 @@
     </contents>
   </ioPorts>
   <ioPorts name="bus_res">
-    <contents name="write">
+    <contents name="call">
       <nodeIds>40</nodeIds>
     </contents>
+    <contents name="write">
+      <nodeIds>47</nodeIds>
+    </contents>
     <contents name="writereq">
-      <nodeIds>39</nodeIds>
+      <nodeIds>38</nodeIds>
+      <nodeIds>46</nodeIds>
     </contents>
     <contents name="writeresp">
       <nodeIds>41</nodeIds>
+      <nodeIds>48</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="res">
@@ -326,7 +420,9 @@
       <operations id="10" stage="1" latency="1"/>
       <operations id="25" stage="1" latency="1"/>
       <operations id="29" stage="1" latency="1"/>
-      <operations id="36" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
     </states>
     <states id="2">
       <operations id="26" stage="1" latency="1"/>
@@ -365,28 +461,44 @@
     </states>
     <states id="10">
       <operations id="33" stage="1" latency="2"/>
+      <operations id="36" stage="1" latency="1"/>
       <operations id="37" stage="1" latency="1"/>
       <operations id="38" stage="1" latency="1"/>
-      <operations id="39" stage="1" latency="1"/>
     </states>
     <states id="11">
       <operations id="34" stage="1" latency="1"/>
-      <operations id="35" stage="1" latency="1"/>
-      <operations id="40" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="2" latency="2"/>
     </states>
     <states id="12">
-      <operations id="41" stage="5" latency="5"/>
+      <operations id="40" stage="1" latency="2"/>
     </states>
     <states id="13">
-      <operations id="41" stage="4" latency="5"/>
+      <operations id="41" stage="5" latency="5"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
     </states>
     <states id="14">
-      <operations id="41" stage="3" latency="5"/>
+      <operations id="41" stage="4" latency="5"/>
+      <operations id="47" stage="1" latency="1"/>
     </states>
     <states id="15">
-      <operations id="41" stage="2" latency="5"/>
+      <operations id="41" stage="3" latency="5"/>
+      <operations id="48" stage="5" latency="5"/>
     </states>
     <states id="16">
+      <operations id="41" stage="2" latency="5"/>
+      <operations id="48" stage="4" latency="5"/>
+    </states>
+    <states id="17">
+      <operations id="41" stage="1" latency="5"/>
+      <operations id="48" stage="3" latency="5"/>
+    </states>
+    <states id="18">
+      <operations id="48" stage="2" latency="5"/>
+    </states>
+    <states id="19">
       <operations id="11" stage="1" latency="1"/>
       <operations id="12" stage="1" latency="1"/>
       <operations id="13" stage="1" latency="1"/>
@@ -401,8 +513,8 @@
       <operations id="22" stage="1" latency="1"/>
       <operations id="23" stage="1" latency="1"/>
       <operations id="24" stage="1" latency="1"/>
-      <operations id="41" stage="1" latency="5"/>
-      <operations id="42" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="5"/>
+      <operations id="49" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
@@ -449,10 +561,19 @@
     <transitions inState="15" outState="16">
       <condition id="-1"/>
     </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="test_scalaire" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1558" mMaxLatency="1558">
-      <basicBlocks>43</basicBlocks>
+    <cfgRegions mId="1" mTag="test_scalaire" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2344" mMaxLatency="2344">
+      <basicBlocks>50</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

@@ -343,13 +343,13 @@ set NewPortList {[
  	{ "name": "m_axi_bus_res_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "bus_res", "role": "BUSER" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "5", "6", "7", "8"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "5", "7", "8", "9", "10"],
 		"CDFG" : "test_scalaire",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1558", "EstimateLatencyMax" : "1558",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2344", "EstimateLatencyMax" : "2344",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -361,27 +361,29 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "bus_A_blk_n_AR", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126", "Port" : "bus_A", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_test_scalaire_Pipeline_main_loop_fu_147", "Port" : "bus_A", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "bus_B", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "bus_B_blk_n_AR", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126", "Port" : "bus_B", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_test_scalaire_Pipeline_main_loop_fu_147", "Port" : "bus_B", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "bus_res", "Type" : "MAXI", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "bus_res_blk_n_AW", "Type" : "RtlSignal"},
-					{"Name" : "bus_res_blk_n_W", "Type" : "RtlSignal"},
-					{"Name" : "bus_res_blk_n_B", "Type" : "RtlSignal"}]},
+					{"Name" : "bus_res_blk_n_B", "Type" : "RtlSignal"},
+					{"Name" : "bus_res_blk_n_W", "Type" : "RtlSignal"}],
+				"SubConnect" : [
+					{"ID" : "5", "SubInstance" : "grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158", "Port" : "bus_res", "Inst_start_state" : "11", "Inst_end_state" : "12"}]},
 			{"Name" : "A", "Type" : "None", "Direction" : "I"},
 			{"Name" : "B", "Type" : "None", "Direction" : "I"},
 			{"Name" : "res", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126", "Parent" : "0", "Child" : ["2", "3", "4"],
-		"CDFG" : "test_scalaire_Pipeline_VITIS_LOOP_14_1",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_main_loop_fu_147", "Parent" : "0", "Child" : ["2", "3", "4"],
+		"CDFG" : "test_scalaire_Pipeline_main_loop",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1543", "EstimateLatencyMax" : "1543",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2316", "EstimateLatencyMax" : "2316",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -392,44 +394,71 @@ set RtlHierarchyInfo {[
 			{"Name" : "bus_B", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "bus_B_blk_n_R", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln14_1", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln13_1", "Type" : "None", "Direction" : "I"},
 			{"Name" : "bus_A", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "bus_A_blk_n_R", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln14", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln13", "Type" : "None", "Direction" : "I"},
 			{"Name" : "tmp1_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_14_1", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "6", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage5", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage5_subdone", "QuitState" : "ap_ST_fsm_pp0_stage5", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage5_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126.fadd_32ns_32ns_32_5_full_dsp_1_U1", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126.fmul_32ns_32ns_32_4_max_dsp_1_U2", "Parent" : "1"},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bus_A_m_axi_U", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bus_B_m_axi_U", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bus_res_m_axi_U", "Parent" : "0"}]}
+			{"Name" : "main_loop", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "9", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage1", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage1_subdone", "QuitState" : "ap_ST_fsm_pp0_stage1", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage1_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_main_loop_fu_147.fadd_32ns_32ns_32_10_full_dsp_1_U1", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_main_loop_fu_147.fmul_32ns_32ns_32_8_max_dsp_1_U2", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_main_loop_fu_147.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158", "Parent" : "0", "Child" : ["6"],
+		"CDFG" : "test_scalaire_Pipeline_VITIS_LOOP_21_1",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "10", "EstimateLatencyMax" : "10",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"Port" : [
+			{"Name" : "bus_res", "Type" : "MAXI", "Direction" : "O",
+				"BlockSignal" : [
+					{"Name" : "bus_res_blk_n_W", "Type" : "RtlSignal"}]},
+			{"Name" : "sext_ln21", "Type" : "None", "Direction" : "I"},
+			{"Name" : "bitcast_ln23", "Type" : "None", "Direction" : "I"}],
+		"Loop" : [
+			{"Name" : "VITIS_LOOP_21_1", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158.flow_control_loop_pipe_sequential_init_U", "Parent" : "5"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bus_A_m_axi_U", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bus_B_m_axi_U", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bus_res_m_axi_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	test_scalaire {
 		bus_A {Type I LastRead 1 FirstWrite -1}
 		bus_B {Type I LastRead 1 FirstWrite -1}
-		bus_res {Type O LastRead 11 FirstWrite 10}
+		bus_res {Type O LastRead 14 FirstWrite 1}
 		A {Type I LastRead 0 FirstWrite -1}
 		B {Type I LastRead 0 FirstWrite -1}
 		res {Type I LastRead 0 FirstWrite -1}}
-	test_scalaire_Pipeline_VITIS_LOOP_14_1 {
+	test_scalaire_Pipeline_main_loop {
 		bus_B {Type I LastRead 1 FirstWrite -1}
-		sext_ln14_1 {Type I LastRead 0 FirstWrite -1}
+		sext_ln13_1 {Type I LastRead 0 FirstWrite -1}
 		bus_A {Type I LastRead 1 FirstWrite -1}
-		sext_ln14 {Type I LastRead 0 FirstWrite -1}
-		tmp1_out {Type O LastRead -1 FirstWrite 5}}}
+		sext_ln13 {Type I LastRead 0 FirstWrite -1}
+		tmp1_out {Type O LastRead -1 FirstWrite 10}}
+	test_scalaire_Pipeline_VITIS_LOOP_21_1 {
+		bus_res {Type O LastRead -1 FirstWrite 1}
+		sext_ln21 {Type I LastRead 0 FirstWrite -1}
+		bitcast_ln23 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1558", "Max" : "1558"}
-	, {"Name" : "Interval", "Min" : "1559", "Max" : "1559"}
+	{"Name" : "Latency", "Min" : "2344", "Max" : "2344"}
+	, {"Name" : "Interval", "Min" : "2345", "Max" : "2345"}
 ]}
 
 set PipelineEnableSignalInfo {[

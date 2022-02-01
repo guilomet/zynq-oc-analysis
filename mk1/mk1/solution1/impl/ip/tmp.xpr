@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="55" Path="F:/projet_m2/mk1/mk1/solution1/impl/ip/tmp.xpr">
+<Project Version="7" Minor="55" Path="F:/projet_m2/git/zynq-oc-analysis/mk1/mk1/solution1/impl/ip/tmp.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="5f5294a8c1634c7897af66e5bff2aced"/>
+    <Option Name="Id" Val="17933a7c292c4acf916a7d14de4a082a"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -90,14 +90,14 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/ip/test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip/test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci">
+      <File Path="$PSRCDIR/sources_1/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip/test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci">
+      <File Path="$PSRCDIR/sources_1/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

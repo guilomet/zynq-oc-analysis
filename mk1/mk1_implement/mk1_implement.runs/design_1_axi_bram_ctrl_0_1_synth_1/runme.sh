@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1'
+HD_PWD='F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

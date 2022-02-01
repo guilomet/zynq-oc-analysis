@@ -4,7 +4,7 @@
 ## - uncomment the lines corresponding to used pins
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
-#create_clock -name sys_clk -period 10.000 [get_ports sys_clk]
+create_clock -name sys_clk -period 5s.000 [get_ports sys_clk]
 
 ##Clock signal
 #set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { sysclk }]; #IO_L12P_T1_MRCC_35 Sch=sysclk

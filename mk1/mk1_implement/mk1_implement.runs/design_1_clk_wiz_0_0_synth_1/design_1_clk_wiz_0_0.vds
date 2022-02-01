@@ -2,17 +2,17 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Dec 30 15:24:13 2021
-# Process ID: 31104
-# Current directory: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+# Start of session at: Tue Jan 25 13:01:21 2022
+# Process ID: 28192
+# Current directory: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
 # Command line: vivado.exe -log design_1_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_clk_wiz_0_0.tcl
-# Log file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.vds
-# Journal file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1\vivado.jou
+# Log file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.vds
+# Journal file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_clk_wiz_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1226.223 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1197.117 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/mk1/mk1/solution1/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/git/zynq-oc-analysis/ip_scalaire'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
 Command: synth_design -top design_1_clk_wiz_0_0 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
@@ -21,15 +21,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26984
+INFO: [Synth 8-7075] Helper process launched with PID 13516
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1452.703 ; gain = 226.480
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1453.375 ; gain = 256.258
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_axi_clk_config' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_axi_clk_config.vhd:177]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_axi_clk_config' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_axi_clk_config.vhd:177]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_axi_lite_ipif' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_axi_lite_ipif.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_axi_lite_ipif' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_axi_lite_ipif.vhd:245]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
@@ -38,7 +38,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_axi_lite_ipif' [f:
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
 	Parameter C_FAMILY bound to: virtex7 - type: string 
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_slave_attachment' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_slave_attachment.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_slave_attachment' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_slave_attachment.vhd:236]
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
 	Parameter C_IPIF_ABUS_WIDTH bound to: 11 - type: integer 
@@ -47,119 +47,119 @@ INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_slave_attachment' 
 	Parameter C_USE_WSTRB bound to: 1 - type: integer 
 	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
 	Parameter C_FAMILY bound to: virtex7 - type: string 
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_address_decoder' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_address_decoder.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_address_decoder' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_address_decoder.vhd:186]
 	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000011111111111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 64'b0000000000000000000000000000100000000000000000000000000000000001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 6 - type: integer 
 	Parameter C_AW bound to: 11 - type: integer 
 	Parameter C_BAR bound to: 11'b00000000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized0' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized0' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized0' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized1' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized0' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized1' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized1' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized2' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized1' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized2' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b010 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized2' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized3' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized2' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized3' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b011 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized3' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized4' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized3' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized4' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized4' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized5' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized4' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized5' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b101 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized5' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized6' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized5' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized6' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b110 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized6' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized7' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized6' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized7' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b111 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized7' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized8' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized7' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized8' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
 	Parameter C_AB bound to: 0 - type: integer 
 	Parameter C_AW bound to: 11 - type: integer 
 	Parameter C_BAR bound to: 11'b01000000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized8' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_address_decoder' (2#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_address_decoder.vhd:186]
-INFO: [Synth 8-226] default block is never used [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_slave_attachment.vhd:438]
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_slave_attachment' (3#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_slave_attachment.vhd:236]
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_axi_lite_ipif' (4#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_axi_lite_ipif.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_pselect_f__parameterized8' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_pselect_f.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_address_decoder' (2#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_address_decoder.vhd:186]
+INFO: [Synth 8-226] default block is never used [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_slave_attachment.vhd:438]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_slave_attachment' (3#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_slave_attachment.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_axi_lite_ipif' (4#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_clk_wiz_0_0_axi_lite_ipif.vhd:245]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter CE_NUMBERS bound to: 9 - type: integer 
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0_clk_wiz_drp' declared at 'f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:115' bound to instance 'CLK_CORE_DRP_I' of component 'design_1_clk_wiz_0_0_clk_wiz_drp' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_axi_clk_config.vhd:440]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz_drp' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:153]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0_clk_wiz_drp' declared at 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:115' bound to instance 'CLK_CORE_DRP_I' of component 'design_1_clk_wiz_0_0_clk_wiz_drp' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_axi_clk_config.vhd:440]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz_drp' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:153]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_FAMILY bound to: virtex7 - type: string 
 	Parameter CE_NUMBERS bound to: 9 - type: integer 
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0_clk_wiz' declared at 'f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68' bound to instance 'clk_inst' of component 'design_1_clk_wiz_0_0_clk_wiz' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:553]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0_clk_wiz' declared at 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68' bound to instance 'clk_inst' of component 'design_1_clk_wiz_0_0_clk_wiz' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:553]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51657]
 INFO: [Synth 8-6155] done synthesizing module 'IBUF' (5#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51657]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59963]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: double 
+	Parameter CLKFBOUT_MULT_F bound to: 39.750000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
 	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: double 
-	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.625000 - type: double 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
 	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
 	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
 	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59963]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (8#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
-	Parameter S1_CLKFBOUT_MULT bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (8#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:68]
+	Parameter S1_CLKFBOUT_MULT bound to: 39 - type: integer 
 	Parameter S1_CLKFBOUT_PHASE bound to: 0 - type: integer 
-	Parameter S1_CLKFBOUT_FRAC bound to: 0 - type: integer 
-	Parameter S1_CLKFBOUT_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC bound to: 1774 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC_EN bound to: 1 - type: integer 
 	Parameter S1_BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter S1_DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter S1_CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter S1_DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter S1_CLKOUT0_DIVIDE bound to: 6 - type: integer 
 	Parameter S1_CLKOUT0_PHASE bound to: 0 - type: integer 
 	Parameter S1_CLKOUT0_DUTY bound to: 50000 - type: integer 
-	Parameter S1_CLKOUT0_FRAC bound to: 0 - type: integer 
-	Parameter S1_CLKOUT0_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_CLKOUT0_FRAC bound to: 1649 - type: integer 
+	Parameter S1_CLKOUT0_FRAC_EN bound to: 1 - type: integer 
 	Parameter S1_CLKOUT1_DIVIDE bound to: 1 - type: integer 
 	Parameter S1_CLKOUT1_PHASE bound to: 0 - type: integer 
 	Parameter S1_CLKOUT1_DUTY bound to: 50000 - type: integer 
@@ -178,19 +178,19 @@ INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (8#
 	Parameter S1_CLKOUT6_DIVIDE bound to: 1 - type: integer 
 	Parameter S1_CLKOUT6_PHASE bound to: 0 - type: integer 
 	Parameter S1_CLKOUT6_DUTY bound to: 50000 - type: integer 
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0_mmcm_drp' declared at 'f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_mmcm_pll_drp.v:47' bound to instance 'mmcm_drp_inst' of component 'design_1_clk_wiz_0_0_mmcm_drp' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:571]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_mmcm_drp' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_mmcm_pll_drp.v:47]
-	Parameter S1_CLKFBOUT_MULT bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0_mmcm_drp' declared at 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_mmcm_pll_drp.v:47' bound to instance 'mmcm_drp_inst' of component 'design_1_clk_wiz_0_0_mmcm_drp' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:571]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_mmcm_drp' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_mmcm_pll_drp.v:47]
+	Parameter S1_CLKFBOUT_MULT bound to: 39 - type: integer 
 	Parameter S1_CLKFBOUT_PHASE bound to: 0 - type: integer 
-	Parameter S1_CLKFBOUT_FRAC bound to: 0 - type: integer 
-	Parameter S1_CLKFBOUT_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC bound to: 1774 - type: integer 
+	Parameter S1_CLKFBOUT_FRAC_EN bound to: 1 - type: integer 
 	Parameter S1_BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter S1_DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter S1_CLKOUT0_DIVIDE bound to: 8 - type: integer 
+	Parameter S1_DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter S1_CLKOUT0_DIVIDE bound to: 6 - type: integer 
 	Parameter S1_CLKOUT0_PHASE bound to: 0 - type: integer 
 	Parameter S1_CLKOUT0_DUTY bound to: 50000 - type: integer 
-	Parameter S1_CLKOUT0_FRAC bound to: 0 - type: integer 
-	Parameter S1_CLKOUT0_FRAC_EN bound to: 0 - type: integer 
+	Parameter S1_CLKOUT0_FRAC bound to: 1649 - type: integer 
+	Parameter S1_CLKOUT0_FRAC_EN bound to: 1 - type: integer 
 	Parameter S1_CLKOUT1_DIVIDE bound to: 1 - type: integer 
 	Parameter S1_CLKOUT1_PHASE bound to: 0 - type: integer 
 	Parameter S1_CLKOUT1_DUTY bound to: 50000 - type: integer 
@@ -209,86 +209,86 @@ INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_mmcm_drp' [f:/pro
 	Parameter S1_CLKOUT6_DIVIDE bound to: 1 - type: integer 
 	Parameter S1_CLKOUT6_PHASE bound to: 0 - type: integer 
 	Parameter S1_CLKOUT6_DUTY bound to: 50000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_mmcm_drp' (9#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_mmcm_pll_drp.v:47]
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz_drp' (10#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_soft_reset' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:142]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_mmcm_drp' (9#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_mmcm_pll_drp.v:47]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz_drp' (10#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz_drp.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0_soft_reset' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:142]
 	Parameter C_SIPIF_DWIDTH bound to: 32 - type: integer 
 	Parameter C_RESET_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
-INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:296]
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_soft_reset' (11#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:142]
-INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_axi_clk_config' (12#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_axi_clk_config.vhd:177]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (13#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_soft_reset' (11#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/design_1_clk_wiz_0_0_soft_reset.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'design_1_clk_wiz_0_0_axi_clk_config' (12#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_axi_clk_config.vhd:177]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (13#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:70]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1532.699 ; gain = 306.477
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1532.668 ; gain = 335.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.605 ; gain = 325.383
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1532.668 ; gain = 335.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.605 ; gain = 325.383
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1532.668 ; gain = 335.551
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.435 . Memory (MB): peak = 1563.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1532.668 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'inst'
-Finished Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'inst'
-Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_clk_wiz_0_0_propImpl.xdc].
+Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_clk_wiz_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_clk_wiz_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1680.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1659.723 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 17 instances were transformed.
   FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1680.887 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1659.730 ; gain = 0.008
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1680.887 ; gain = 454.664
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1659.730 ; gain = 462.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1680.887 ; gain = 454.664
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1659.730 ; gain = 462.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/dont_touch.xdc, line 9).
 Applied set_property KEEP = true for clk_in1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1680.887 ; gain = 454.664
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1659.730 ; gain = 462.613
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'design_1_clk_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -301,7 +301,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'desig
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'design_1_clk_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1680.887 ; gain = 454.664
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1659.730 ; gain = 462.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -369,25 +369,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 1680.887 ; gain = 454.664
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 1659.730 ; gain = 462.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:30 . Memory (MB): peak = 1680.887 ; gain = 454.664
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 1659.730 ; gain = 462.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:45 . Memory (MB): peak = 1726.008 ; gain = 499.785
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1726.125 ; gain = 529.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:46 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:24 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -405,37 +405,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:48 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:48 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:49 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:49 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:49 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:49 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -454,41 +454,41 @@ Report Cell Usage:
 |1     |BUFG       |     2|
 |2     |CARRY4     |    32|
 |3     |LUT1       |     3|
-|4     |LUT2       |   179|
-|5     |LUT3       |   171|
-|6     |LUT4       |    79|
-|7     |LUT5       |   160|
-|8     |LUT6       |   687|
+|4     |LUT2       |   180|
+|5     |LUT3       |   170|
+|6     |LUT4       |    78|
+|7     |LUT5       |   158|
+|8     |LUT6       |   692|
 |9     |MMCME2_ADV |     1|
-|10    |MUXF7      |   153|
+|10    |MUXF7      |   152|
 |11    |MUXF8      |     2|
-|12    |FDRE       |  1431|
-|13    |FDSE       |    57|
+|12    |FDRE       |  1412|
+|13    |FDSE       |    76|
 |14    |IBUF       |     1|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:49 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 1742.668 ; gain = 545.551
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:43 . Memory (MB): peak = 1742.531 ; gain = 387.027
-Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:49 . Memory (MB): peak = 1742.531 ; gain = 516.309
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:22 . Memory (MB): peak = 1742.668 ; gain = 418.488
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 1742.668 ; gain = 545.551
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1742.531 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 188 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1742.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 187 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.160 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 2fa22462
+Synth Design complete, checksum: cb1eff27
 INFO: [Common 17-83] Releasing license: Synthesis
 88 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:56 . Memory (MB): peak = 1749.059 ; gain = 522.836
-INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_clk_wiz_0_0, cache-ID = cbb92ddb7f7b0343
-INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:38 . Memory (MB): peak = 1749.160 ; gain = 552.043
+INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_clk_wiz_0_0, cache-ID = 8e96e7d980904ed4
+INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_clk_wiz_0_0_utilization_synth.rpt -pb design_1_clk_wiz_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 30 15:26:38 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 25 13:03:27 2022...

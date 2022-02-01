@@ -2,11 +2,11 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Dec 30 15:24:13 2021
-# Process ID: 31104
-# Current directory: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+# Start of session at: Tue Jan 25 13:01:21 2022
+# Process ID: 28192
+# Current directory: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
 # Command line: vivado.exe -log design_1_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_clk_wiz_0_0.tcl
-# Log file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.vds
-# Journal file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1\vivado.jou
+# Log file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/design_1_clk_wiz_0_0.vds
+# Journal file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_clk_wiz_0_0.tcl -notrace

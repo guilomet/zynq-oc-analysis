@@ -4,3 +4,4 @@
 ## Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ############################################################
 set_directive_top -name test_scalaire "test_scalaire"
+set_directive_unroll -factor 2 "test_scalaire/test_scalaire_label0"

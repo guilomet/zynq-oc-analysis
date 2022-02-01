@@ -138,12 +138,10 @@
     void _ssdm_op_SpecLicense() __attribute__ ((nothrow));
 # 2 "<built-in>" 2
 # 1 "mk1/test4.c" 2
-__attribute__((sdx_kernel("test_scalaire", 0))) void test_scalaire (float A[256], float B[256], float res[1])
-{_ssdm_SpecArrayDimSize(A, 256);_ssdm_SpecArrayDimSize(B, 256);_ssdm_SpecArrayDimSize(res, 1);
+__attribute__((sdx_kernel("test_scalaire", 0))) void test_scalaire (float A[256], float B[256], float res[16])
+{_ssdm_SpecArrayDimSize(A, 256);_ssdm_SpecArrayDimSize(B, 256);_ssdm_SpecArrayDimSize(res, 16);
 #pragma HLS TOP name=test_scalaire
 # 2 "mk1/test4.c"
-
-
 
 
 #pragma HLS INTERFACE m_axi port=A bundle=bus_A
@@ -153,12 +151,19 @@ __attribute__((sdx_kernel("test_scalaire", 0))) void test_scalaire (float A[256]
 
  float tmp[256];
  float tmp1 = 0, tmp2 = 0;
+ int pile_iteration = 0;
 
- VITIS_LOOP_14_1: for (int i = 0; i < 256; i++)
+ main_loop:for (int i = 0; i < 256; i++)
  {
-#pragma HLS PIPELINE II=6
+#pragma HLS PIPELINE II=9
+
  tmp2 = A[i]*B[i];
-  tmp1 = tmp1 + tmp2;
+  tmp1 += tmp2;
+  pile_iteration += i;
  }
- res[0] = tmp1;
+ VITIS_LOOP_21_1: for (int i = 0; i < 8; i++)
+ {
+  res[i] = tmp1;
+ }
+ res[8] = (float)(pile_iteration);
 }

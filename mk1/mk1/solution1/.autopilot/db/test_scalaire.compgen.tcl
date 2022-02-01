@@ -52,7 +52,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 10 \
+			id 13 \
 			corename test_scalaire_control_axilite \
 			name test_scalaire_control_s_axi \
 			ports {$port_control} \
@@ -74,10 +74,10 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 11 \
+    id 14 \
     corename {m_axi} \
     op interface \
-    delay_budget 7.3 \ 
+    delay_budget 3.65 \ 
     is_flushable 0 \ 
     mem_style block \ 
     name {test_scalaire_bus_A_m_axi} \
@@ -95,10 +95,10 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 12 \
+    id 15 \
     corename {m_axi} \
     op interface \
-    delay_budget 7.3 \ 
+    delay_budget 3.65 \ 
     is_flushable 0 \ 
     mem_style block \ 
     name {test_scalaire_bus_B_m_axi} \
@@ -116,10 +116,10 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 13 \
+    id 16 \
     corename {m_axi} \
     op interface \
-    delay_budget 7.3 \ 
+    delay_budget 3.65 \ 
     is_flushable 0 \ 
     mem_style block \ 
     name {test_scalaire_bus_res_m_axi} \

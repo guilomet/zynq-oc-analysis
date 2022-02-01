@@ -2,17 +2,17 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Dec 30 15:24:14 2021
-# Process ID: 29956
-# Current directory: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1
+# Start of session at: Tue Jan 25 13:01:27 2022
+# Process ID: 14288
+# Current directory: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1
 # Command line: vivado.exe -log design_1_axi_bram_ctrl_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_bram_ctrl_0_1.tcl
-# Log file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/design_1_axi_bram_ctrl_0_1.vds
-# Journal file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1\vivado.jou
+# Log file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/design_1_axi_bram_ctrl_0_1.vds
+# Journal file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_axi_bram_ctrl_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1224.020 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1222.863 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/mk1/mk1/solution1/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/git/zynq-oc-analysis/ip_scalaire'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
 Command: synth_design -top design_1_axi_bram_ctrl_0_1 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
@@ -21,11 +21,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18672
+INFO: [Synth 8-7075] Helper process launched with PID 7996
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1450.043 ; gain = 226.023
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1451.457 ; gain = 228.594
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_1' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/synth/design_1_axi_bram_ctrl_0_1.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_1' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/synth/design_1_axi_bram_ctrl_0_1.vhd:104]
 	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
 	Parameter C_MEMORY_DEPTH bound to: 2048 - type: integer 
 	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
@@ -44,100 +44,100 @@ INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_1' [f:/projet_
 	Parameter C_ECC_TYPE bound to: 0 - type: integer 
 	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
 	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/synth/design_1_axi_bram_ctrl_0_1.vhd:255]
-INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
-INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
-INFO: [Synth 8-638] synthesizing module 'full_axi' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
-WARNING: [Synth 8-6774] Null subtype or type declaration found [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
-INFO: [Synth 8-3919] null assignment ignored [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
-INFO: [Synth 8-638] synthesizing module 'sng_port_arb' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
-INFO: [Synth 8-256] done synthesizing module 'sng_port_arb' (1#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
-INFO: [Synth 8-638] synthesizing module 'wr_chnl' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
-INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24126]
-INFO: [Synth 8-638] synthesizing module 'wrap_brst' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
-INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (2#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
-INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
-INFO: [Synth 8-3491] module 'FDR' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27824' bound to instance 'Data_Exists_DFF' of component 'FDR' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:230]
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/synth/design_1_axi_bram_ctrl_0_1.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+INFO: [Synth 8-638] synthesizing module 'full_axi' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
+INFO: [Synth 8-3919] null assignment ignored [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
+INFO: [Synth 8-638] synthesizing module 'sng_port_arb' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
+INFO: [Synth 8-256] done synthesizing module 'sng_port_arb' (1#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
+INFO: [Synth 8-638] synthesizing module 'wr_chnl' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
+INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24126]
+INFO: [Synth 8-638] synthesizing module 'wrap_brst' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
+INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (2#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
+INFO: [Synth 8-3491] module 'FDR' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27824' bound to instance 'Data_Exists_DFF' of component 'FDR' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:230]
 INFO: [Synth 8-6157] synthesizing module 'FDR' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27824]
 INFO: [Synth 8-6155] done synthesizing module 'FDR' (3#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27824]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
 INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941]
 INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (4#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941]
-INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
 INFO: [Synth 8-6157] synthesizing module 'XORCY' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299]
 INFO: [Synth 8-6155] done synthesizing module 'XORCY' (5#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299]
-INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (6#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
-INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
-INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
-INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
-INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
-INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
-INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
-INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:62941' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:105299' bound to instance 'XORCY_I' of component 'XORCY' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:27837' bound to instance 'FDRE_I' of component 'FDRE' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
 INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (7#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100961]
-INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (8#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
-INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (9#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
-WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30020]
-INFO: [Synth 8-638] synthesizing module 'rd_chnl' [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
-INFO: [Synth 8-256] done synthesizing module 'rd_chnl' (10#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
-INFO: [Synth 8-256] done synthesizing module 'full_axi' (11#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
-INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (12#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
-INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (13#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (14#1) [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/synth/design_1_axi_bram_ctrl_0_1.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (8#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (9#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30020]
+INFO: [Synth 8-638] synthesizing module 'rd_chnl' [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
+INFO: [Synth 8-256] done synthesizing module 'rd_chnl' (10#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
+INFO: [Synth 8-256] done synthesizing module 'full_axi' (11#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (12#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (13#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ipshared/33c1/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (14#1) [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/synth/design_1_axi_bram_ctrl_0_1.vhd:104]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1522.273 ; gain = 298.254
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1522.934 ; gain = 300.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1522.273 ; gain = 298.254
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1522.934 ; gain = 300.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1522.273 ; gain = 298.254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1522.934 ; gain = 300.070
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1522.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1522.934 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_ooc.xdc] for cell 'U0'
-Parsing XDC File [F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/dont_touch.xdc]
+Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1625.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1627.773 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   FDR => FDRE: 1 instance 
   MUXCY_L => MUXCY: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1636.098 ; gain = 10.324
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1638.770 ; gain = 10.996
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1636.098 ; gain = 412.078
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.770 ; gain = 415.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1636.098 ; gain = 412.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.770 ; gain = 415.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1636.098 ; gain = 412.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1638.770 ; gain = 415.906
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'arb_sm_cs_reg' in module 'sng_port_arb'
 INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' in module 'wr_chnl'
@@ -184,7 +184,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rd_data_
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1636.098 ; gain = 412.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.770 ; gain = 415.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -239,25 +239,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1636.098 ; gain = 412.078
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1638.770 ; gain = 415.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1636.098 ; gain = 412.078
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1638.770 ; gain = 415.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1638.543 ; gain = 414.523
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1641.172 ; gain = 418.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1647.605 ; gain = 423.586
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1650.246 ; gain = 427.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -275,37 +275,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1655.023 ; gain = 432.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1655.023 ; gain = 432.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1655.023 ; gain = 432.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1655.023 ; gain = 432.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1655.023 ; gain = 432.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1655.023 ; gain = 432.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -332,18 +332,18 @@ Report Cell Usage:
 |9     |FDSE  |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1655.023 ; gain = 432.160
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 1654.402 ; gain = 316.559
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1654.402 ; gain = 430.383
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1655.023 ; gain = 316.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 1655.023 ; gain = 432.160
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1654.402 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1655.023 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1671.133 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1671.750 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -351,10 +351,10 @@ Synth Design complete, checksum: f9ccb1e0
 INFO: [Common 17-83] Releasing license: Synthesis
 72 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 1671.133 ; gain = 447.113
-INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/design_1_axi_bram_ctrl_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_bram_ctrl_0_1, cache-ID = d964ffacee7295c1
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1671.750 ; gain = 448.887
+INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/design_1_axi_bram_ctrl_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_bram_ctrl_0_1, cache-ID = b315ab02717b6337
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
-INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/design_1_axi_bram_ctrl_0_1.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/design_1_axi_bram_ctrl_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_bram_ctrl_0_1_utilization_synth.rpt -pb design_1_axi_bram_ctrl_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 30 15:25:38 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 25 13:02:39 2022...

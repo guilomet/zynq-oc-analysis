@@ -70,7 +70,7 @@ extern "C" void apatb_test_scalaire_hw(volatile void * __xlx_apatb_param_A, vola
   }
   // Collect __xlx_res__tmp_vec
   vector<sc_bv<32> >__xlx_res__tmp_vec;
-  for (int j = 0, e = 1; j != e; ++j) {
+  for (int j = 0, e = 16; j != e; ++j) {
     sc_bv<32> _xlx_tmp_sc;
     _xlx_tmp_sc.range(7, 0) = ((char*)__xlx_apatb_param_res)[j*4+0];
     _xlx_tmp_sc.range(15, 8) = ((char*)__xlx_apatb_param_res)[j*4+1];
@@ -78,7 +78,7 @@ extern "C" void apatb_test_scalaire_hw(volatile void * __xlx_apatb_param_A, vola
     _xlx_tmp_sc.range(31, 24) = ((char*)__xlx_apatb_param_res)[j*4+3];
     __xlx_res__tmp_vec.push_back(_xlx_tmp_sc);
   }
-  int __xlx_size_param_res = 1;
+  int __xlx_size_param_res = 16;
   int __xlx_offset_param_res = 0;
   int __xlx_offset_byte_param_res = 0*4;
   int* __xlx_res__input_buffer= new int[__xlx_res__tmp_vec.size()];

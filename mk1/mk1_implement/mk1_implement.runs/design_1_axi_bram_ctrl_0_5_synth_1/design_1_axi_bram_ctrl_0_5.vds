@@ -2,16 +2,16 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Dec 30 15:25:51 2021
-# Process ID: 9308
-# Current directory: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1
+# Start of session at: Tue Jan 25 13:02:48 2022
+# Process ID: 24416
+# Current directory: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1
 # Command line: vivado.exe -log design_1_axi_bram_ctrl_0_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_bram_ctrl_0_5.tcl
-# Log file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1/design_1_axi_bram_ctrl_0_5.vds
-# Journal file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1\vivado.jou
+# Log file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1/design_1_axi_bram_ctrl_0_5.vds
+# Journal file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_axi_bram_ctrl_0_5.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/mk1/mk1/solution1/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/git/zynq-oc-analysis/ip_scalaire'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_5, cache-ID = d964ffacee7295c1.
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 30 15:26:12 2021...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_5, cache-ID = b315ab02717b6337.
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 25 13:03:06 2022...

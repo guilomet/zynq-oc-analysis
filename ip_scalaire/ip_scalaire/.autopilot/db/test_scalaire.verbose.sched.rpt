@@ -1,0 +1,362 @@
+
+
+================================================================
+== Vitis HLS Report for 'test_scalaire'
+================================================================
+* Date:           Thu Jan 27 11:08:54 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+* Project:        ip_scalaire
+* Solution:       ip_scalaire (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.650 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     2851|     2851|  14.255 us|  14.255 us|  2852|  2852|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 25
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 26 [2/2] (1.00ns)   --->   "%res_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %res"   --->   Operation 26 'read' 'res_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 27 [2/2] (1.00ns)   --->   "%B_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %B"   --->   Operation 27 'read' 'B_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 28 [2/2] (1.00ns)   --->   "%A_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %A"   --->   Operation 28 'read' 'A_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%tmp1_loc = alloca i32 1"   --->   Operation 29 'alloca' 'tmp1_loc' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.00>
+ST_2 : Operation 30 [1/2] (1.00ns)   --->   "%res_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %res"   --->   Operation 30 'read' 'res_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 31 [1/2] (1.00ns)   --->   "%B_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %B"   --->   Operation 31 'read' 'B_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 32 [1/2] (1.00ns)   --->   "%A_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %A"   --->   Operation 32 'read' 'A_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i30 @_ssdm_op_PartSelect.i30.i32.i32.i32, i32 %A_read, i32 2, i32 31" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 33 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln13_1 = partselect i30 @_ssdm_op_PartSelect.i30.i32.i32.i32, i32 %B_read, i32 2, i32 31" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 34 'partselect' 'trunc_ln13_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i30 @_ssdm_op_PartSelect.i30.i32.i32.i32, i32 %res_read, i32 2, i32 31" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 35 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.65>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%sext_ln13 = sext i30 %trunc_ln" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 36 'sext' 'sext_ln13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%bus_A_addr = getelementptr i32 %bus_A, i32 %sext_ln13" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 37 'getelementptr' 'bus_A_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [7/7] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_A_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 38 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln13_1 = sext i30 %trunc_ln13_1" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 39 'sext' 'sext_ln13_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%bus_B_addr = getelementptr i32 %bus_B, i32 %sext_ln13_1" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 40 'getelementptr' 'bus_B_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [7/7] (3.65ns)   --->   "%empty_19 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_B_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 41 'readreq' 'empty_19' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 3.65>
+ST_4 : Operation 42 [6/7] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_A_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 42 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 43 [6/7] (3.65ns)   --->   "%empty_19 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_B_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 43 'readreq' 'empty_19' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 3.65>
+ST_5 : Operation 44 [5/7] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_A_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 44 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 45 [5/7] (3.65ns)   --->   "%empty_19 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_B_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 45 'readreq' 'empty_19' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 3.65>
+ST_6 : Operation 46 [4/7] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_A_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 46 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 47 [4/7] (3.65ns)   --->   "%empty_19 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_B_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 47 'readreq' 'empty_19' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 3.65>
+ST_7 : Operation 48 [3/7] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_A_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 48 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 49 [3/7] (3.65ns)   --->   "%empty_19 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_B_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 49 'readreq' 'empty_19' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 3.65>
+ST_8 : Operation 50 [2/7] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_A_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 50 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 51 [2/7] (3.65ns)   --->   "%empty_19 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_B_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 51 'readreq' 'empty_19' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 3.65>
+ST_9 : Operation 52 [1/7] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_A_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 52 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 53 [1/7] (3.65ns)   --->   "%empty_19 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %bus_B_addr, i32 256" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 53 'readreq' 'empty_19' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 54 [2/2] (0.00ns)   --->   "%call_ln13 = call void @test_scalaire_Pipeline_loop_1, i32 %bus_B, i30 %trunc_ln13_1, i32 %bus_A, i30 %trunc_ln, i32 %tmp1_loc" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 54 'call' 'call_ln13' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 3.65>
+ST_11 : Operation 55 [1/2] (0.00ns)   --->   "%call_ln13 = call void @test_scalaire_Pipeline_loop_1, i32 %bus_B, i30 %trunc_ln13_1, i32 %bus_A, i30 %trunc_ln, i32 %tmp1_loc" [ip_scalaire/ip_scal.cpp:13]   --->   Operation 55 'call' 'call_ln13' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%sext_ln30 = sext i30 %trunc_ln1" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 56 'sext' 'sext_ln30' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 57 [1/1] (0.00ns)   --->   "%bus_res_addr = getelementptr i32 %bus_res, i32 %sext_ln30" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 57 'getelementptr' 'bus_res_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 58 [1/1] (3.65ns)   --->   "%empty_20 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %bus_res_addr, i32 9" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 58 'writereq' 'empty_20' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 3.65>
+ST_12 : Operation 59 [1/1] (0.00ns)   --->   "%tmp1_loc_load = load i32 %tmp1_loc"   --->   Operation 59 'load' 'tmp1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%bitcast_ln30 = bitcast i32 %tmp1_loc_load" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 60 'bitcast' 'bitcast_ln30' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 61 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 61 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 3.65>
+ST_13 : Operation 62 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 62 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 3.65>
+ST_14 : Operation 63 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 63 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 3.65>
+ST_15 : Operation 64 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 64 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 3.65>
+ST_16 : Operation 65 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 65 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 3.65>
+ST_17 : Operation 66 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 66 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 17> <Delay = 3.65>
+ST_18 : Operation 67 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 67 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 19 <SV = 18> <Delay = 3.65>
+ST_19 : Operation 68 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 %bitcast_ln30, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 68 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 20 <SV = 19> <Delay = 3.65>
+ST_20 : Operation 69 [1/1] (3.65ns)   --->   "%write_ln30 = write void @_ssdm_op_Write.m_axi.p1i32, i32 %bus_res_addr, i32 1191215104, i4 15" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 69 'write' 'write_ln30' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 21 <SV = 20> <Delay = 3.65>
+ST_21 : Operation 70 [5/5] (3.65ns)   --->   "%empty_21 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %bus_res_addr" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 70 'writeresp' 'empty_21' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 22 <SV = 21> <Delay = 3.65>
+ST_22 : Operation 71 [4/5] (3.65ns)   --->   "%empty_21 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %bus_res_addr" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 71 'writeresp' 'empty_21' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 23 <SV = 22> <Delay = 3.65>
+ST_23 : Operation 72 [3/5] (3.65ns)   --->   "%empty_21 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %bus_res_addr" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 72 'writeresp' 'empty_21' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 24 <SV = 23> <Delay = 3.65>
+ST_24 : Operation 73 [2/5] (3.65ns)   --->   "%empty_21 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %bus_res_addr" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 73 'writeresp' 'empty_21' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 25 <SV = 24> <Delay = 3.65>
+ST_25 : Operation 74 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_12"   --->   Operation 74 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 75 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bus_A, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0"   --->   Operation 75 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 76 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %bus_A"   --->   Operation 76 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 77 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bus_B, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0"   --->   Operation 77 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 78 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %bus_B"   --->   Operation 78 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 79 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bus_res, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0"   --->   Operation 79 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 80 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %bus_res"   --->   Operation 80 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 81 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_7, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 81 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %A, void @empty_9, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 82 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 83 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_10, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 83 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 84 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %B, void @empty_9, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 84 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 85 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %res, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_11, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 85 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 86 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %res, void @empty_9, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_8"   --->   Operation 86 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 87 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_6, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 87 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 88 [1/5] (3.65ns)   --->   "%empty_21 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %bus_res_addr" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 88 'writeresp' 'empty_21' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 113 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_25 : Operation 89 [1/1] (0.00ns)   --->   "%ret_ln30 = ret" [ip_scalaire/ip_scal.cpp:30]   --->   Operation 89 'ret' 'ret_ln30' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 1.35ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read operation ('res') on port 'res' [7]  (1 ns)
+
+ <State 2>: 1ns
+The critical path consists of the following:
+	s_axi read operation ('res') on port 'res' [7]  (1 ns)
+
+ <State 3>: 3.65ns
+The critical path consists of the following:
+	'getelementptr' operation ('bus_A_addr', ip_scalaire/ip_scal.cpp:13) [27]  (0 ns)
+	bus request operation ('empty', ip_scalaire/ip_scal.cpp:13) on port 'bus_A' (ip_scalaire/ip_scal.cpp:13) [28]  (3.65 ns)
+
+ <State 4>: 3.65ns
+The critical path consists of the following:
+	bus request operation ('empty', ip_scalaire/ip_scal.cpp:13) on port 'bus_A' (ip_scalaire/ip_scal.cpp:13) [28]  (3.65 ns)
+
+ <State 5>: 3.65ns
+The critical path consists of the following:
+	bus request operation ('empty', ip_scalaire/ip_scal.cpp:13) on port 'bus_A' (ip_scalaire/ip_scal.cpp:13) [28]  (3.65 ns)
+
+ <State 6>: 3.65ns
+The critical path consists of the following:
+	bus request operation ('empty', ip_scalaire/ip_scal.cpp:13) on port 'bus_A' (ip_scalaire/ip_scal.cpp:13) [28]  (3.65 ns)
+
+ <State 7>: 3.65ns
+The critical path consists of the following:
+	bus request operation ('empty', ip_scalaire/ip_scal.cpp:13) on port 'bus_A' (ip_scalaire/ip_scal.cpp:13) [28]  (3.65 ns)
+
+ <State 8>: 3.65ns
+The critical path consists of the following:
+	bus request operation ('empty', ip_scalaire/ip_scal.cpp:13) on port 'bus_A' (ip_scalaire/ip_scal.cpp:13) [28]  (3.65 ns)
+
+ <State 9>: 3.65ns
+The critical path consists of the following:
+	bus request operation ('empty', ip_scalaire/ip_scal.cpp:13) on port 'bus_A' (ip_scalaire/ip_scal.cpp:13) [28]  (3.65 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 3.65ns
+The critical path consists of the following:
+	'getelementptr' operation ('bus_res_addr', ip_scalaire/ip_scal.cpp:30) [37]  (0 ns)
+	bus request operation ('empty_20', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [38]  (3.65 ns)
+
+ <State 12>: 3.65ns
+The critical path consists of the following:
+	'load' operation ('tmp1_loc_load') on local variable 'tmp1_loc' [34]  (0 ns)
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [40]  (3.65 ns)
+
+ <State 13>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [41]  (3.65 ns)
+
+ <State 14>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [42]  (3.65 ns)
+
+ <State 15>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [43]  (3.65 ns)
+
+ <State 16>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [44]  (3.65 ns)
+
+ <State 17>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [45]  (3.65 ns)
+
+ <State 18>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [46]  (3.65 ns)
+
+ <State 19>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [47]  (3.65 ns)
+
+ <State 20>: 3.65ns
+The critical path consists of the following:
+	bus write operation ('write_ln30', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [48]  (3.65 ns)
+
+ <State 21>: 3.65ns
+The critical path consists of the following:
+	bus response operation ('empty_21', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [49]  (3.65 ns)
+
+ <State 22>: 3.65ns
+The critical path consists of the following:
+	bus response operation ('empty_21', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [49]  (3.65 ns)
+
+ <State 23>: 3.65ns
+The critical path consists of the following:
+	bus response operation ('empty_21', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [49]  (3.65 ns)
+
+ <State 24>: 3.65ns
+The critical path consists of the following:
+	bus response operation ('empty_21', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [49]  (3.65 ns)
+
+ <State 25>: 3.65ns
+The critical path consists of the following:
+	bus response operation ('empty_21', ip_scalaire/ip_scal.cpp:30) on port 'bus_res' (ip_scalaire/ip_scal.cpp:30) [49]  (3.65 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

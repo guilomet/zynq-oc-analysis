@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'test_scalaire'
 ================================================================
 + General Information: 
-    * Date:           Thu Dec 30 15:01:43 2021
+    * Date:           Mon Jan 24 01:56:50 2022
     * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
     * Project:        mk1
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,9 +19,11 @@
     |                        Modules                       |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |          |        |           |            |     |
     |                        & Loops                       |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   |   DSP  |     FF    |     LUT    | URAM|
     +------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
-    |+ test_scalaire                                       |  Timing|  -0.00|     1558|  1.558e+04|         -|     1559|     -|        no|  12 (10%)|  5 (6%)|  2320 (6%)|  3215 (18%)|    -|
-    | + grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126  |  Timing|  -0.00|     1543|  1.543e+04|         -|     1543|     -|        no|         -|  5 (6%)|   527 (1%)|    851 (4%)|    -|
-    |  o VITIS_LOOP_14_1                                   |       -|   7.30|     1541|  1.541e+04|        12|        6|   256|       yes|         -|       -|          -|           -|    -|
+    |+ test_scalaire                                       |  Timing|  -1.29|     2344|  1.172e+04|         -|     2345|     -|        no|  12 (10%)|  5 (6%)|  2583 (7%)|  3639 (20%)|    -|
+    | + grp_test_scalaire_Pipeline_main_loop_fu_147        |  Timing|  -1.29|     2316|  1.158e+04|         -|     2316|     -|        no|         -|  5 (6%)|   717 (2%)|    928 (5%)|    -|
+    |  o main_loop                                         |       -|   3.65|     2314|  1.157e+04|        20|        9|   256|       yes|         -|       -|          -|           -|    -|
+    | + grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158  |  Timing|  -0.00|       10|     50.000|         -|       10|     -|        no|         -|       -|    7 (~0%)|    71 (~0%)|    -|
+    |  o VITIS_LOOP_21_1                                   |       -|   3.65|        8|     40.000|         2|        1|     8|       yes|         -|       -|          -|           -|    -|
     +------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
 
 
@@ -85,19 +87,21 @@
 == M_AXI Burst Information
 ================================================================
 * Burst Summary
-+--------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-| HW Interface | Loop            | Message                                                                                                                                                                                                                  | Location          |
-+--------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-| m_axi_bus_A  | VITIS_LOOP_14_1 | Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | mk1/test4.c:14:19 |
-| m_axi_bus_B  | VITIS_LOOP_14_1 | Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | mk1/test4.c:14:19 |
-+--------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
++---------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+| HW Interface  | Loop            | Message                                                                                                                                                                                                                  | Location          |
++---------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
+| m_axi_bus_A   | main_loop       | Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | mk1/test4.c:13:12 |
+| m_axi_bus_B   | main_loop       | Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | mk1/test4.c:13:12 |
+| m_axi_bus_res | VITIS_LOOP_21_1 | Multiple burst writes of length 8 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.  | mk1/test4.c:21:19 |
++---------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 
 * Bursts and Widening Missed
-+--------------+----------+---------------------------------------------------------------------------------------------------------------------+-------------------+
-| HW Interface | Variable | Problem                                                                                                             | Location          |
-+--------------+----------+---------------------------------------------------------------------------------------------------------------------+-------------------+
-| m_axi_bus_A  | A        | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | mk1/test4.c:14:19 |
-| m_axi_bus_B  | B        | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | mk1/test4.c:14:19 |
-+--------------+----------+---------------------------------------------------------------------------------------------------------------------+-------------------+
++---------------+----------+---------------------------------------------------------------------------------------------------------------------+-------------------+
+| HW Interface  | Variable | Problem                                                                                                             | Location          |
++---------------+----------+---------------------------------------------------------------------------------------------------------------------+-------------------+
+| m_axi_bus_res | res      | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | mk1/test4.c:21:19 |
+| m_axi_bus_A   | A        | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | mk1/test4.c:13:12 |
+| m_axi_bus_B   | B        | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | mk1/test4.c:13:12 |
++---------------+----------+---------------------------------------------------------------------------------------------------------------------+-------------------+
 
 

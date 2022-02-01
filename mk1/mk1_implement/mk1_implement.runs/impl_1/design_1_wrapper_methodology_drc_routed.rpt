@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Fri Dec 31 01:11:17 2021
+| Date         : Thu Jan 27 11:18:34 2022
 | Host         : glomet-fixe running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,24 +23,18 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 2
-+-----------+----------+---------------------------------------------+------------+
-| Rule      | Severity | Description                                 | Violations |
-+-----------+----------+---------------------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay               | 1          |
-| ULMTCS-1  | Warning  | Control Sets use limits recommend reduction | 1          |
-+-----------+----------+---------------------------------------------+------------+
+             Violations found: 1
++----------+----------+---------------------------------------------+------------+
+| Rule     | Severity | Description                                 | Violations |
++----------+----------+---------------------------------------------+------------+
+| ULMTCS-1 | Warning  | Control Sets use limits recommend reduction | 1          |
++----------+----------+---------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-18#1 Warning
-Missing input or output delay  
-An output delay is missing on led_0[0] relative to clock(s) sys_clock
-Related violations: <none>
-
 ULMTCS-1#1 Warning
 Control Sets use limits recommend reduction  
-This design uses 436 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+This design uses 443 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 

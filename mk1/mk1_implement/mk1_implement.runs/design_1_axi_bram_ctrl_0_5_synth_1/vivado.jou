@@ -2,11 +2,11 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Dec 30 15:25:51 2021
-# Process ID: 9308
-# Current directory: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1
+# Start of session at: Tue Jan 25 13:02:48 2022
+# Process ID: 24416
+# Current directory: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1
 # Command line: vivado.exe -log design_1_axi_bram_ctrl_0_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_bram_ctrl_0_5.tcl
-# Log file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1/design_1_axi_bram_ctrl_0_5.vds
-# Journal file: F:/projet_m2/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1\vivado.jou
+# Log file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1/design_1_axi_bram_ctrl_0_5.vds
+# Journal file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_axi_bram_ctrl_0_5.tcl -notrace

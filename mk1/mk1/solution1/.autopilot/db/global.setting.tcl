@@ -1,6 +1,6 @@
 
 set TopModule "test_scalaire"
-set ClockPeriod 10
+set ClockPeriod 5
 set ClockList ap_clk
 set HasVivadoClockPeriod 1
 set CombLogicFlag 0
@@ -44,7 +44,7 @@ set SCTraceOption all
 set TargetInfo xc7z010:-clg400:-1
 set SourceFiles {sc {} c ../test4.c}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile F:/projet_m2/mk1/mk1/solution1/solution1.directive
+set DirectiveFile F:/projet_m2/git/zynq-oc-analysis/mk1/mk1/solution1/solution1.directive
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

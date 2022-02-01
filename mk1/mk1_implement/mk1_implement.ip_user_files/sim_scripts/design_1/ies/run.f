@@ -212,6 +212,23 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_smc_2_0/sim/design_1_axi_smc_2_0.v" \
 -endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_comp_32_0_0/sim/design_1_comp_32_0_0.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_conv_funs_pkg.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_proc_common_pkg.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_ipif_pkg.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_family_support.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_family.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_soft_reset.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/proc_common_v3_30_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_pselect_f.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_address_decoder.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_slave_attachment.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_interrupt_control.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/design_1_xadc_wiz_0_0_axi_lite_ipif.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_xadc_core_drp.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_axi_xadc.vhd" \
+  "../../../bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" \
+-endlib
 -makelib ies_lib/xbip_utils_v3_0_10 \
   "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/b417/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 -endlib
@@ -243,29 +260,26 @@
   "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/bf60/hdl/floating_point_v7_1_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_bus_A_m_axi.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_bus_B_m_axi.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_bus_res_m_axi.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_control_s_axi.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_flow_control_loop_pipe_sequential_init.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_14_1.vhd" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/vhdl/test_scalaire.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_bus_A_m_axi.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_bus_B_m_axi.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_bus_res_m_axi.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_control_s_axi.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_flow_control_loop_pipe_sequential_init.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_loop_1.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/vhdl/test_scalaire.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/ip/test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip.v" \
-  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/a92a/hdl/ip/test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" \
-  "../../../bd/design_1/ip/design_1_test_scalaire_0_1/sim/design_1_test_scalaire_0_1.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_comp_32_0_0/sim/design_1_comp_32_0_0.vhd" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.v" \
+  "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v" \
+  "../../../bd/design_1/ip/design_1_test_scalaire_0_3/sim/design_1_test_scalaire_0_3.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_24 \
   "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
+  "../../../bd/design_1/ip/design_1_auto_pc_3/sim/design_1_auto_pc_3.v" \
   "../../../bd/design_1/ip/design_1_auto_pc_0_1/sim/design_1_auto_pc_0.v" \
 -endlib
 -makelib ies_lib/axi_clock_converter_v2_1_23 \
@@ -274,6 +288,7 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_cc_0/sim/design_1_auto_cc_0.v" \
   "../../../bd/design_1/ip/design_1_auto_pc_1_1/sim/design_1_auto_pc_1.v" \
+  "../../../bd/design_1/ip/design_1_auto_pc_2/sim/design_1_auto_pc_2.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/sim/design_1.vhd" \

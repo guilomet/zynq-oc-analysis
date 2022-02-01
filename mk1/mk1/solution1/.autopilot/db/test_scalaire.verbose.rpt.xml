@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'test_scalaire'" level="0">
-<item name = "Date">Thu Dec 30 15:01:43 2021
+<item name = "Date">Mon Jan 24 01:56:50 2022
 </item>
 <item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)</item>
 <item name = "Project">mk1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+<column name="ap_clk">5.00 ns, 4.944 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1558, 1558, 15.580 us, 15.580 us, 1559, 1559, no</column>
+<column name="">2344, 2344, 11.720 us, 11.720 us, 2345, 2345, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126">test_scalaire_Pipeline_VITIS_LOOP_14_1, 1543, 1543, 15.430 us, 15.430 us, 1543, 1543, no</column>
+<column name="grp_test_scalaire_Pipeline_main_loop_fu_147">test_scalaire_Pipeline_main_loop, 2316, 2316, 11.580 us, 11.580 us, 2316, 2316, no</column>
+<column name="grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158">test_scalaire_Pipeline_VITIS_LOOP_21_1, 10, 10, 50.000 ns, 50.000 ns, 10, 10, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -48,14 +49,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 2, -</column>
+<column name="Expression">-, -, 0, 41, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">12, 5, 2213, 2823, -</column>
+<column name="Instance">12, 5, 2410, 2971, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 390, -</column>
-<column name="Register">-, -, 107, -, -</column>
+<column name="Multiplexer">-, -, -, 627, -</column>
+<column name="Register">-, -, 173, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">10, 6, 6, 18, 0</specialColumn>
+<specialColumn name="Utilization (%)">10, 6, 7, 20, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -66,7 +67,8 @@
 <column name="bus_B_m_axi_U">bus_B_m_axi, 4, 0, 512, 580, 0</column>
 <column name="bus_res_m_axi_U">bus_res_m_axi, 4, 0, 512, 580, 0</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 150, 232, 0</column>
-<column name="grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126">test_scalaire_Pipeline_VITIS_LOOP_14_1, 0, 5, 527, 851, 0</column>
+<column name="grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158">test_scalaire_Pipeline_VITIS_LOOP_21_1, 0, 0, 7, 71, 0</column>
+<column name="grp_test_scalaire_Pipeline_main_loop_fu_147">test_scalaire_Pipeline_main_loop, 0, 5, 717, 928, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -83,12 +85,13 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln25_fu_196_p2">+, 0, 0, 39, 32, 6</column>
 <column name="ap_block_state2_io">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">81, 17, 1, 17</column>
+<column name="ap_NS_fsm">100, 20, 1, 20</column>
 <column name="bus_A_ARADDR">14, 3, 32, 96</column>
 <column name="bus_A_ARBURST">9, 2, 2, 4</column>
 <column name="bus_A_ARCACHE">9, 2, 4, 8</column>
@@ -117,6 +120,25 @@
 <column name="bus_B_ARVALID">14, 3, 1, 3</column>
 <column name="bus_B_RREADY">9, 2, 1, 2</column>
 <column name="bus_B_blk_n_AR">9, 2, 1, 2</column>
+<column name="bus_res_AWADDR">20, 4, 32, 128</column>
+<column name="bus_res_AWBURST">9, 2, 2, 4</column>
+<column name="bus_res_AWCACHE">9, 2, 4, 8</column>
+<column name="bus_res_AWID">9, 2, 1, 2</column>
+<column name="bus_res_AWLEN">20, 4, 32, 128</column>
+<column name="bus_res_AWLOCK">9, 2, 2, 4</column>
+<column name="bus_res_AWPROT">9, 2, 3, 6</column>
+<column name="bus_res_AWQOS">9, 2, 4, 8</column>
+<column name="bus_res_AWREGION">9, 2, 4, 8</column>
+<column name="bus_res_AWSIZE">9, 2, 3, 6</column>
+<column name="bus_res_AWUSER">9, 2, 1, 2</column>
+<column name="bus_res_AWVALID">14, 3, 1, 3</column>
+<column name="bus_res_BREADY">14, 3, 1, 3</column>
+<column name="bus_res_WDATA">14, 3, 32, 96</column>
+<column name="bus_res_WID">9, 2, 1, 2</column>
+<column name="bus_res_WLAST">9, 2, 1, 2</column>
+<column name="bus_res_WSTRB">14, 3, 4, 12</column>
+<column name="bus_res_WUSER">9, 2, 1, 2</column>
+<column name="bus_res_WVALID">14, 3, 1, 3</column>
 <column name="bus_res_blk_n_AW">9, 2, 1, 2</column>
 <column name="bus_res_blk_n_B">9, 2, 1, 2</column>
 <column name="bus_res_blk_n_W">9, 2, 1, 2</column>
@@ -124,11 +146,14 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">16, 0, 16, 0</column>
-<column name="grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126_ap_start_reg">1, 0, 1, 0</column>
-<column name="trunc_ln14_1_reg_217">30, 0, 30, 0</column>
-<column name="trunc_ln1_reg_223">30, 0, 30, 0</column>
-<column name="trunc_ln_reg_211">30, 0, 30, 0</column>
+<column name="ap_CS_fsm">19, 0, 19, 0</column>
+<column name="bitcast_ln23_reg_304">32, 0, 32, 0</column>
+<column name="grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_test_scalaire_Pipeline_main_loop_fu_147_ap_start_reg">1, 0, 1, 0</column>
+<column name="trunc_ln13_1_reg_272">30, 0, 30, 0</column>
+<column name="trunc_ln1_reg_278">30, 0, 30, 0</column>
+<column name="trunc_ln2_reg_284">30, 0, 30, 0</column>
+<column name="trunc_ln_reg_266">30, 0, 30, 0</column>
 </table>
 </item>
 </section>

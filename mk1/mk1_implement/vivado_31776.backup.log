@@ -1,0 +1,1499 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Jan 24 16:39:35 2022
+# Process ID: 31776
+# Current directory: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32452 F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.xpr
+# Log file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/vivado.log
+# Journal file: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.xpr
+WARNING: [BD 41-2576] File 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1.xci' referenced by design 'design_1' could not be found.
+WARNING: [BD 41-2576] File 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci' referenced by design 'design_1' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/git/zynq-oc-analysis/ip_scalaire'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/bd_afc3_one_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/bd_afc3_s00mmu_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/bd_afc3_s00tr_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/bd_afc3_s00sic_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/bd_afc3_s00a2s_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/bd_afc3_sarn_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/bd_afc3_srn_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/bd_afc3_sawn_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/bd_afc3_swn_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/bd_afc3_sbn_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/bd_afc3_m00s2a_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/bd_afc3_m00e_0.xci' referenced by design 'bd_afc3' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_0/bd_a878_one_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_2/bd_a878_s00mmu_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_3/bd_a878_s00tr_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_4/bd_a878_s00sic_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_5/bd_a878_s00a2s_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_6/bd_a878_sarn_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_7/bd_a878_srn_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_8/bd_a878_sawn_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_9/bd_a878_swn_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_10/bd_a878_sbn_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_11/bd_a878_m00s2a_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_12/bd_a878_m00e_0.xci' referenced by design 'bd_a878' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_0/bd_a888_one_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_1/bd_a888_psr_aclk_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_2/bd_a888_s00mmu_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_3/bd_a888_s00tr_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_4/bd_a888_s00sic_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_5/bd_a888_s00a2s_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_6/bd_a888_sarn_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_7/bd_a888_srn_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_8/bd_a888_sawn_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_9/bd_a888_swn_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_10/bd_a888_sbn_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_11/bd_a888_m00s2a_0.xci' referenced by design 'bd_a888' could not be found.
+WARNING: [BD 41-2576] File 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/ip/ip_12/bd_a888_m00e_0.xci' referenced by design 'bd_a888' could not be found.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1476.582 ; gain = 253.562
+update_compile_order -fileset sources_1
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_pc_3 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_1_auto_cc_0 
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_1
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_2
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_2
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_3
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_4
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_5
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_2
+Adding component instance block -- xilinx.com:module_ref:comp_32:1.0 - comp_32_0
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:hls:test_scalaire:1.0 - test_scalaire_0
+Successfully read diagram <design_1> from block design file <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1720.770 ; gain = 180.332
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK1]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET1_N] [get_bd_cells proc_sys_reset_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_1
+endgroup
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_1]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz_1/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz_1/reset]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_rtl -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+INFO: [BoardRule 102-15] connect_bd_net /reset_rtl /clk_wiz_1/reset
+INFO: [BoardRule 102-19] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [BoardRule 102-1] Board automation did not generate location constraint for /clk_wiz_1/reset. Users may need to specify the location constraint manually.
+endgroup
+startgroup
+set_property -dict [list CONFIG.USE_DYN_RECONFIG {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {109.241}] [get_bd_cells clk_wiz_1]
+WARNING: [BD 41-1684] Pin /clk_wiz_1/reset is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets reset_rtl_1]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/clk_wiz_1/s_axi_lite} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins clk_wiz_1/s_axi_lite]
+Slave segment '/clk_wiz_1/s_axi_lite/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x44A2_0000 [ 64K ]>.
+delete_bd_objs [get_bd_ports reset_rtl]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins clk_wiz_1/clk_out1]
+set_property PFM.CLOCK {FCLK_CLK0 {id "11" is_default "true" proc_sys_reset "/rst_ps7_0_100M" status "fixed" freq_hz "100000000"}} [get_bd_cells /processing_system7_0]
+set_property PFM.CLOCK {} [get_bd_cells /clk_wiz_0]
+set_property PFM.CLOCK {clk_out1 {id "15" is_default "false" proc_sys_reset "/proc_sys_reset_0" status "fixed" freq_hz "100000000"}} [get_bd_cells /clk_wiz_0]
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {98.146}] [get_bd_cells clk_wiz_0]
+endgroup
+validate_bd_design
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2149.297 ; gain = 38.391
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run design_1_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_5 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m06_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 5493cab152080ca4; cache size = 144.204 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 5493cab152080ca4; cache size = 144.204 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 5493cab152080ca4; cache size = 144.204 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 0215b430e2e7e786; cache size = 144.204 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_proc_sys_reset_0_0, cache-ID = 4bd3cb823b31ed6a; cache size = 144.204 MB.
+[Mon Jan 24 16:45:23 2022] Launched design_1_clk_wiz_0_0_synth_1, design_1_axi_smc_2_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_bram_ctrl_0_1_synth_1, design_1_axi_bram_ctrl_0_5_synth_1, design_1_axi_bram_ctrl_0_3_synth_1, design_1_axi_smc_0_synth_1, design_1_axi_smc_1_0_synth_1, design_1_auto_cc_0_synth_1, design_1_auto_pc_1_synth_1, design_1_clk_wiz_1_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_clk_wiz_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_axi_smc_2_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_smc_2_0_synth_1/runme.log
+design_1_xbar_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_1_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_1_synth_1/runme.log
+design_1_axi_bram_ctrl_0_5_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_5_synth_1/runme.log
+design_1_axi_bram_ctrl_0_3_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_bram_ctrl_0_3_synth_1/runme.log
+design_1_axi_smc_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_axi_smc_1_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_axi_smc_1_0_synth_1/runme.log
+design_1_auto_cc_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_auto_cc_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_clk_wiz_1_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_1_0_synth_1/runme.log
+synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Mon Jan 24 16:45:24 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2377.965 ; gain = 214.297
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 26 2021-19:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2413.695 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279653926A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 4167.590 ; gain = 1753.895
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7z010_1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-3.3v-qspi-x1-single}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M06_AXI] [get_bd_nets clk_wiz_1_clk_out1] [get_bd_nets sys_clock_1] [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_ports sys_clock]
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} CONFIG.PRIM_IN_FREQ {125.000} CONFIG.CLKIN1_JITTER_PS {80.0} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKIN1_PERIOD {8.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+reset_run design_1_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = cd3c1968bd833194; cache size = 168.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 5493cab152080ca4; cache size = 168.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 168.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 5493cab152080ca4; cache size = 168.207 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 0215b430e2e7e786; cache size = 168.207 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 168.207 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 168.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 168.207 MB.
+[Mon Jan 24 19:58:37 2022] Launched design_1_clk_wiz_0_0_synth_1, design_1_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_clk_wiz_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_xbar_0_synth_1/runme.log
+synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Mon Jan 24 19:58:37 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:05 ; elapsed = 00:01:24 . Memory (MB): peak = 4302.141 ; gain = 25.852
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]'
+undo
+INFO: [Common 17-17] undo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]'
+undo
+INFO: [Common 17-17] undo 'set_property PROBES.FILE {} [get_hw_devices xc7z010_1]'
+redo
+INFO: [Common 17-16] redo 'set_property PROBES.FILE {} [get_hw_devices xc7z010_1]'
+redo
+INFO: [Common 17-16] redo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]'
+redo
+INFO: [Common 17-16] redo 'set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_1
+endgroup
+set_property location {3 869 851} [get_bd_cells clk_wiz_1]
+set_property location {2 837 979} [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_nets sys_clock_1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_1]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock_0 -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 100000000 /sys_clock_0
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock_0
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock_0 /clk_wiz_1/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 125000000 /sys_clock_0
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200.000} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {109.241}] [get_bd_cells clk_wiz_1]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_1/resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins clk_wiz_0/clk_in1]
+startgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC PROPAGATED] [get_bd_cells clk_wiz_0]
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {Custom} CONFIG.CLKIN1_JITTER_PS {100.0} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.CLKOUT1_JITTER {114.829} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKFBOUT_MULT_F' from '8.000' to '10.000' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '8.000' to '10.000' has been ignored for IP 'clk_wiz_0'
+endgroup
+startgroup
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {Custom} Manual_Source {Auto}}  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE Custom [get_bd_cells /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I clock_rtl -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 125000000 /clock_rtl
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /clock_rtl
+INFO: [BoardRule 102-15] connect_bd_net /clock_rtl /clk_wiz_0/clk_in1
+WARNING: [BoardRule 102-1] Board automation did not generate location constraint for /clk_wiz_0/clk_in1. Users may need to specify the location constraint manually.
+delete_bd_objs [get_bd_nets clock_rtl_1]
+delete_bd_objs [get_bd_ports sys_clock]
+delete_bd_objs [get_bd_ports clock_rtl]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins clk_wiz_0/clk_in1]
+startgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0]
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {Custom} CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} CONFIG.PRIM_IN_FREQ {200} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.CLKIN1_JITTER_PS {50.0} CONFIG.MMCM_CLKFBOUT_MULT_F {5.000} CONFIG.MMCM_CLKIN1_PERIOD {5.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.CLKOUT1_JITTER {98.146} CONFIG.CLKOUT1_PHASE_ERROR {89.971}] [get_bd_cells clk_wiz_0]
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK1_PORT {0} CONFIG.PCW_EN_RST1_PORT {0}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 4537.480 ; gain = 89.898
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+reset_run design_1_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_processing_system7_0_0_synth_1
+
+reset_run design_1_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = cd3c1968bd833194; cache size = 171.379 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 5493cab152080ca4; cache size = 171.379 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 171.379 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 5493cab152080ca4; cache size = 171.379 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 0215b430e2e7e786; cache size = 171.379 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 171.379 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 171.379 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 171.379 MB.
+[Mon Jan 24 20:48:44 2022] Launched design_1_processing_system7_0_0_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_clk_wiz_1_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_clk_wiz_1_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_1_0_synth_1/runme.log
+synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Mon Jan 24 20:48:44 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 4606.695 ; gain = 69.215
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.USE_DYN_RECONFIG {true} CONFIG.RESET_TYPE {ACTIVE_HIGH} CONFIG.RESET_PORT {reset}] [get_bd_cells clk_wiz_1]
+WARNING: [BD 41-1684] Pin /clk_wiz_1/resetn is now disabled. All connections to this pin have been removed. 
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/clk_wiz_1/s_axi_lite} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins clk_wiz_1/s_axi_lite]
+Slave segment '/clk_wiz_1/s_axi_lite/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x44A2_0000 [ 64K ]>.
+copy_bd_objs /  [get_bd_cells {proc_sys_reset_0}]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
+connect_bd_net [get_bd_pins clk_wiz_1/locked] [get_bd_pins proc_sys_reset_1/dcm_locked]
+connect_bd_net [get_bd_pins proc_sys_reset_1/mb_debug_sys_rst] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+set_property PFM.CLOCK {clk_out1 {id "17" is_default "false" proc_sys_reset "/proc_sys_reset_1" status "fixed" freq_hz "200000000"}} [get_bd_cells /clk_wiz_1]
+disconnect_bd_net /processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_1/mb_debug_sys_rst]
+connect_bd_net [get_bd_pins proc_sys_reset_1/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins clk_wiz_1/clk_out1]
+startgroup
+endgroup
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+reset_run design_1_clk_wiz_1_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_1_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m06_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = cd3c1968bd833194; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 5493cab152080ca4; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 5493cab152080ca4; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 5493cab152080ca4; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 0215b430e2e7e786; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = 8ff2501f9fb5a67f; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 174.536 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_proc_sys_reset_0_1, cache-ID = 4bd3cb823b31ed6a; cache size = 174.536 MB.
+[Mon Jan 24 22:32:11 2022] Launched design_1_clk_wiz_1_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_clk_wiz_1_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_1_0_synth_1/runme.log
+synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Mon Jan 24 22:32:11 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:00 ; elapsed = 00:01:28 . Memory (MB): peak = 4769.715 ; gain = 80.562
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: f:/projet_m2/git/zynq-oc-analysis/ip_scalaire/ip_scalaire/impl/ip/component.xml. It will be created.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/git/zynq-oc-analysis/ip_scalaire'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:test_scalaire:1.1 [get_ips  design_1_test_scalaire_0_3] -log ip_upgrade.log
+Upgrading 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_test_scalaire_0_3_synth_1
+
+INFO: [IP_Flow 19-1972] Upgraded design_1_test_scalaire_0_3 from ip_scal 1.0 to ip_scal 1.1
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_test_scalaire_0_3] -no_script -sync -force -quiet
+generate_target all [get_files  F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+WARNING: [IP_Flow 19-519] IP 'design_1_test_scalaire_0_3' detected a language mismatch between 'Verilog Simulation Wrapper' and 'VHDL Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block test_scalaire_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m06_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 4873.297 ; gain = 50.277
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_2_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_test_scalaire_0_3] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_4] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 0215b430e2e7e786; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 5493cab152080ca4; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = cd3c1968bd833194; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 5493cab152080ca4; cache size = 176.815 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 5493cab152080ca4; cache size = 176.815 MB.
+export_ip_user_files -of_objects [get_files F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_test_scalaire_0_3_synth_1 -jobs 10
+[Tue Jan 25 00:33:14 2022] Launched design_1_test_scalaire_0_3_synth_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_test_scalaire_0_3_synth_1/runme.log
+export_simulation -of_objects [get_files F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd] -directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.ip_user_files/sim_scripts -ip_user_files_dir F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.ip_user_files -ipstatic_source_dir F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.cache/compile_simlib/modelsim} {questa=F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.cache/compile_simlib/questa} {riviera=F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.cache/compile_simlib/riviera} {activehdl=F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279653926A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279653926A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets sys_clock_0_1] [get_bd_nets clk_wiz_1_locked] [get_bd_intf_nets axi_interconnect_0_M06_AXI] [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_cells proc_sys_reset_1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+startgroup
+endgroup
+delete_bd_objs [get_bd_ports sys_clock_0]
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+reset_run design_1_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = cd3c1968bd833194; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 5493cab152080ca4; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 5493cab152080ca4; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 0215b430e2e7e786; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_clk_wiz_0_0, cache-ID = 6386352ee25a9a65; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = a9fcc1757237e18e; cache size = 182.162 MB.
+[Tue Jan 25 00:43:10 2022] Launched synth_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Tue Jan 25 00:43:10 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 4942.867 ; gain = 69.570
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279653926A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279653926A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7z010_1 ]]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets sys_clock_1] [get_bd_ports sys_clock]
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {Custom}] [get_bd_cells clk_wiz_0]
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins clk_wiz_0/clk_in1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_1
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+endgroup
+connect_bd_net [get_bd_pins proc_sys_reset_1/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+connect_bd_net [get_bd_pins proc_sys_reset_1/slowest_sync_clk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+set_property PFM.CLOCK {FCLK_CLK0 {id "11" is_default "true" proc_sys_reset "/rst_ps7_0_100M" status "fixed" freq_hz "100000000"} FCLK_CLK1 {id "14" is_default "false" proc_sys_reset "/proc_sys_reset_1" status "fixed" freq_hz "200000000"}} [get_bd_cells /processing_system7_0]
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+reset_run design_1_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_processing_system7_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /clk_wiz_0/clk_in1(125000000) and /processing_system7_0/FCLK_CLK1(200000000)
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd 
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_proc_sys_reset_1_0, cache-ID = 4bd3cb823b31ed6a; cache size = 182.162 MB.
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+startgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0]
+set_property -dict [list CONFIG.PRIM_IN_FREQ {200.000} CONFIG.CLKIN1_JITTER_PS {50.0} CONFIG.MMCM_CLKFBOUT_MULT_F {5.000} CONFIG.MMCM_CLKIN1_PERIOD {5.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.CLKOUT1_JITTER {98.146} CONFIG.CLKOUT1_PHASE_ERROR {89.971}] [get_bd_cells clk_wiz_0]
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+report_ip_status -name ip_status 
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip, but BD cell '/xadc_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </xadc_wiz_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 5117.883 ; gain = 72.496
+set_property PFM.CLOCK {FCLK_CLK1 {id "14" is_default "false" proc_sys_reset "/proc_sys_reset_1" status "fixed" freq_hz "200000000"}} [get_bd_cells /processing_system7_0]
+set_property PFM.CLOCK {FCLK_CLK0 {id "21" is_default "false" proc_sys_reset "/rst_ps7_0_100M" status "fixed" freq_hz "200000000"} FCLK_CLK1 {id "14" is_default "false" proc_sys_reset "/proc_sys_reset_1" status "fixed" freq_hz "200000000"}} [get_bd_cells /processing_system7_0]
+set_property PFM.CLOCK {FCLK_CLK0 {id "21" is_default "true" proc_sys_reset "/rst_ps7_0_100M" status "fixed" freq_hz "200000000"} FCLK_CLK1 {id "14" is_default "false" proc_sys_reset "/proc_sys_reset_1" status "fixed" freq_hz "200000000"}} [get_bd_cells /processing_system7_0]
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip, but BD cell '/xadc_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </xadc_wiz_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_4 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = baffcce8ce568973; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps7_0_100M_0, cache-ID = 4bd3cb823b31ed6a; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = baffcce8ce568973; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_0, cache-ID = b060e518826fe372; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_proc_sys_reset_1_0, cache-ID = 4bd3cb823b31ed6a; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_2, cache-ID = b060e518826fe372; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_4, cache-ID = b060e518826fe372; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 182.162 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 182.162 MB.
+[Tue Jan 25 01:09:27 2022] Launched design_1_processing_system7_0_0_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_3_synth_1, design_1_auto_cc_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_3_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_auto_pc_3_synth_1/runme.log
+design_1_auto_cc_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_auto_cc_0_synth_1/runme.log
+synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Tue Jan 25 01:09:27 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:59 ; elapsed = 00:01:15 . Memory (MB): peak = 5195.812 ; gain = 77.930
+set_property location {1 379 800} [get_bd_cells proc_sys_reset_0]
+startgroup
+set_property -dict [list CONFIG.PRIM_SOURCE {Global_buffer}] [get_bd_cells clk_wiz_0]
+endgroup
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+reset_run design_1_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip, but BD cell '/xadc_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </xadc_wiz_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = 974b75225b723dc0; cache size = 188.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = baffcce8ce568973; cache size = 188.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 188.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = baffcce8ce568973; cache size = 188.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 6a8879d925988cff; cache size = 188.236 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 188.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 188.235 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 188.235 MB.
+[Tue Jan 25 01:15:28 2022] Launched design_1_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_clk_wiz_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Tue Jan 25 01:15:28 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:57 ; elapsed = 00:01:13 . Memory (MB): peak = 5223.367 ; gain = 27.555
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279653926A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279653926A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+disconnect_bd_net /processing_system7_0_FCLK_CLK1 [get_bd_pins clk_wiz_0/clk_in1]
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} CONFIG.PRIM_IN_FREQ {125.000} CONFIG.CLKIN1_JITTER_PS {80.0} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKIN1_PERIOD {8.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.CLKOUT1_JITTER {109.241} CONFIG.CLKOUT1_PHASE_ERROR {96.948}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock
+INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+save_bd_design
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1
+
+reset_run design_1_clk_wiz_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/axi_interconnect_0/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /axi_interconnect_0/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_2_0: SmartConnect design_1_axi_smc_2_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/s_axi_aclk have been updated from connected ip, but BD cell '/xadc_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </xadc_wiz_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /test_scalaire_0/ap_clk have been updated from connected ip, but BD cell '/test_scalaire_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 200000000 
+Please resolve any mismatches by directly setting properties on BD cell </test_scalaire_0> to completely resolve these warnings.
+Wrote  : <F:\projet_m2\git\zynq-oc-analysis\mk1\mk1_implement\mk1_implement.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to pin: '/axi_bram_ctrl_1/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addra'(32) to pin: '/axi_bram_ctrl_2/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to pin: '/axi_bram_ctrl_3/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addra'(32) to pin: '/axi_bram_ctrl_4/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_2/addrb'(32) to pin: '/axi_bram_ctrl_5/bram_addr_a'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_A_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_1/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_B_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_arlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_smc_2/S00_AXI_awlock'(1) to pin: '/test_scalaire_0/m_axi_bus_res_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/hw_handoff/design_1_axi_smc_2_0_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2_0/bd_0/synth/design_1_axi_smc_2_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_2 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m05_couplers/auto_pc .
+Exporting to file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = 974b75225b723dc0; cache size = 190.514 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = baffcce8ce568973; cache size = 190.514 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = baffcce8ce568973; cache size = 190.514 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = baffcce8ce568973; cache size = 190.514 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 6a8879d925988cff; cache size = 190.514 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 525bc8eed192f559; cache size = 190.514 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_1_0, cache-ID = 46b57182eb031aca; cache size = 190.514 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_2_0, cache-ID = 017779339b2961bc; cache size = 190.514 MB.
+[Tue Jan 25 01:31:18 2022] Launched design_1_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_clk_wiz_0_0_synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+synth_1: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/synth_1/runme.log
+[Tue Jan 25 01:31:18 2022] Launched impl_1...
+Run output will be captured here: F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:54 ; elapsed = 00:01:10 . Memory (MB): peak = 5314.684 ; gain = 72.973
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.610 . Memory (MB): peak = 5373.855 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 473 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.995 . Memory (MB): peak = 6137.906 ; gain = 25.660
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.998 . Memory (MB): peak = 6137.906 ; gain = 25.660
+Generating merged BMM file for the design top 'design_1_wrapper'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 6137.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 89 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 86 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 6214.637 ; gain = 899.953
+open_report: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 6253.570 ; gain = 38.934
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: f:/projet_m2/git/zynq-oc-analysis/ip_scalaire/ip_scalaire/impl/ip/component.xml. It will be created.
+open_bd_design {F:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/projet_m2/git/zynq-oc-analysis/ip_scalaire'.

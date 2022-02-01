@@ -60,14 +60,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_axi_smc_2_0/design_1_axi_smc_2_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_smc_2_0 || ORIG_REF_NAME==design_1_axi_smc_2_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_test_scalaire_0_1/design_1_test_scalaire_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_test_scalaire_0_1 || ORIG_REF_NAME==design_1_test_scalaire_0_1} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_comp_32_0_0/design_1_comp_32_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_comp_32_0_0 || ORIG_REF_NAME==design_1_comp_32_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xadc_wiz_0_0 || ORIG_REF_NAME==design_1_xadc_wiz_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_test_scalaire_0_3/design_1_test_scalaire_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_test_scalaire_0_3 || ORIG_REF_NAME==design_1_test_scalaire_0_3} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_3 || ORIG_REF_NAME==design_1_auto_pc_3} -quiet] -quiet
@@ -84,4 +84,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_au
 # IP: bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_2 || ORIG_REF_NAME==design_1_auto_pc_2} -quiet] -quiet
 
-# XDC: f:/projet_m2/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/design_1_ooc.xdc

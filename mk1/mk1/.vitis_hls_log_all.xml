@@ -3,28 +3,29 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <packageLog/>
+      <packageLog>
+        <logs message="ERROR: [IMPL 213-28] Failed to generate IP." projectName="mk1" solutionName="solution1" date="2022-01-24T01:57:26.197+0100"/>
+        <logs message="ERROR: '2201240157' is an invalid argument. Please specify an integer value.&#xD;&#xD;&#xA;    while executing&#xD;&#xD;&#xA;&quot;rdi::set_property core_revision 2201240157 {component component_1}&quot;&#xD;&#xD;&#xA;    invoked from within&#xD;&#xD;&#xA;&quot;set_property core_revision $Revision $core&quot;&#xD;&#xD;&#xA;    (file &quot;run_ippack.tcl&quot; line 1577)&#xD;" projectName="mk1" solutionName="solution1" date="2022-01-24T01:57:26.152+0100"/>
+      </packageLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:43.246+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARUSER' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.996+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARREGION' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.983+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARQOS' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.973+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARPROT' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.961+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARCACHE' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.948+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARLOCK' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.935+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARBURST' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.924+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARSIZE' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.911+0100" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_14_1/m_axi_bus_A_ARLEN' to 0." projectName="mk1" solutionName="solution1" date="2021-12-30T15:01:42.900+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.935+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_BREADY' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.805+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWUSER' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.797+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWREGION' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.789+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWQOS' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.782+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWPROT' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.775+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWCACHE' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.769+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWLOCK' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.762+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWBURST' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.755+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'test_scalaire_Pipeline_VITIS_LOOP_21_1/m_axi_bus_res_AWSIZE' to 0." projectName="mk1" solutionName="solution1" date="2022-01-24T01:56:49.748+0100" type="Warning"/>
       </synLog>
       <packageLog>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="mk1" solutionName="solution1" date="2021-12-30T15:03:45.116+0100" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="mk1" solutionName="solution1" date="2021-12-30T15:03:43.112+0100" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="mk1" solutionName="solution1" date="2021-12-30T15:02:13.488+0100" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="mk1" solutionName="solution1" date="2021-12-30T15:02:11.479+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="mk1" solutionName="solution1" date="2022-01-24T01:57:25.881+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="mk1" solutionName="solution1" date="2022-01-24T01:57:23.873+0100" type="Warning"/>
       </packageLog>
     </logs>
   </warningLogs>

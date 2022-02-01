@@ -1,7 +1,5 @@
-void test_scalaire (float A[256], float B[256], float res[1])
+void test_scalaire (float A[256], float B[256], float res[16])
 {
-	//res est mis comme un vecteur de taille 1 afin d'obtenir un port AXI
-
 
 #pragma HLS INTERFACE m_axi port=A bundle=bus_A
 #pragma HLS INTERFACE m_axi port=B bundle=bus_B
@@ -10,12 +8,19 @@ void test_scalaire (float A[256], float B[256], float res[1])
 
 	float tmp[256];
 	float tmp1 = 0, tmp2 = 0;
+	int pile_iteration = 0;
 
-	for (int i = 0; i < 256; i++)
+	main_loop:for (int i = 0; i < 256; i++)
 	{
-#pragma HLS PIPELINE II=6
+#pragma HLS PIPELINE II=9
+
 		tmp2 = A[i]*B[i];
-		tmp1 = tmp1 + tmp2;
+		tmp1 += tmp2;
+		pile_iteration += i;
 	}
-	res[0] = tmp1;
+	for (int i = 0; i < 8; i++)
+	{
+		res[i] = tmp1;
+	}
+	res[8] = (float)(pile_iteration);
 }

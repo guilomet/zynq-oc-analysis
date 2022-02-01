@@ -7,8 +7,8 @@
     </downStreamTool>
     <synthesis askAgain="false"/>
     <config>
-        <config_compile complex-mul-dsp="0" unsafe_math_optimizations="1"/>
-        <config_export display_name="test_scalaire" format="ip_catalog" ipname="test_scalaire" rtl="verilog" version="1.1" vivado_clock="10"/>
+        <config_compile complex-mul-dsp="0" name_max_length="120" unsafe_math_optimizations="1"/>
+        <config_export display_name="test_scalaire" ipname="test_scalaire" rtl="verilog" version="1.1" vivado_clock="5" format="ip_catalog"/>
         <config_interface m_axi_addr64="0"/>
         <config_unroll tripcount_threshold="2"/>
     </config>
@@ -72,7 +72,7 @@
         <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" default="false" period="10"/>
+        <clock name="default" default="false" period="5"/>
     </clockList>
 </solution>
 

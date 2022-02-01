@@ -7,34 +7,34 @@
         <ProductFamily>zynq</ProductFamily>
         <Part>xc7z010-clg400-1</Part>
         <TopModelName>test_scalaire</TopModelName>
-        <TargetClockPeriod>10.00</TargetClockPeriod>
-        <ClockUncertainty>2.70</ClockUncertainty>
+        <TargetClockPeriod>5.00</TargetClockPeriod>
+        <ClockUncertainty>1.35</ClockUncertainty>
         <FlowTarget>vivado</FlowTarget>
     </UserAssignments>
     <PerformanceEstimates>
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.944</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>1558</Best-caseLatency>
-            <Average-caseLatency>1558</Average-caseLatency>
-            <Worst-caseLatency>1558</Worst-caseLatency>
-            <Best-caseRealTimeLatency>15.580 us</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>15.580 us</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>15.580 us</Worst-caseRealTimeLatency>
-            <Interval-min>1559</Interval-min>
-            <Interval-max>1559</Interval-max>
+            <Best-caseLatency>2344</Best-caseLatency>
+            <Average-caseLatency>2344</Average-caseLatency>
+            <Worst-caseLatency>2344</Worst-caseLatency>
+            <Best-caseRealTimeLatency>11.720 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>11.720 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>11.720 us</Worst-caseRealTimeLatency>
+            <Interval-min>2345</Interval-min>
+            <Interval-max>2345</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>12</BRAM_18K>
             <DSP>5</DSP>
-            <FF>2320</FF>
-            <LUT>3215</LUT>
+            <FF>2583</FF>
+            <LUT>3639</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -1892,47 +1892,55 @@
             <ModuleName>test_scalaire</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126</InstName>
-                    <ModuleName>test_scalaire_Pipeline_VITIS_LOOP_14_1</ModuleName>
+                    <InstName>grp_test_scalaire_Pipeline_main_loop_fu_147</InstName>
+                    <ModuleName>test_scalaire_Pipeline_main_loop</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>126</ID>
-                    <BindInstances>add_ln14_fu_126_p2 fmul_32ns_32ns_32_4_max_dsp_1_U2 fadd_32ns_32ns_32_5_full_dsp_1_U1</BindInstances>
+                    <ID>147</ID>
+                    <BindInstances>add_ln13_fu_126_p2 fmul_32ns_32ns_32_8_max_dsp_1_U2 fadd_32ns_32ns_32_10_full_dsp_1_U1</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158</InstName>
+                    <ModuleName>test_scalaire_Pipeline_VITIS_LOOP_21_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>158</ID>
+                    <BindInstances>add_ln21_fu_98_p2</BindInstances>
                 </Instance>
             </InstancesList>
+            <BindInstances>add_ln25_fu_196_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>test_scalaire_Pipeline_VITIS_LOOP_14_1</Name>
+            <Name>test_scalaire_Pipeline_main_loop</Name>
             <Loops>
-                <VITIS_LOOP_14_1/>
+                <main_loop/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
-                    <TargetClockPeriod>10.00</TargetClockPeriod>
-                    <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <EstimatedClockPeriod>4.944</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>1543</Best-caseLatency>
-                    <Average-caseLatency>1543</Average-caseLatency>
-                    <Worst-caseLatency>1543</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>15.430 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>15.430 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>15.430 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>1543</PipelineInitiationInterval>
+                    <Best-caseLatency>2316</Best-caseLatency>
+                    <Average-caseLatency>2316</Average-caseLatency>
+                    <Worst-caseLatency>2316</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>11.580 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>11.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>11.580 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2316</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_14_1>
-                        <Name>VITIS_LOOP_14_1</Name>
+                    <main_loop>
+                        <Name>main_loop</Name>
                         <TripCount>256</TripCount>
-                        <Latency>1541</Latency>
-                        <AbsoluteTimeLatency>15.410 us</AbsoluteTimeLatency>
-                        <PipelineII>6</PipelineII>
-                        <PipelineDepth>12</PipelineDepth>
+                        <Latency>2314</Latency>
+                        <AbsoluteTimeLatency>11.570 us</AbsoluteTimeLatency>
+                        <PipelineII>9</PipelineII>
+                        <PipelineDepth>20</PipelineDepth>
                         <PipelineType>yes</PipelineType>
-                    </VITIS_LOOP_14_1>
+                    </main_loop>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -1940,12 +1948,12 @@
                     <DSP>5</DSP>
                     <AVAIL_DSP>80</AVAIL_DSP>
                     <UTIL_DSP>6</UTIL_DSP>
-                    <FF>527</FF>
+                    <FF>717</FF>
                     <AVAIL_FF>35200</AVAIL_FF>
-                    <UTIL_FF>1</UTIL_FF>
-                    <LUT>851</LUT>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>928</LUT>
                     <AVAIL_LUT>17600</AVAIL_LUT>
-                    <UTIL_LUT>4</UTIL_LUT>
+                    <UTIL_LUT>5</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>120</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
@@ -1955,27 +1963,83 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_14_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_126_p2" SOURCE="mk1/test4.c:14" URAM="0" VARIABLE="add_ln14"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="3" LOOP="VITIS_LOOP_14_1" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_4_max_dsp_1_U2" SOURCE="mk1/test4.c:17" URAM="0" VARIABLE="tmp2"/>
-                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="4" LOOP="VITIS_LOOP_14_1" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_5_full_dsp_1_U1" SOURCE="mk1/test4.c:18" URAM="0" VARIABLE="tmp1_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="main_loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_126_p2" SOURCE="mk1/test4.c:13" URAM="0" VARIABLE="add_ln13"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="7" LOOP="main_loop" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_8_max_dsp_1_U2" SOURCE="mk1/test4.c:17" URAM="0" VARIABLE="tmp2"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="9" LOOP="main_loop" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_10_full_dsp_1_U1" SOURCE="mk1/test4.c:18" URAM="0" VARIABLE="tmp1_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>test_scalaire_Pipeline_VITIS_LOOP_21_1</Name>
+            <Loops>
+                <VITIS_LOOP_21_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <EstimatedClockPeriod>3.650</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>50.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>50.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>50.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>10</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_21_1>
+                        <Name>VITIS_LOOP_21_1</Name>
+                        <TripCount>8</TripCount>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>40.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                    </VITIS_LOOP_21_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>7</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>71</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_21_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_fu_98_p2" SOURCE="mk1/test4.c:21" URAM="0" VARIABLE="add_ln21"/>
             </BindNodes>
         </Module>
         <Module>
             <Name>test_scalaire</Name>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
-                    <TargetClockPeriod>10.00</TargetClockPeriod>
-                    <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <EstimatedClockPeriod>4.944</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>1558</Best-caseLatency>
-                    <Average-caseLatency>1558</Average-caseLatency>
-                    <Worst-caseLatency>1558</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>15.580 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>15.580 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>15.580 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>1559</PipelineInitiationInterval>
+                    <Best-caseLatency>2344</Best-caseLatency>
+                    <Average-caseLatency>2344</Average-caseLatency>
+                    <Worst-caseLatency>2344</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>11.720 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>11.720 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>11.720 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2345</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
@@ -1987,23 +2051,26 @@
                     <DSP>5</DSP>
                     <AVAIL_DSP>80</AVAIL_DSP>
                     <UTIL_DSP>6</UTIL_DSP>
-                    <FF>2320</FF>
+                    <FF>2583</FF>
                     <AVAIL_FF>35200</AVAIL_FF>
-                    <UTIL_FF>6</UTIL_FF>
-                    <LUT>3215</LUT>
+                    <UTIL_FF>7</UTIL_FF>
+                    <LUT>3639</LUT>
                     <AVAIL_LUT>17600</AVAIL_LUT>
-                    <UTIL_LUT>18</UTIL_LUT>
+                    <UTIL_LUT>20</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>0</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_fu_196_p2" SOURCE="mk1/test4.c:25" URAM="0" VARIABLE="add_ln25"/>
+            </BindNodes>
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands>
-        <config_compile unsafe_math_optimizations="1"/>
-        <config_export display_name="test_scalaire" ipname="test_scalaire" rtl="vhdl" version="1.1" vivado_clock="10"/>
+        <config_compile name_max_length="120" unsafe_math_optimizations="1"/>
+        <config_export display_name="test_scalaire" ipname="test_scalaire" rtl="vhdl" version="2.0" vivado_clock="5"/>
         <config_interface m_axi_addr64="0"/>
         <config_unroll tripcount_threshold="2"/>
     </UserConfigCommands>
@@ -2387,15 +2454,17 @@
             <item name="Burst Summary">
                 <table>
                     <keys size="4">HW Interface, Loop, Message, Location</keys>
-                    <column name="m_axi_bus_A">VITIS_LOOP_14_1, Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings., mk1/test4.c:14:19</column>
-                    <column name="m_axi_bus_B">VITIS_LOOP_14_1, Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings., mk1/test4.c:14:19</column>
+                    <column name="m_axi_bus_A">main_loop, Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings., mk1/test4.c:13:12</column>
+                    <column name="m_axi_bus_B">main_loop, Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings., mk1/test4.c:13:12</column>
+                    <column name="m_axi_bus_res">VITIS_LOOP_21_1, Multiple burst writes of length 8 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings., mk1/test4.c:21:19</column>
                 </table>
             </item>
             <item name="Bursts and Widening Missed">
                 <table>
                     <keys size="4">HW Interface, Variable, Problem, Location</keys>
-                    <column name="m_axi_bus_A">A, Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'., mk1/test4.c:14:19</column>
-                    <column name="m_axi_bus_B">B, Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'., mk1/test4.c:14:19</column>
+                    <column name="m_axi_bus_res">res, Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'., mk1/test4.c:21:19</column>
+                    <column name="m_axi_bus_A">A, Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'., mk1/test4.c:13:12</column>
+                    <column name="m_axi_bus_B">B, Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'., mk1/test4.c:13:12</column>
                 </table>
             </item>
         </section>

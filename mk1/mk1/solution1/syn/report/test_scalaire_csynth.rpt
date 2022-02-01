@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'test_scalaire'
 ================================================================
-* Date:           Thu Dec 30 15:01:43 2021
+* Date:           Mon Jan 24 01:56:50 2022
 
 * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
 * Project:        mk1
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.944 ns|     1.35 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
     |   min   |   max   |    min    |    max    |  min |  max |   Type  |
     +---------+---------+-----------+-----------+------+------+---------+
-    |     1558|     1558|  15.580 us|  15.580 us|  1559|  1559|       no|
+    |     2344|     2344|  11.720 us|  11.720 us|  2345|  2345|       no|
     +---------+---------+-----------+-----------+------+------+---------+
 
     + Detail: 
@@ -38,7 +38,8 @@
         |                                                   |                                        |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
         |                      Instance                     |                 Module                 |   min   |   max   |    min    |    max    |  min |  max |   Type  |
         +---------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126  |test_scalaire_Pipeline_VITIS_LOOP_14_1  |     1543|     1543|  15.430 us|  15.430 us|  1543|  1543|       no|
+        |grp_test_scalaire_Pipeline_main_loop_fu_147        |test_scalaire_Pipeline_main_loop        |     2316|     2316|  11.580 us|  11.580 us|  2316|  2316|       no|
+        |grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158  |test_scalaire_Pipeline_VITIS_LOOP_21_1  |       10|       10|  50.000 ns|  50.000 ns|    10|    10|       no|
         +---------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
@@ -54,18 +55,18 @@
 |       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
 +-----------------+---------+----+-------+-------+-----+
 |DSP              |        -|   -|      -|      -|    -|
-|Expression       |        -|   -|      0|      2|    -|
+|Expression       |        -|   -|      0|     41|    -|
 |FIFO             |        -|   -|      -|      -|    -|
-|Instance         |       12|   5|   2213|   2823|    -|
+|Instance         |       12|   5|   2410|   2971|    -|
 |Memory           |        -|   -|      -|      -|    -|
-|Multiplexer      |        -|   -|      -|    390|    -|
-|Register         |        -|   -|    107|      -|    -|
+|Multiplexer      |        -|   -|      -|    627|    -|
+|Register         |        -|   -|    173|      -|    -|
 +-----------------+---------+----+-------+-------+-----+
-|Total            |       12|   5|   2320|   3215|    0|
+|Total            |       12|   5|   2583|   3639|    0|
 +-----------------+---------+----+-------+-------+-----+
 |Available        |      120|  80|  35200|  17600|    0|
 +-----------------+---------+----+-------+-------+-----+
-|Utilization (%)  |       10|   6|      6|     18|    0|
+|Utilization (%)  |       10|   6|      7|     20|    0|
 +-----------------+---------+----+-------+-------+-----+
 
 + Detail: 
@@ -77,9 +78,10 @@
     |bus_B_m_axi_U                                      |bus_B_m_axi                             |        4|   0|  512|  580|    0|
     |bus_res_m_axi_U                                    |bus_res_m_axi                           |        4|   0|  512|  580|    0|
     |control_s_axi_U                                    |control_s_axi                           |        0|   0|  150|  232|    0|
-    |grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126  |test_scalaire_Pipeline_VITIS_LOOP_14_1  |        0|   5|  527|  851|    0|
+    |grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158  |test_scalaire_Pipeline_VITIS_LOOP_21_1  |        0|   0|    7|   71|    0|
+    |grp_test_scalaire_Pipeline_main_loop_fu_147        |test_scalaire_Pipeline_main_loop        |        0|   5|  717|  928|    0|
     +---------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
-    |Total                                              |                                        |       12|   5| 2213| 2823|    0|
+    |Total                                              |                                        |       12|   5| 2410| 2971|    0|
     +---------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -95,62 +97,85 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
+    |add_ln25_fu_196_p2  |         +|   0|  0|  39|          32|           6|
     |ap_block_state2_io  |        or|   0|  0|   2|           1|           1|
     +--------------------+----------+----+---+----+------------+------------+
-    |Total               |          |   0|  0|   2|           1|           1|
+    |Total               |          |   0|  0|  41|          33|           7|
     +--------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
-    +------------------+----+-----------+-----+-----------+
-    |       Name       | LUT| Input Size| Bits| Total Bits|
-    +------------------+----+-----------+-----+-----------+
-    |ap_NS_fsm         |  81|         17|    1|         17|
-    |bus_A_ARADDR      |  14|          3|   32|         96|
-    |bus_A_ARBURST     |   9|          2|    2|          4|
-    |bus_A_ARCACHE     |   9|          2|    4|          8|
-    |bus_A_ARID        |   9|          2|    1|          2|
-    |bus_A_ARLEN       |  14|          3|   32|         96|
-    |bus_A_ARLOCK      |   9|          2|    2|          4|
-    |bus_A_ARPROT      |   9|          2|    3|          6|
-    |bus_A_ARQOS       |   9|          2|    4|          8|
-    |bus_A_ARREGION    |   9|          2|    4|          8|
-    |bus_A_ARSIZE      |   9|          2|    3|          6|
-    |bus_A_ARUSER      |   9|          2|    1|          2|
-    |bus_A_ARVALID     |  14|          3|    1|          3|
-    |bus_A_RREADY      |   9|          2|    1|          2|
-    |bus_A_blk_n_AR    |   9|          2|    1|          2|
-    |bus_B_ARADDR      |  14|          3|   32|         96|
-    |bus_B_ARBURST     |   9|          2|    2|          4|
-    |bus_B_ARCACHE     |   9|          2|    4|          8|
-    |bus_B_ARID        |   9|          2|    1|          2|
-    |bus_B_ARLEN       |  14|          3|   32|         96|
-    |bus_B_ARLOCK      |   9|          2|    2|          4|
-    |bus_B_ARPROT      |   9|          2|    3|          6|
-    |bus_B_ARQOS       |   9|          2|    4|          8|
-    |bus_B_ARREGION    |   9|          2|    4|          8|
-    |bus_B_ARSIZE      |   9|          2|    3|          6|
-    |bus_B_ARUSER      |   9|          2|    1|          2|
-    |bus_B_ARVALID     |  14|          3|    1|          3|
-    |bus_B_RREADY      |   9|          2|    1|          2|
-    |bus_B_blk_n_AR    |   9|          2|    1|          2|
-    |bus_res_blk_n_AW  |   9|          2|    1|          2|
-    |bus_res_blk_n_B   |   9|          2|    1|          2|
-    |bus_res_blk_n_W   |   9|          2|    1|          2|
-    +------------------+----+-----------+-----+-----------+
-    |Total             | 390|         85|  186|        517|
-    +------------------+----+-----------+-----+-----------+
+    +------------------+-----+-----------+-----+-----------+
+    |       Name       | LUT | Input Size| Bits| Total Bits|
+    +------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm         |  100|         20|    1|         20|
+    |bus_A_ARADDR      |   14|          3|   32|         96|
+    |bus_A_ARBURST     |    9|          2|    2|          4|
+    |bus_A_ARCACHE     |    9|          2|    4|          8|
+    |bus_A_ARID        |    9|          2|    1|          2|
+    |bus_A_ARLEN       |   14|          3|   32|         96|
+    |bus_A_ARLOCK      |    9|          2|    2|          4|
+    |bus_A_ARPROT      |    9|          2|    3|          6|
+    |bus_A_ARQOS       |    9|          2|    4|          8|
+    |bus_A_ARREGION    |    9|          2|    4|          8|
+    |bus_A_ARSIZE      |    9|          2|    3|          6|
+    |bus_A_ARUSER      |    9|          2|    1|          2|
+    |bus_A_ARVALID     |   14|          3|    1|          3|
+    |bus_A_RREADY      |    9|          2|    1|          2|
+    |bus_A_blk_n_AR    |    9|          2|    1|          2|
+    |bus_B_ARADDR      |   14|          3|   32|         96|
+    |bus_B_ARBURST     |    9|          2|    2|          4|
+    |bus_B_ARCACHE     |    9|          2|    4|          8|
+    |bus_B_ARID        |    9|          2|    1|          2|
+    |bus_B_ARLEN       |   14|          3|   32|         96|
+    |bus_B_ARLOCK      |    9|          2|    2|          4|
+    |bus_B_ARPROT      |    9|          2|    3|          6|
+    |bus_B_ARQOS       |    9|          2|    4|          8|
+    |bus_B_ARREGION    |    9|          2|    4|          8|
+    |bus_B_ARSIZE      |    9|          2|    3|          6|
+    |bus_B_ARUSER      |    9|          2|    1|          2|
+    |bus_B_ARVALID     |   14|          3|    1|          3|
+    |bus_B_RREADY      |    9|          2|    1|          2|
+    |bus_B_blk_n_AR    |    9|          2|    1|          2|
+    |bus_res_AWADDR    |   20|          4|   32|        128|
+    |bus_res_AWBURST   |    9|          2|    2|          4|
+    |bus_res_AWCACHE   |    9|          2|    4|          8|
+    |bus_res_AWID      |    9|          2|    1|          2|
+    |bus_res_AWLEN     |   20|          4|   32|        128|
+    |bus_res_AWLOCK    |    9|          2|    2|          4|
+    |bus_res_AWPROT    |    9|          2|    3|          6|
+    |bus_res_AWQOS     |    9|          2|    4|          8|
+    |bus_res_AWREGION  |    9|          2|    4|          8|
+    |bus_res_AWSIZE    |    9|          2|    3|          6|
+    |bus_res_AWUSER    |    9|          2|    1|          2|
+    |bus_res_AWVALID   |   14|          3|    1|          3|
+    |bus_res_BREADY    |   14|          3|    1|          3|
+    |bus_res_WDATA     |   14|          3|   32|         96|
+    |bus_res_WID       |    9|          2|    1|          2|
+    |bus_res_WLAST     |    9|          2|    1|          2|
+    |bus_res_WSTRB     |   14|          3|    4|         12|
+    |bus_res_WUSER     |    9|          2|    1|          2|
+    |bus_res_WVALID    |   14|          3|    1|          3|
+    |bus_res_blk_n_AW  |    9|          2|    1|          2|
+    |bus_res_blk_n_B   |    9|          2|    1|          2|
+    |bus_res_blk_n_W   |    9|          2|    1|          2|
+    +------------------+-----+-----------+-----+-----------+
+    |Total             |  627|        135|  316|        947|
+    +------------------+-----+-----------+-----+-----------+
 
     * Register: 
     +----------------------------------------------------------------+----+----+-----+-----------+
     |                              Name                              | FF | LUT| Bits| Const Bits|
     +----------------------------------------------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                                                       |  16|   0|   16|          0|
-    |grp_test_scalaire_Pipeline_VITIS_LOOP_14_1_fu_126_ap_start_reg  |   1|   0|    1|          0|
-    |trunc_ln14_1_reg_217                                            |  30|   0|   30|          0|
-    |trunc_ln1_reg_223                                               |  30|   0|   30|          0|
-    |trunc_ln_reg_211                                                |  30|   0|   30|          0|
+    |ap_CS_fsm                                                       |  19|   0|   19|          0|
+    |bitcast_ln23_reg_304                                            |  32|   0|   32|          0|
+    |grp_test_scalaire_Pipeline_VITIS_LOOP_21_1_fu_158_ap_start_reg  |   1|   0|    1|          0|
+    |grp_test_scalaire_Pipeline_main_loop_fu_147_ap_start_reg        |   1|   0|    1|          0|
+    |trunc_ln13_1_reg_272                                            |  30|   0|   30|          0|
+    |trunc_ln1_reg_278                                               |  30|   0|   30|          0|
+    |trunc_ln2_reg_284                                               |  30|   0|   30|          0|
+    |trunc_ln_reg_266                                                |  30|   0|   30|          0|
     +----------------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                           | 107|   0|  107|          0|
+    |Total                                                           | 173|   0|  173|          0|
     +----------------------------------------------------------------+----+----+-----+-----------+
 
 

@@ -15,6 +15,18 @@
         },
         {
           "functionName": "test_scalaire",
+          "label": "test_scalaire_label0",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "2"
+              }]
+          }
+        },
+        {
+          "functionName": "test_scalaire",
           "label": "",
           "functionLabel": "",
           "pragma": {
