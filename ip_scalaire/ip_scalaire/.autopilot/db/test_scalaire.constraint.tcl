@@ -3,7 +3,7 @@ set clock_constraint { \
     module test_scalaire \
     port ap_clk \
     period 5 \
-    uncertainty 1.35 \
+    uncertainty 1 \
 }
 
 set all_path {}

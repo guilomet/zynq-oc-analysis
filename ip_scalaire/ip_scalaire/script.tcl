@@ -11,8 +11,9 @@ set_part {xc7z010-clg400-1}
 create_clock -period 5 -name default
 config_compile -unsafe_math_optimizations
 config_dataflow -strict_mode off
-config_export -display_name ip_scal -format ip_catalog -rtl verilog -version 1.1
+config_export -display_name ip_scal -format ip_catalog -rtl verilog -version 2.0
 config_interface -m_axi_addr64=0 -register_io scalar_in
+set_clock_uncertainty 1
 source "./ip_scalaire/ip_scalaire/directives.tcl"
 #csim_design
 csynth_design

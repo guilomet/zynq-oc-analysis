@@ -1,0 +1,1 @@
+g++ -o "/home/fpga/test_scal/test_scal/bin/ARM/Release/test_scal.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/fpga/test_scal/test_scal/obj/ARM/Release/clk_wizard.o /home/fpga/test_scal/test_scal/obj/ARM/Release/gestion_json.o /home/fpga/test_scal/test_scal/obj/ARM/Release/main.o

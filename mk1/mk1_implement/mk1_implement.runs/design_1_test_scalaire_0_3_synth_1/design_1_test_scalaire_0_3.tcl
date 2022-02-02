@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_test_scalaire_0_3_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 set_param ced.repoPaths H:/Xilinx/ced_store/Vivado_example_project
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }

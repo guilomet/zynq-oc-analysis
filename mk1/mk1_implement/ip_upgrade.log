@@ -1,6 +1,27 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed Feb  2 18:00:13 2022
+| Host         : glomet-fixe running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_test_scalaire_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_test_scalaire_0_3 (xilinx.com:hls:test_scalaire:1.1) from (Rev. 2112350470) to (Rev. 2112359519)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
 | Date         : Thu Jan 27 11:10:52 2022
 | Host         : glomet-fixe running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

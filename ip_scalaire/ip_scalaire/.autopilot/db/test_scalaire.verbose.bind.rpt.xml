@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'test_scalaire'" level="0">
-<item name = "Date">Thu Jan 27 11:08:54 2022
+<item name = "Date">Wed Feb  2 17:59:10 2022
 </item>
 <item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)</item>
 <item name = "Project">ip_scalaire</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.650 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 4.371 ns, 1.00 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2851, 2851, 14.255 us, 14.255 us, 2852, 2852, no</column>
+<column name="">4152, 4152, 20.760 us, 20.760 us, 4153, 4153, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_test_scalaire_Pipeline_loop_1_fu_139">test_scalaire_Pipeline_loop_1, 2827, 2827, 14.135 us, 14.135 us, 2827, 2827, no</column>
+<column name="grp_test_scalaire_Pipeline_loop_1_fu_98">test_scalaire_Pipeline_loop_1, 4124, 4124, 20.620 us, 20.620 us, 4124, 4124, no</column>
+<column name="grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111">test_scalaire_Pipeline_VITIS_LOOP_31_1, 19, 19, 95.000 ns, 95.000 ns, 19, 19, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

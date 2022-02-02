@@ -61,9 +61,9 @@ design_1_axi_bram_ctrl_0_0_sc::design_1_axi_bram_ctrl_0_0_sc(const sc_core::sc_m
 
   // initialize module
     xsc::common_cpp::properties model_param_props;
-    model_param_props.addLong("C_MEMORY_DEPTH", "2048");
-    model_param_props.addLong("C_BRAM_ADDR_WIDTH", "11");
-    model_param_props.addLong("C_S_AXI_ADDR_WIDTH", "13");
+    model_param_props.addLong("C_MEMORY_DEPTH", "8192");
+    model_param_props.addLong("C_BRAM_ADDR_WIDTH", "13");
+    model_param_props.addLong("C_S_AXI_ADDR_WIDTH", "15");
     model_param_props.addLong("C_S_AXI_DATA_WIDTH", "32");
     model_param_props.addLong("C_S_AXI_ID_WIDTH", "1");
     model_param_props.addLong("C_S_AXI_SUPPORTS_NARROW_BURST", "0");

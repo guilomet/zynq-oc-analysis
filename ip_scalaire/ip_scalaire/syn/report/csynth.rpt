@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'test_scalaire'
 ================================================================
 + General Information: 
-    * Date:           Thu Jan 27 11:08:56 2022
+    * Date:           Wed Feb  2 17:59:11 2022
     * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
     * Project:        ip_scalaire
     * Solution:       ip_scalaire (Vivado IP Flow Target)
@@ -15,14 +15,16 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +---------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
-    |                   Modules                   |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |          |        |           |            |     |
-    |                   & Loops                   |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   |   DSP  |     FF    |     LUT    | URAM|
-    +---------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
-    |+ test_scalaire                              |  Timing|  -0.00|     2851|  1.426e+04|         -|     2852|     -|        no|  12 (10%)|  5 (6%)|  2678 (7%)|  3342 (18%)|    -|
-    | + grp_test_scalaire_Pipeline_loop_1_fu_139  |  Timing|  -0.00|     2827|  1.414e+04|         -|     2827|     -|        no|         -|  5 (6%)|   748 (2%)|    922 (5%)|    -|
-    |  o loop_1                                   |       -|   3.65|     2825|  1.412e+04|        21|       11|   256|       yes|         -|       -|          -|           -|    -|
-    +---------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
+    +------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
+    |                        Modules                       |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |          |        |           |            |     |
+    |                        & Loops                       |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   |   DSP  |     FF    |     LUT    | URAM|
+    +------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
+    |+ test_scalaire                                       |  Timing|  -0.37|     4152|  2.076e+04|         -|     4153|     -|        no|  12 (10%)|  5 (6%)|  3150 (8%)|  3505 (19%)|    -|
+    | + grp_test_scalaire_Pipeline_loop_1_fu_98            |  Timing|  -0.37|     4124|  2.062e+04|         -|     4124|     -|        no|         -|  5 (6%)|  1155 (3%)|   1148 (6%)|    -|
+    |  o loop_1                                            |       -|   4.00|     4121|  2.060e+04|        27|        1|  4096|       yes|         -|       -|          -|           -|    -|
+    | + grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111  |       -|   0.00|       19|     95.000|         -|       19|     -|        no|         -|       -|   43 (~0%)|    72 (~0%)|    -|
+    |  o VITIS_LOOP_31_1                                   |       -|   4.00|       17|     85.000|         3|        1|    16|       yes|         -|       -|          -|           -|    -|
+    +------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+----------+--------+-----------+------------+-----+
 
 
 ================================================================
@@ -85,21 +87,20 @@
 == M_AXI Burst Information
 ================================================================
 * Burst Summary
-+---------------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+
-| HW Interface  | Loop   | Message                                                                                                                                                                                                                  | Location                     |
-+---------------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+
-| m_axi_bus_A   | loop_1 | Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | ip_scalaire/ip_scal.cpp:13:9 |
-| m_axi_bus_B   | loop_1 | Multiple burst reads of length 256 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | ip_scalaire/ip_scal.cpp:13:9 |
-| m_axi_bus_res |        | Multiple burst writes of length 9 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.  | ip_scalaire/ip_scal.cpp:30:1 |
-+---------------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+
++---------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| HW Interface  | Loop            | Message                                                                                                                                                                                                                  | Location                      |
++---------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| m_axi_bus_res | VITIS_LOOP_31_1 | Multiple burst writes of length 16 and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | ip_scalaire/ip_scal.cpp:31:19 |
++---------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
 
 * Bursts and Widening Missed
-+---------------+----------+---------------------------------------------------------------------------------------------------------------------+------------------------------+
-| HW Interface  | Variable | Problem                                                                                                             | Location                     |
-+---------------+----------+---------------------------------------------------------------------------------------------------------------------+------------------------------+
-| m_axi_bus_res | res      | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | ip_scalaire/ip_scal.cpp:30:1 |
-| m_axi_bus_A   | A        | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | ip_scalaire/ip_scal.cpp:13:9 |
-| m_axi_bus_B   | B        | Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. | ip_scalaire/ip_scal.cpp:13:9 |
-+---------------+----------+---------------------------------------------------------------------------------------------------------------------+------------------------------+
++---------------+----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------------------------+
+| HW Interface  | Variable | Loop   | Problem                                                                                                                                        | Resolution | Location                      |
++---------------+----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------------------------+
+| m_axi_bus_A   | A        | loop_1 | , float (*) [16], float*)] Could not analyze pattern                                                                                           | 214-229    | ip_scalaire/ip_scal.cpp:13:9  |
+| m_axi_bus_B   | B        | loop_1 | , float (*) [16], float*)] Could not analyze pattern                                                                                           | 214-229    | ip_scalaire/ip_scal.cpp:13:9  |
+| m_axi_bus_res | res      |        | , float (*) [16], float*)] Could not widen since the size of type 'float' is greater than or equal to the max_widen_bitwidth threshold of '0'. |            | ip_scalaire/ip_scal.cpp:31:19 |
++---------------+----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+------------+-------------------------------+
 
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
 

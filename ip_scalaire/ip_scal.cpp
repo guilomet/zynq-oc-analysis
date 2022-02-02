@@ -1,4 +1,4 @@
-void test_scalaire (float A[256], float B[256], float res[9])
+void test_scalaire (float A[256][16], float B[256][16], float res[16])
 {
 
 #pragma HLS INTERFACE m_axi port=A bundle=bus_A
@@ -7,25 +7,30 @@ void test_scalaire (float A[256], float B[256], float res[9])
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 
 	float tmp[256];
-	float tmp1 = 0, tmp2 = 0;
+	float tmp1[16];
 	int incre = 0;
 
-	loop_1:for (int i = 0; i < 256; i++)
+	loop_1:for (int cpt = 0; cpt < 256*16; cpt++)
 	{
-#pragma HLS PIPELINE II=11
-		tmp2 = A[i]*B[i];
-		incre += i+1;
-		tmp1 = tmp1 + tmp2;
+		int i, j;
+		i = cpt >> 4;
+		j = cpt % 16;
+#pragma HLS PIPELINE II=1
+		float p  = A[i][j]*B[i][j];
+		if (i == 0)
+		{
+			tmp1[j] = p;
+		}
+		else
+		{
+			tmp1[j] += p;
+		}
+
 	}
 
-	res[0] = tmp1;
-	res[1] = tmp1;
-	res[2] = tmp1;
-	res[3] = tmp1;
-	res[4] = tmp1;
-	res[5] = tmp1;
-	res[6] = tmp1;
-	res[7] = tmp1;
-	res[8] = incre;
+	for(int j = 0; j < 16; j++)
+	{
+		res[j] = tmp1[j];
+	}
 }
 

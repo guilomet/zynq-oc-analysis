@@ -1899,7 +1899,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>10826b80</spirit:value>
+            <spirit:value>9e6a4c52</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1918,7 +1918,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7d04f022</spirit:value>
+            <spirit:value>dbccb7c1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1937,7 +1937,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4f15e65f</spirit:value>
+            <spirit:value>82ecc594</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1956,7 +1956,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>26434662</spirit:value>
+            <spirit:value>7b04f209</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5003,7 +5003,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v</spirit:name>
+        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -5036,11 +5036,19 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/test_scalaire_test_scalaire_Pipeline_loop_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/test_scalaire_tmp1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -5091,12 +5099,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/test_scalaire_test_scalaire_Pipeline_loop_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/test_scalaire_tmp1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -5111,7 +5129,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v</spirit:name>
+        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -5133,7 +5151,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v</spirit:name>
+        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -5166,7 +5184,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -5174,9 +5192,17 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/test_scalaire_tmp1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/test_scalaire.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e7288e80</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_3e5a3a19</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -5222,12 +5248,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/test_scalaire_test_scalaire_Pipeline_loop_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/test_scalaire_tmp1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -5242,7 +5278,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v</spirit:name>
+        <spirit:name>hdl/ip/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -5671,7 +5707,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="41">2851</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="41">4152</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -5688,8 +5724,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>ip_scal</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112350470</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-01-27T10:10:38Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2112359519</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-02-02T16:59:56Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -5700,10 +5736,10 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8b47b986"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="8b4b7dad"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="b258013b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3d3c8fe1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8e4bafaa"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="649a87da"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="3b5337a5"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="df292372"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0a263d98"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

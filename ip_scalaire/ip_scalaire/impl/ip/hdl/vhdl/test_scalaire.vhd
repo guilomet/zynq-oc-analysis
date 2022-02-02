@@ -208,67 +208,40 @@ end;
 architecture behav of test_scalaire is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "test_scalaire_test_scalaire,hls_ip_2021_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010-clg400-1,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=2851,HLS_SYN_TPT=none,HLS_SYN_MEM=12,HLS_SYN_DSP=0,HLS_SYN_FF=2678,HLS_SYN_LUT=3342,HLS_VERSION=2021_1}";
+    "test_scalaire_test_scalaire,hls_ip_2021_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010-clg400-1,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.371000,HLS_SYN_LAT=4152,HLS_SYN_TPT=none,HLS_SYN_MEM=12,HLS_SYN_DSP=0,HLS_SYN_FF=3150,HLS_SYN_LUT=3505,HLS_VERSION=2021_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000000001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000000010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000000100";
-    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000001000";
-    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000010000";
-    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000100000";
-    constant ap_ST_fsm_state7 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000001000000";
-    constant ap_ST_fsm_state8 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000010000000";
-    constant ap_ST_fsm_state9 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000100000000";
-    constant ap_ST_fsm_state10 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000001000000000";
-    constant ap_ST_fsm_state11 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000010000000000";
-    constant ap_ST_fsm_state12 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000100000000000";
-    constant ap_ST_fsm_state13 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000001000000000000";
-    constant ap_ST_fsm_state14 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000010000000000000";
-    constant ap_ST_fsm_state15 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000100000000000000";
-    constant ap_ST_fsm_state16 : STD_LOGIC_VECTOR (24 downto 0) := "0000000001000000000000000";
-    constant ap_ST_fsm_state17 : STD_LOGIC_VECTOR (24 downto 0) := "0000000010000000000000000";
-    constant ap_ST_fsm_state18 : STD_LOGIC_VECTOR (24 downto 0) := "0000000100000000000000000";
-    constant ap_ST_fsm_state19 : STD_LOGIC_VECTOR (24 downto 0) := "0000001000000000000000000";
-    constant ap_ST_fsm_state20 : STD_LOGIC_VECTOR (24 downto 0) := "0000010000000000000000000";
-    constant ap_ST_fsm_state21 : STD_LOGIC_VECTOR (24 downto 0) := "0000100000000000000000000";
-    constant ap_ST_fsm_state22 : STD_LOGIC_VECTOR (24 downto 0) := "0001000000000000000000000";
-    constant ap_ST_fsm_state23 : STD_LOGIC_VECTOR (24 downto 0) := "0010000000000000000000000";
-    constant ap_ST_fsm_state24 : STD_LOGIC_VECTOR (24 downto 0) := "0100000000000000000000000";
-    constant ap_ST_fsm_state25 : STD_LOGIC_VECTOR (24 downto 0) := "1000000000000000000000000";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (9 downto 0) := "0000000010";
+    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (9 downto 0) := "0000000100";
+    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (9 downto 0) := "0000001000";
+    constant ap_ST_fsm_state5 : STD_LOGIC_VECTOR (9 downto 0) := "0000010000";
+    constant ap_ST_fsm_state6 : STD_LOGIC_VECTOR (9 downto 0) := "0000100000";
+    constant ap_ST_fsm_state7 : STD_LOGIC_VECTOR (9 downto 0) := "0001000000";
+    constant ap_ST_fsm_state8 : STD_LOGIC_VECTOR (9 downto 0) := "0010000000";
+    constant ap_ST_fsm_state9 : STD_LOGIC_VECTOR (9 downto 0) := "0100000000";
+    constant ap_ST_fsm_state10 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_1 : BOOLEAN := true;
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
-    constant ap_const_lv32_A : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001010";
-    constant ap_const_lv32_B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001011";
-    constant ap_const_lv32_C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001100";
-    constant ap_const_lv32_D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001101";
-    constant ap_const_lv32_E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001110";
-    constant ap_const_lv32_F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001111";
-    constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
-    constant ap_const_lv32_11 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010001";
-    constant ap_const_lv32_12 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010010";
-    constant ap_const_lv32_13 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010011";
-    constant ap_const_lv32_18 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011000";
+    constant ap_const_lv32_9 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001001";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant C_S_AXI_DATA_WIDTH : INTEGER range 63 downto 0 := 20;
     constant C_M_AXI_DATA_WIDTH : INTEGER range 63 downto 0 := 20;
-    constant ap_const_lv32_9 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001001";
-    constant ap_const_boolean_0 : BOOLEAN := false;
-    constant ap_const_lv32_100 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000100000000";
+    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
+    constant ap_const_lv32_4 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000100";
+    constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
-    constant ap_const_lv4_F : STD_LOGIC_VECTOR (3 downto 0) := "1111";
-    constant ap_const_lv32_47008000 : STD_LOGIC_VECTOR (31 downto 0) := "01000111000000001000000000000000";
     constant ap_const_lv32_1F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011111";
 
     signal ap_rst_n_inv : STD_LOGIC;
     signal ap_start : STD_LOGIC;
     signal ap_done : STD_LOGIC;
     signal ap_idle : STD_LOGIC;
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000000001";
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
@@ -286,127 +259,139 @@ architecture behav of test_scalaire is
     signal res_0_data_reg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal res_0_vld_reg : STD_LOGIC := '0';
     signal res_0_ack_out : STD_LOGIC;
-    signal bus_A_blk_n_AR : STD_LOGIC;
+    signal bus_res_blk_n_AW : STD_LOGIC;
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal bus_B_blk_n_AR : STD_LOGIC;
-    signal bus_res_blk_n_AW : STD_LOGIC;
-    signal ap_CS_fsm_state11 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state11 : signal is "none";
-    signal bus_res_blk_n_W : STD_LOGIC;
-    signal ap_CS_fsm_state12 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state12 : signal is "none";
-    signal ap_CS_fsm_state13 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state13 : signal is "none";
-    signal ap_CS_fsm_state14 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state14 : signal is "none";
-    signal ap_CS_fsm_state15 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state15 : signal is "none";
-    signal ap_CS_fsm_state16 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state16 : signal is "none";
-    signal ap_CS_fsm_state17 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state17 : signal is "none";
-    signal ap_CS_fsm_state18 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state18 : signal is "none";
-    signal ap_CS_fsm_state19 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state19 : signal is "none";
-    signal ap_CS_fsm_state20 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state20 : signal is "none";
     signal bus_res_blk_n_B : STD_LOGIC;
-    signal ap_CS_fsm_state25 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state25 : signal is "none";
-    signal trunc_ln_reg_224 : STD_LOGIC_VECTOR (29 downto 0);
+    signal ap_CS_fsm_state10 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
+    signal B_read_reg_139 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
-    signal trunc_ln13_1_reg_230 : STD_LOGIC_VECTOR (29 downto 0);
-    signal trunc_ln1_reg_236 : STD_LOGIC_VECTOR (29 downto 0);
-    signal bitcast_ln30_fu_213_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal bitcast_ln30_reg_258 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_ap_idle : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_ap_ready : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWVALID : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WVALID : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WLAST : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARVALID : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_RREADY : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_BREADY : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWVALID : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WVALID : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WLAST : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARVALID : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_RREADY : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_BREADY : STD_LOGIC;
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out_ap_vld : STD_LOGIC;
+    signal A_read_reg_144 : STD_LOGIC_VECTOR (31 downto 0);
+    signal trunc_ln_reg_149 : STD_LOGIC_VECTOR (29 downto 0);
+    signal tmp1_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal tmp1_ce0 : STD_LOGIC;
+    signal tmp1_we0 : STD_LOGIC;
+    signal tmp1_q0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp1_ce1 : STD_LOGIC;
+    signal tmp1_q1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_ap_idle : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_ap_ready : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WLAST : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_RREADY : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_BREADY : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WLAST : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_RREADY : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_BREADY : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce0 : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_we0 : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address1 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce1 : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_idle : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_ready : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WLAST : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARVALID : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARID : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_RREADY : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_BREADY : STD_LOGIC;
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_address0 : STD_LOGIC_VECTOR (3 downto 0);
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_ce0 : STD_LOGIC;
     signal bus_A_AWREADY : STD_LOGIC;
     signal bus_A_WREADY : STD_LOGIC;
     signal bus_A_ARVALID : STD_LOGIC;
     signal bus_A_ARREADY : STD_LOGIC;
-    signal bus_A_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal bus_A_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal bus_A_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal bus_A_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal bus_A_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal bus_A_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal bus_A_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal bus_A_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal bus_A_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal bus_A_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal bus_A_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal bus_A_RVALID : STD_LOGIC;
     signal bus_A_RREADY : STD_LOGIC;
     signal bus_A_RDATA : STD_LOGIC_VECTOR (31 downto 0);
@@ -422,17 +407,6 @@ architecture behav of test_scalaire is
     signal bus_B_WREADY : STD_LOGIC;
     signal bus_B_ARVALID : STD_LOGIC;
     signal bus_B_ARREADY : STD_LOGIC;
-    signal bus_B_ARADDR : STD_LOGIC_VECTOR (31 downto 0);
-    signal bus_B_ARID : STD_LOGIC_VECTOR (0 downto 0);
-    signal bus_B_ARLEN : STD_LOGIC_VECTOR (31 downto 0);
-    signal bus_B_ARSIZE : STD_LOGIC_VECTOR (2 downto 0);
-    signal bus_B_ARBURST : STD_LOGIC_VECTOR (1 downto 0);
-    signal bus_B_ARLOCK : STD_LOGIC_VECTOR (1 downto 0);
-    signal bus_B_ARCACHE : STD_LOGIC_VECTOR (3 downto 0);
-    signal bus_B_ARPROT : STD_LOGIC_VECTOR (2 downto 0);
-    signal bus_B_ARQOS : STD_LOGIC_VECTOR (3 downto 0);
-    signal bus_B_ARREGION : STD_LOGIC_VECTOR (3 downto 0);
-    signal bus_B_ARUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal bus_B_RVALID : STD_LOGIC;
     signal bus_B_RREADY : STD_LOGIC;
     signal bus_B_RDATA : STD_LOGIC_VECTOR (31 downto 0);
@@ -446,9 +420,19 @@ architecture behav of test_scalaire is
     signal bus_B_BUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal bus_res_AWVALID : STD_LOGIC;
     signal bus_res_AWREADY : STD_LOGIC;
+    signal bus_res_AWADDR : STD_LOGIC_VECTOR (31 downto 0);
+    signal bus_res_AWID : STD_LOGIC_VECTOR (0 downto 0);
+    signal bus_res_AWLEN : STD_LOGIC_VECTOR (31 downto 0);
+    signal bus_res_AWSIZE : STD_LOGIC_VECTOR (2 downto 0);
+    signal bus_res_AWBURST : STD_LOGIC_VECTOR (1 downto 0);
+    signal bus_res_AWLOCK : STD_LOGIC_VECTOR (1 downto 0);
+    signal bus_res_AWCACHE : STD_LOGIC_VECTOR (3 downto 0);
+    signal bus_res_AWPROT : STD_LOGIC_VECTOR (2 downto 0);
+    signal bus_res_AWQOS : STD_LOGIC_VECTOR (3 downto 0);
+    signal bus_res_AWREGION : STD_LOGIC_VECTOR (3 downto 0);
+    signal bus_res_AWUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal bus_res_WVALID : STD_LOGIC;
     signal bus_res_WREADY : STD_LOGIC;
-    signal bus_res_WDATA : STD_LOGIC_VECTOR (31 downto 0);
     signal bus_res_ARREADY : STD_LOGIC;
     signal bus_res_RVALID : STD_LOGIC;
     signal bus_res_RDATA : STD_LOGIC_VECTOR (31 downto 0);
@@ -461,14 +445,14 @@ architecture behav of test_scalaire is
     signal bus_res_BRESP : STD_LOGIC_VECTOR (1 downto 0);
     signal bus_res_BID : STD_LOGIC_VECTOR (0 downto 0);
     signal bus_res_BUSER : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm_state10 : STD_LOGIC;
-    attribute fsm_encoding of ap_CS_fsm_state10 : signal is "none";
-    signal sext_ln13_fu_180_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sext_ln13_1_fu_190_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal sext_ln30_fu_200_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_block_state3_io : BOOLEAN;
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (24 downto 0);
+    signal grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg : STD_LOGIC := '0';
+    signal grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg : STD_LOGIC := '0';
+    signal ap_CS_fsm_state4 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
+    signal ap_CS_fsm_state5 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state5 : signal is "none";
+    signal sext_ln31_fu_129_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (9 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
@@ -479,21 +463,6 @@ architecture behav of test_scalaire is
     signal ap_ST_fsm_state8_blk : STD_LOGIC;
     signal ap_ST_fsm_state9_blk : STD_LOGIC;
     signal ap_ST_fsm_state10_blk : STD_LOGIC;
-    signal ap_ST_fsm_state11_blk : STD_LOGIC;
-    signal ap_ST_fsm_state12_blk : STD_LOGIC;
-    signal ap_ST_fsm_state13_blk : STD_LOGIC;
-    signal ap_ST_fsm_state14_blk : STD_LOGIC;
-    signal ap_ST_fsm_state15_blk : STD_LOGIC;
-    signal ap_ST_fsm_state16_blk : STD_LOGIC;
-    signal ap_ST_fsm_state17_blk : STD_LOGIC;
-    signal ap_ST_fsm_state18_blk : STD_LOGIC;
-    signal ap_ST_fsm_state19_blk : STD_LOGIC;
-    signal ap_ST_fsm_state20_blk : STD_LOGIC;
-    signal ap_ST_fsm_state21_blk : STD_LOGIC;
-    signal ap_ST_fsm_state22_blk : STD_LOGIC;
-    signal ap_ST_fsm_state23_blk : STD_LOGIC;
-    signal ap_ST_fsm_state24_blk : STD_LOGIC;
-    signal ap_ST_fsm_state25_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
     component test_scalaire_test_scalaire_Pipeline_loop_1 IS
@@ -504,52 +473,7 @@ architecture behav of test_scalaire is
         ap_done : OUT STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        m_axi_bus_B_AWVALID : OUT STD_LOGIC;
-        m_axi_bus_B_AWREADY : IN STD_LOGIC;
-        m_axi_bus_B_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_bus_B_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_bus_B_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_bus_B_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_bus_B_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_bus_B_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_bus_B_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_bus_B_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_bus_B_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_bus_B_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_WVALID : OUT STD_LOGIC;
-        m_axi_bus_B_WREADY : IN STD_LOGIC;
-        m_axi_bus_B_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_bus_B_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_bus_B_WLAST : OUT STD_LOGIC;
-        m_axi_bus_B_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_ARVALID : OUT STD_LOGIC;
-        m_axi_bus_B_ARREADY : IN STD_LOGIC;
-        m_axi_bus_B_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_bus_B_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_bus_B_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_bus_B_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_bus_B_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_bus_B_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_bus_B_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
-        m_axi_bus_B_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_bus_B_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
-        m_axi_bus_B_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_RVALID : IN STD_LOGIC;
-        m_axi_bus_B_RREADY : OUT STD_LOGIC;
-        m_axi_bus_B_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
-        m_axi_bus_B_RLAST : IN STD_LOGIC;
-        m_axi_bus_B_RID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_bus_B_BVALID : IN STD_LOGIC;
-        m_axi_bus_B_BREADY : OUT STD_LOGIC;
-        m_axi_bus_B_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
-        m_axi_bus_B_BID : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axi_bus_B_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        sext_ln13_1 : IN STD_LOGIC_VECTOR (29 downto 0);
+        A : IN STD_LOGIC_VECTOR (31 downto 0);
         m_axi_bus_A_AWVALID : OUT STD_LOGIC;
         m_axi_bus_A_AWREADY : IN STD_LOGIC;
         m_axi_bus_A_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
@@ -595,9 +519,138 @@ architecture behav of test_scalaire is
         m_axi_bus_A_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
         m_axi_bus_A_BID : IN STD_LOGIC_VECTOR (0 downto 0);
         m_axi_bus_A_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
-        sext_ln13 : IN STD_LOGIC_VECTOR (29 downto 0);
-        tmp1_out : OUT STD_LOGIC_VECTOR (31 downto 0);
-        tmp1_out_ap_vld : OUT STD_LOGIC );
+        B : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_B_AWVALID : OUT STD_LOGIC;
+        m_axi_bus_B_AWREADY : IN STD_LOGIC;
+        m_axi_bus_B_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_B_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_B_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_B_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_B_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_B_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_B_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_B_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_B_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_B_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_WVALID : OUT STD_LOGIC;
+        m_axi_bus_B_WREADY : IN STD_LOGIC;
+        m_axi_bus_B_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_B_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_B_WLAST : OUT STD_LOGIC;
+        m_axi_bus_B_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_ARVALID : OUT STD_LOGIC;
+        m_axi_bus_B_ARREADY : IN STD_LOGIC;
+        m_axi_bus_B_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_B_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_B_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_B_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_B_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_B_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_B_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_B_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_B_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_B_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_RVALID : IN STD_LOGIC;
+        m_axi_bus_B_RREADY : OUT STD_LOGIC;
+        m_axi_bus_B_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_B_RLAST : IN STD_LOGIC;
+        m_axi_bus_B_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_B_BVALID : IN STD_LOGIC;
+        m_axi_bus_B_BREADY : OUT STD_LOGIC;
+        m_axi_bus_B_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_B_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_B_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        tmp1_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
+        tmp1_ce0 : OUT STD_LOGIC;
+        tmp1_we0 : OUT STD_LOGIC;
+        tmp1_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        tmp1_address1 : OUT STD_LOGIC_VECTOR (3 downto 0);
+        tmp1_ce1 : OUT STD_LOGIC;
+        tmp1_q1 : IN STD_LOGIC_VECTOR (31 downto 0) );
+    end component;
+
+
+    component test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1 IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        m_axi_bus_res_AWVALID : OUT STD_LOGIC;
+        m_axi_bus_res_AWREADY : IN STD_LOGIC;
+        m_axi_bus_res_AWADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_res_AWID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_AWLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_res_AWSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_res_AWBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_res_AWLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_res_AWCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_res_AWPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_res_AWQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_res_AWREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_res_AWUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_WVALID : OUT STD_LOGIC;
+        m_axi_bus_res_WREADY : IN STD_LOGIC;
+        m_axi_bus_res_WDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_res_WSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_res_WLAST : OUT STD_LOGIC;
+        m_axi_bus_res_WID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_WUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_ARVALID : OUT STD_LOGIC;
+        m_axi_bus_res_ARREADY : IN STD_LOGIC;
+        m_axi_bus_res_ARADDR : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_res_ARID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_ARLEN : OUT STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_res_ARSIZE : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_res_ARBURST : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_res_ARLOCK : OUT STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_res_ARCACHE : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_res_ARPROT : OUT STD_LOGIC_VECTOR (2 downto 0);
+        m_axi_bus_res_ARQOS : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_res_ARREGION : OUT STD_LOGIC_VECTOR (3 downto 0);
+        m_axi_bus_res_ARUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_RVALID : IN STD_LOGIC;
+        m_axi_bus_res_RREADY : OUT STD_LOGIC;
+        m_axi_bus_res_RDATA : IN STD_LOGIC_VECTOR (31 downto 0);
+        m_axi_bus_res_RLAST : IN STD_LOGIC;
+        m_axi_bus_res_RID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_RUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_RRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_res_BVALID : IN STD_LOGIC;
+        m_axi_bus_res_BREADY : OUT STD_LOGIC;
+        m_axi_bus_res_BRESP : IN STD_LOGIC_VECTOR (1 downto 0);
+        m_axi_bus_res_BID : IN STD_LOGIC_VECTOR (0 downto 0);
+        m_axi_bus_res_BUSER : IN STD_LOGIC_VECTOR (0 downto 0);
+        sext_ln31 : IN STD_LOGIC_VECTOR (29 downto 0);
+        tmp1_address0 : OUT STD_LOGIC_VECTOR (3 downto 0);
+        tmp1_ce0 : OUT STD_LOGIC;
+        tmp1_q0 : IN STD_LOGIC_VECTOR (31 downto 0) );
+    end component;
+
+
+    component test_scalaire_tmp1 IS
+    generic (
+        DataWidth : INTEGER;
+        AddressRange : INTEGER;
+        AddressWidth : INTEGER );
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        address0 : IN STD_LOGIC_VECTOR (3 downto 0);
+        ce0 : IN STD_LOGIC;
+        we0 : IN STD_LOGIC;
+        d0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        q0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        address1 : IN STD_LOGIC_VECTOR (3 downto 0);
+        ce1 : IN STD_LOGIC;
+        q1 : OUT STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
@@ -993,108 +1046,188 @@ architecture behav of test_scalaire is
 
 
 begin
-    grp_test_scalaire_Pipeline_loop_1_fu_139 : component test_scalaire_test_scalaire_Pipeline_loop_1
+    tmp1_U : component test_scalaire_tmp1
+    generic map (
+        DataWidth => 32,
+        AddressRange => 16,
+        AddressWidth => 4)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst_n_inv,
+        address0 => tmp1_address0,
+        ce0 => tmp1_ce0,
+        we0 => tmp1_we0,
+        d0 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_d0,
+        q0 => tmp1_q0,
+        address1 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address1,
+        ce1 => tmp1_ce1,
+        q1 => tmp1_q1);
+
+    grp_test_scalaire_Pipeline_loop_1_fu_98 : component test_scalaire_test_scalaire_Pipeline_loop_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start,
-        ap_done => grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done,
-        ap_idle => grp_test_scalaire_Pipeline_loop_1_fu_139_ap_idle,
-        ap_ready => grp_test_scalaire_Pipeline_loop_1_fu_139_ap_ready,
-        m_axi_bus_B_AWVALID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWVALID,
-        m_axi_bus_B_AWREADY => ap_const_logic_0,
-        m_axi_bus_B_AWADDR => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWADDR,
-        m_axi_bus_B_AWID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWID,
-        m_axi_bus_B_AWLEN => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLEN,
-        m_axi_bus_B_AWSIZE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWSIZE,
-        m_axi_bus_B_AWBURST => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWBURST,
-        m_axi_bus_B_AWLOCK => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLOCK,
-        m_axi_bus_B_AWCACHE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWCACHE,
-        m_axi_bus_B_AWPROT => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWPROT,
-        m_axi_bus_B_AWQOS => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWQOS,
-        m_axi_bus_B_AWREGION => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWREGION,
-        m_axi_bus_B_AWUSER => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWUSER,
-        m_axi_bus_B_WVALID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WVALID,
-        m_axi_bus_B_WREADY => ap_const_logic_0,
-        m_axi_bus_B_WDATA => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WDATA,
-        m_axi_bus_B_WSTRB => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WSTRB,
-        m_axi_bus_B_WLAST => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WLAST,
-        m_axi_bus_B_WID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WID,
-        m_axi_bus_B_WUSER => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WUSER,
-        m_axi_bus_B_ARVALID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARVALID,
-        m_axi_bus_B_ARREADY => bus_B_ARREADY,
-        m_axi_bus_B_ARADDR => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARADDR,
-        m_axi_bus_B_ARID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARID,
-        m_axi_bus_B_ARLEN => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLEN,
-        m_axi_bus_B_ARSIZE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARSIZE,
-        m_axi_bus_B_ARBURST => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARBURST,
-        m_axi_bus_B_ARLOCK => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLOCK,
-        m_axi_bus_B_ARCACHE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARCACHE,
-        m_axi_bus_B_ARPROT => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARPROT,
-        m_axi_bus_B_ARQOS => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARQOS,
-        m_axi_bus_B_ARREGION => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARREGION,
-        m_axi_bus_B_ARUSER => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARUSER,
-        m_axi_bus_B_RVALID => bus_B_RVALID,
-        m_axi_bus_B_RREADY => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_RREADY,
-        m_axi_bus_B_RDATA => bus_B_RDATA,
-        m_axi_bus_B_RLAST => bus_B_RLAST,
-        m_axi_bus_B_RID => bus_B_RID,
-        m_axi_bus_B_RUSER => bus_B_RUSER,
-        m_axi_bus_B_RRESP => bus_B_RRESP,
-        m_axi_bus_B_BVALID => ap_const_logic_0,
-        m_axi_bus_B_BREADY => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_BREADY,
-        m_axi_bus_B_BRESP => ap_const_lv2_0,
-        m_axi_bus_B_BID => ap_const_lv1_0,
-        m_axi_bus_B_BUSER => ap_const_lv1_0,
-        sext_ln13_1 => trunc_ln13_1_reg_230,
-        m_axi_bus_A_AWVALID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWVALID,
+        ap_start => grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start,
+        ap_done => grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done,
+        ap_idle => grp_test_scalaire_Pipeline_loop_1_fu_98_ap_idle,
+        ap_ready => grp_test_scalaire_Pipeline_loop_1_fu_98_ap_ready,
+        A => A_read_reg_144,
+        m_axi_bus_A_AWVALID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWVALID,
         m_axi_bus_A_AWREADY => ap_const_logic_0,
-        m_axi_bus_A_AWADDR => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWADDR,
-        m_axi_bus_A_AWID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWID,
-        m_axi_bus_A_AWLEN => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLEN,
-        m_axi_bus_A_AWSIZE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWSIZE,
-        m_axi_bus_A_AWBURST => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWBURST,
-        m_axi_bus_A_AWLOCK => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLOCK,
-        m_axi_bus_A_AWCACHE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWCACHE,
-        m_axi_bus_A_AWPROT => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWPROT,
-        m_axi_bus_A_AWQOS => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWQOS,
-        m_axi_bus_A_AWREGION => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWREGION,
-        m_axi_bus_A_AWUSER => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWUSER,
-        m_axi_bus_A_WVALID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WVALID,
+        m_axi_bus_A_AWADDR => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWADDR,
+        m_axi_bus_A_AWID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWID,
+        m_axi_bus_A_AWLEN => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLEN,
+        m_axi_bus_A_AWSIZE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWSIZE,
+        m_axi_bus_A_AWBURST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWBURST,
+        m_axi_bus_A_AWLOCK => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLOCK,
+        m_axi_bus_A_AWCACHE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWCACHE,
+        m_axi_bus_A_AWPROT => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWPROT,
+        m_axi_bus_A_AWQOS => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWQOS,
+        m_axi_bus_A_AWREGION => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWREGION,
+        m_axi_bus_A_AWUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWUSER,
+        m_axi_bus_A_WVALID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WVALID,
         m_axi_bus_A_WREADY => ap_const_logic_0,
-        m_axi_bus_A_WDATA => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WDATA,
-        m_axi_bus_A_WSTRB => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WSTRB,
-        m_axi_bus_A_WLAST => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WLAST,
-        m_axi_bus_A_WID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WID,
-        m_axi_bus_A_WUSER => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WUSER,
-        m_axi_bus_A_ARVALID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARVALID,
+        m_axi_bus_A_WDATA => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WDATA,
+        m_axi_bus_A_WSTRB => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WSTRB,
+        m_axi_bus_A_WLAST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WLAST,
+        m_axi_bus_A_WID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WID,
+        m_axi_bus_A_WUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WUSER,
+        m_axi_bus_A_ARVALID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARVALID,
         m_axi_bus_A_ARREADY => bus_A_ARREADY,
-        m_axi_bus_A_ARADDR => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARADDR,
-        m_axi_bus_A_ARID => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARID,
-        m_axi_bus_A_ARLEN => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLEN,
-        m_axi_bus_A_ARSIZE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARSIZE,
-        m_axi_bus_A_ARBURST => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARBURST,
-        m_axi_bus_A_ARLOCK => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLOCK,
-        m_axi_bus_A_ARCACHE => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARCACHE,
-        m_axi_bus_A_ARPROT => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARPROT,
-        m_axi_bus_A_ARQOS => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARQOS,
-        m_axi_bus_A_ARREGION => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARREGION,
-        m_axi_bus_A_ARUSER => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARUSER,
+        m_axi_bus_A_ARADDR => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARADDR,
+        m_axi_bus_A_ARID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARID,
+        m_axi_bus_A_ARLEN => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLEN,
+        m_axi_bus_A_ARSIZE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARSIZE,
+        m_axi_bus_A_ARBURST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARBURST,
+        m_axi_bus_A_ARLOCK => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLOCK,
+        m_axi_bus_A_ARCACHE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARCACHE,
+        m_axi_bus_A_ARPROT => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARPROT,
+        m_axi_bus_A_ARQOS => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARQOS,
+        m_axi_bus_A_ARREGION => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARREGION,
+        m_axi_bus_A_ARUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARUSER,
         m_axi_bus_A_RVALID => bus_A_RVALID,
-        m_axi_bus_A_RREADY => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_RREADY,
+        m_axi_bus_A_RREADY => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_RREADY,
         m_axi_bus_A_RDATA => bus_A_RDATA,
         m_axi_bus_A_RLAST => bus_A_RLAST,
         m_axi_bus_A_RID => bus_A_RID,
         m_axi_bus_A_RUSER => bus_A_RUSER,
         m_axi_bus_A_RRESP => bus_A_RRESP,
         m_axi_bus_A_BVALID => ap_const_logic_0,
-        m_axi_bus_A_BREADY => grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_BREADY,
+        m_axi_bus_A_BREADY => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_BREADY,
         m_axi_bus_A_BRESP => ap_const_lv2_0,
         m_axi_bus_A_BID => ap_const_lv1_0,
         m_axi_bus_A_BUSER => ap_const_lv1_0,
-        sext_ln13 => trunc_ln_reg_224,
-        tmp1_out => grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out,
-        tmp1_out_ap_vld => grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out_ap_vld);
+        B => B_read_reg_139,
+        m_axi_bus_B_AWVALID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWVALID,
+        m_axi_bus_B_AWREADY => ap_const_logic_0,
+        m_axi_bus_B_AWADDR => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWADDR,
+        m_axi_bus_B_AWID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWID,
+        m_axi_bus_B_AWLEN => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLEN,
+        m_axi_bus_B_AWSIZE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWSIZE,
+        m_axi_bus_B_AWBURST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWBURST,
+        m_axi_bus_B_AWLOCK => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLOCK,
+        m_axi_bus_B_AWCACHE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWCACHE,
+        m_axi_bus_B_AWPROT => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWPROT,
+        m_axi_bus_B_AWQOS => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWQOS,
+        m_axi_bus_B_AWREGION => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWREGION,
+        m_axi_bus_B_AWUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWUSER,
+        m_axi_bus_B_WVALID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WVALID,
+        m_axi_bus_B_WREADY => ap_const_logic_0,
+        m_axi_bus_B_WDATA => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WDATA,
+        m_axi_bus_B_WSTRB => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WSTRB,
+        m_axi_bus_B_WLAST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WLAST,
+        m_axi_bus_B_WID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WID,
+        m_axi_bus_B_WUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WUSER,
+        m_axi_bus_B_ARVALID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARVALID,
+        m_axi_bus_B_ARREADY => bus_B_ARREADY,
+        m_axi_bus_B_ARADDR => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARADDR,
+        m_axi_bus_B_ARID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARID,
+        m_axi_bus_B_ARLEN => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLEN,
+        m_axi_bus_B_ARSIZE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARSIZE,
+        m_axi_bus_B_ARBURST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARBURST,
+        m_axi_bus_B_ARLOCK => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLOCK,
+        m_axi_bus_B_ARCACHE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARCACHE,
+        m_axi_bus_B_ARPROT => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARPROT,
+        m_axi_bus_B_ARQOS => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARQOS,
+        m_axi_bus_B_ARREGION => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARREGION,
+        m_axi_bus_B_ARUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARUSER,
+        m_axi_bus_B_RVALID => bus_B_RVALID,
+        m_axi_bus_B_RREADY => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_RREADY,
+        m_axi_bus_B_RDATA => bus_B_RDATA,
+        m_axi_bus_B_RLAST => bus_B_RLAST,
+        m_axi_bus_B_RID => bus_B_RID,
+        m_axi_bus_B_RUSER => bus_B_RUSER,
+        m_axi_bus_B_RRESP => bus_B_RRESP,
+        m_axi_bus_B_BVALID => ap_const_logic_0,
+        m_axi_bus_B_BREADY => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_BREADY,
+        m_axi_bus_B_BRESP => ap_const_lv2_0,
+        m_axi_bus_B_BID => ap_const_lv1_0,
+        m_axi_bus_B_BUSER => ap_const_lv1_0,
+        tmp1_address0 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address0,
+        tmp1_ce0 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce0,
+        tmp1_we0 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_we0,
+        tmp1_d0 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_d0,
+        tmp1_address1 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address1,
+        tmp1_ce1 => grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce1,
+        tmp1_q1 => tmp1_q1);
+
+    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111 : component test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        ap_start => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start,
+        ap_done => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done,
+        ap_idle => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_idle,
+        ap_ready => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_ready,
+        m_axi_bus_res_AWVALID => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWVALID,
+        m_axi_bus_res_AWREADY => bus_res_AWREADY,
+        m_axi_bus_res_AWADDR => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWADDR,
+        m_axi_bus_res_AWID => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWID,
+        m_axi_bus_res_AWLEN => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLEN,
+        m_axi_bus_res_AWSIZE => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWSIZE,
+        m_axi_bus_res_AWBURST => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWBURST,
+        m_axi_bus_res_AWLOCK => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLOCK,
+        m_axi_bus_res_AWCACHE => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWCACHE,
+        m_axi_bus_res_AWPROT => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWPROT,
+        m_axi_bus_res_AWQOS => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWQOS,
+        m_axi_bus_res_AWREGION => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWREGION,
+        m_axi_bus_res_AWUSER => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWUSER,
+        m_axi_bus_res_WVALID => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WVALID,
+        m_axi_bus_res_WREADY => bus_res_WREADY,
+        m_axi_bus_res_WDATA => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WDATA,
+        m_axi_bus_res_WSTRB => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WSTRB,
+        m_axi_bus_res_WLAST => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WLAST,
+        m_axi_bus_res_WID => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WID,
+        m_axi_bus_res_WUSER => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WUSER,
+        m_axi_bus_res_ARVALID => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARVALID,
+        m_axi_bus_res_ARREADY => ap_const_logic_0,
+        m_axi_bus_res_ARADDR => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARADDR,
+        m_axi_bus_res_ARID => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARID,
+        m_axi_bus_res_ARLEN => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLEN,
+        m_axi_bus_res_ARSIZE => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARSIZE,
+        m_axi_bus_res_ARBURST => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARBURST,
+        m_axi_bus_res_ARLOCK => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLOCK,
+        m_axi_bus_res_ARCACHE => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARCACHE,
+        m_axi_bus_res_ARPROT => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARPROT,
+        m_axi_bus_res_ARQOS => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARQOS,
+        m_axi_bus_res_ARREGION => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARREGION,
+        m_axi_bus_res_ARUSER => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARUSER,
+        m_axi_bus_res_RVALID => ap_const_logic_0,
+        m_axi_bus_res_RREADY => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_RREADY,
+        m_axi_bus_res_RDATA => ap_const_lv32_0,
+        m_axi_bus_res_RLAST => ap_const_logic_0,
+        m_axi_bus_res_RID => ap_const_lv1_0,
+        m_axi_bus_res_RUSER => ap_const_lv1_0,
+        m_axi_bus_res_RRESP => ap_const_lv2_0,
+        m_axi_bus_res_BVALID => bus_res_BVALID,
+        m_axi_bus_res_BREADY => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_BREADY,
+        m_axi_bus_res_BRESP => bus_res_BRESP,
+        m_axi_bus_res_BID => bus_res_BID,
+        m_axi_bus_res_BUSER => bus_res_BUSER,
+        sext_ln31 => trunc_ln_reg_149,
+        tmp1_address0 => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_address0,
+        tmp1_ce0 => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_ce0,
+        tmp1_q0 => tmp1_q0);
 
     control_s_axi_U : component test_scalaire_control_s_axi
     generic map (
@@ -1202,17 +1335,17 @@ begin
         ACLK_EN => ap_const_logic_1,
         I_ARVALID => bus_A_ARVALID,
         I_ARREADY => bus_A_ARREADY,
-        I_ARADDR => bus_A_ARADDR,
-        I_ARID => bus_A_ARID,
-        I_ARLEN => bus_A_ARLEN,
-        I_ARSIZE => bus_A_ARSIZE,
-        I_ARLOCK => bus_A_ARLOCK,
-        I_ARCACHE => bus_A_ARCACHE,
-        I_ARQOS => bus_A_ARQOS,
-        I_ARPROT => bus_A_ARPROT,
-        I_ARUSER => bus_A_ARUSER,
-        I_ARBURST => bus_A_ARBURST,
-        I_ARREGION => bus_A_ARREGION,
+        I_ARADDR => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARADDR,
+        I_ARID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARID,
+        I_ARLEN => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLEN,
+        I_ARSIZE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARSIZE,
+        I_ARLOCK => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLOCK,
+        I_ARCACHE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARCACHE,
+        I_ARQOS => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARQOS,
+        I_ARPROT => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARPROT,
+        I_ARUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARUSER,
+        I_ARBURST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARBURST,
+        I_ARREGION => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARREGION,
         I_RVALID => bus_A_RVALID,
         I_RREADY => bus_A_RREADY,
         I_RDATA => bus_A_RDATA,
@@ -1318,17 +1451,17 @@ begin
         ACLK_EN => ap_const_logic_1,
         I_ARVALID => bus_B_ARVALID,
         I_ARREADY => bus_B_ARREADY,
-        I_ARADDR => bus_B_ARADDR,
-        I_ARID => bus_B_ARID,
-        I_ARLEN => bus_B_ARLEN,
-        I_ARSIZE => bus_B_ARSIZE,
-        I_ARLOCK => bus_B_ARLOCK,
-        I_ARCACHE => bus_B_ARCACHE,
-        I_ARQOS => bus_B_ARQOS,
-        I_ARPROT => bus_B_ARPROT,
-        I_ARUSER => bus_B_ARUSER,
-        I_ARBURST => bus_B_ARBURST,
-        I_ARREGION => bus_B_ARREGION,
+        I_ARADDR => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARADDR,
+        I_ARID => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARID,
+        I_ARLEN => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLEN,
+        I_ARSIZE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARSIZE,
+        I_ARLOCK => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLOCK,
+        I_ARCACHE => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARCACHE,
+        I_ARQOS => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARQOS,
+        I_ARPROT => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARPROT,
+        I_ARUSER => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARUSER,
+        I_ARBURST => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARBURST,
+        I_ARREGION => grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARREGION,
         I_RVALID => bus_B_RVALID,
         I_RREADY => bus_B_RREADY,
         I_RDATA => bus_B_RDATA,
@@ -1454,24 +1587,24 @@ begin
         I_RLAST => bus_res_RLAST,
         I_AWVALID => bus_res_AWVALID,
         I_AWREADY => bus_res_AWREADY,
-        I_AWADDR => sext_ln30_fu_200_p1,
-        I_AWID => ap_const_lv1_0,
-        I_AWLEN => ap_const_lv32_9,
-        I_AWSIZE => ap_const_lv3_0,
-        I_AWLOCK => ap_const_lv2_0,
-        I_AWCACHE => ap_const_lv4_0,
-        I_AWQOS => ap_const_lv4_0,
-        I_AWPROT => ap_const_lv3_0,
-        I_AWUSER => ap_const_lv1_0,
-        I_AWBURST => ap_const_lv2_0,
-        I_AWREGION => ap_const_lv4_0,
+        I_AWADDR => bus_res_AWADDR,
+        I_AWID => bus_res_AWID,
+        I_AWLEN => bus_res_AWLEN,
+        I_AWSIZE => bus_res_AWSIZE,
+        I_AWLOCK => bus_res_AWLOCK,
+        I_AWCACHE => bus_res_AWCACHE,
+        I_AWQOS => bus_res_AWQOS,
+        I_AWPROT => bus_res_AWPROT,
+        I_AWUSER => bus_res_AWUSER,
+        I_AWBURST => bus_res_AWBURST,
+        I_AWREGION => bus_res_AWREGION,
         I_WVALID => bus_res_WVALID,
         I_WREADY => bus_res_WREADY,
-        I_WDATA => bus_res_WDATA,
-        I_WID => ap_const_lv1_0,
-        I_WUSER => ap_const_lv1_0,
-        I_WLAST => ap_const_logic_0,
-        I_WSTRB => ap_const_lv4_F,
+        I_WDATA => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WDATA,
+        I_WID => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WID,
+        I_WUSER => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WUSER,
+        I_WLAST => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WLAST,
+        I_WSTRB => grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WSTRB,
         I_BVALID => bus_res_BVALID,
         I_BREADY => bus_res_BREADY,
         I_BRESP => bus_res_BRESP,
@@ -1494,16 +1627,32 @@ begin
     end process;
 
 
-    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg_assign_proc : process(ap_clk)
+    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg <= ap_const_logic_0;
+                grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg <= ap_const_logic_0;
             else
-                if ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
-                    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_test_scalaire_Pipeline_loop_1_fu_139_ap_ready = ap_const_logic_1)) then 
-                    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg <= ap_const_logic_0;
+                if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
+                    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_ready = ap_const_logic_1)) then 
+                    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg <= ap_const_logic_0;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst_n_inv = '1') then
+                grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg <= ap_const_logic_0;
+            else
+                if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+                    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_test_scalaire_Pipeline_loop_1_fu_98_ap_ready = ap_const_logic_1)) then 
+                    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -1530,7 +1679,7 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((not(((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) and (ap_const_logic_1 = A_0_ack_out) and (ap_const_logic_1 = ap_const_logic_1) and (ap_const_logic_1 = A_0_vld_reg)) or (not(((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) and (ap_const_logic_0 = A_0_vld_reg) and (ap_const_logic_1 = ap_const_logic_1)))) then
+            if (((not(((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = A_0_ack_out) and (ap_const_logic_1 = ap_const_logic_1) and (ap_const_logic_1 = A_0_vld_reg)) or (not(((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) and (ap_const_logic_0 = A_0_vld_reg) and (ap_const_logic_1 = ap_const_logic_1)))) then
                 A_0_data_reg <= A;
             end if;
         end if;
@@ -1538,7 +1687,17 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((not(((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) and (ap_const_logic_1 = B_0_ack_out) and (ap_const_logic_1 = ap_const_logic_1) and (ap_const_logic_1 = B_0_vld_reg)) or (not(((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) and (ap_const_logic_0 = B_0_vld_reg) and (ap_const_logic_1 = ap_const_logic_1)))) then
+            if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
+                A_read_reg_144 <= A_0_data_reg;
+                B_read_reg_139 <= B_0_data_reg;
+                trunc_ln_reg_149 <= res_0_data_reg(31 downto 2);
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((not(((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = B_0_ack_out) and (ap_const_logic_1 = ap_const_logic_1) and (ap_const_logic_1 = B_0_vld_reg)) or (not(((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) and (ap_const_logic_0 = B_0_vld_reg) and (ap_const_logic_1 = ap_const_logic_1)))) then
                 B_0_data_reg <= B;
             end if;
         end if;
@@ -1546,35 +1705,17 @@ begin
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state12)) then
-                bitcast_ln30_reg_258 <= bitcast_ln30_fu_213_p1;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((not(((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) and (res_0_ack_out = ap_const_logic_1) and (ap_const_logic_1 = ap_const_logic_1) and (res_0_vld_reg = ap_const_logic_1)) or (not(((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) and (ap_const_logic_1 = ap_const_logic_1) and (res_0_vld_reg = ap_const_logic_0)))) then
+            if (((not(((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) and (res_0_ack_out = ap_const_logic_1) and (ap_const_logic_1 = ap_const_logic_1) and (res_0_vld_reg = ap_const_logic_1)) or (not(((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_const_logic_1) and (res_0_vld_reg = ap_const_logic_0)))) then
                 res_0_data_reg <= res;
             end if;
         end if;
     end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                trunc_ln13_1_reg_230 <= B_0_data_reg(31 downto 2);
-                trunc_ln1_reg_236 <= res_0_data_reg(31 downto 2);
-                trunc_ln_reg_224 <= A_0_data_reg(31 downto 2);
-            end if;
-        end if;
-    end process;
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state3, ap_CS_fsm_state11, ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, ap_CS_fsm_state25, grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done, bus_res_AWREADY, bus_res_WREADY, bus_res_BVALID, ap_block_state3_io)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, ap_CS_fsm_state3, ap_CS_fsm_state10, grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done, grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done, bus_res_AWREADY, bus_res_BVALID, ap_CS_fsm_state5)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
-                if (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
+                if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_1))) then
                     ap_NS_fsm <= ap_ST_fsm_state2;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state1;
@@ -1582,7 +1723,7 @@ begin
             when ap_ST_fsm_state2 => 
                 ap_NS_fsm <= ap_ST_fsm_state3;
             when ap_ST_fsm_state3 => 
-                if (((ap_const_boolean_0 = ap_block_state3_io) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                if ((not(((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
@@ -1590,7 +1731,11 @@ begin
             when ap_ST_fsm_state4 => 
                 ap_NS_fsm <= ap_ST_fsm_state5;
             when ap_ST_fsm_state5 => 
-                ap_NS_fsm <= ap_ST_fsm_state6;
+                if (((grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state5))) then
+                    ap_NS_fsm <= ap_ST_fsm_state6;
+                else
+                    ap_NS_fsm <= ap_ST_fsm_state5;
+                end if;
             when ap_ST_fsm_state6 => 
                 ap_NS_fsm <= ap_ST_fsm_state7;
             when ap_ST_fsm_state7 => 
@@ -1600,89 +1745,19 @@ begin
             when ap_ST_fsm_state9 => 
                 ap_NS_fsm <= ap_ST_fsm_state10;
             when ap_ST_fsm_state10 => 
-                ap_NS_fsm <= ap_ST_fsm_state11;
-            when ap_ST_fsm_state11 => 
-                if ((not(((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state11))) then
-                    ap_NS_fsm <= ap_ST_fsm_state12;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state11;
-                end if;
-            when ap_ST_fsm_state12 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state12))) then
-                    ap_NS_fsm <= ap_ST_fsm_state13;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state12;
-                end if;
-            when ap_ST_fsm_state13 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state13))) then
-                    ap_NS_fsm <= ap_ST_fsm_state14;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state13;
-                end if;
-            when ap_ST_fsm_state14 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14))) then
-                    ap_NS_fsm <= ap_ST_fsm_state15;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state14;
-                end if;
-            when ap_ST_fsm_state15 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state15))) then
-                    ap_NS_fsm <= ap_ST_fsm_state16;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state15;
-                end if;
-            when ap_ST_fsm_state16 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state16))) then
-                    ap_NS_fsm <= ap_ST_fsm_state17;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state16;
-                end if;
-            when ap_ST_fsm_state17 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state17))) then
-                    ap_NS_fsm <= ap_ST_fsm_state18;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state17;
-                end if;
-            when ap_ST_fsm_state18 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state18))) then
-                    ap_NS_fsm <= ap_ST_fsm_state19;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state18;
-                end if;
-            when ap_ST_fsm_state19 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state19))) then
-                    ap_NS_fsm <= ap_ST_fsm_state20;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state19;
-                end if;
-            when ap_ST_fsm_state20 => 
-                if (((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state20))) then
-                    ap_NS_fsm <= ap_ST_fsm_state21;
-                else
-                    ap_NS_fsm <= ap_ST_fsm_state20;
-                end if;
-            when ap_ST_fsm_state21 => 
-                ap_NS_fsm <= ap_ST_fsm_state22;
-            when ap_ST_fsm_state22 => 
-                ap_NS_fsm <= ap_ST_fsm_state23;
-            when ap_ST_fsm_state23 => 
-                ap_NS_fsm <= ap_ST_fsm_state24;
-            when ap_ST_fsm_state24 => 
-                ap_NS_fsm <= ap_ST_fsm_state25;
-            when ap_ST_fsm_state25 => 
-                if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25))) then
+                if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
-                    ap_NS_fsm <= ap_ST_fsm_state25;
+                    ap_NS_fsm <= ap_ST_fsm_state10;
                 end if;
             when others =>  
-                ap_NS_fsm <= "XXXXXXXXXXXXXXXXXXXXXXXXX";
+                ap_NS_fsm <= "XXXXXXXXXX";
         end case;
     end process;
 
-    A_0_ack_out_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state2, bus_res_BVALID)
+    A_0_ack_out_assign_proc : process(ap_CS_fsm_state10, ap_CS_fsm_state2, bus_res_BVALID)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state2) or ((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or ((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10)))) then 
             A_0_ack_out <= ap_const_logic_1;
         else 
             A_0_ack_out <= ap_const_logic_0;
@@ -1690,9 +1765,9 @@ begin
     end process;
 
 
-    B_0_ack_out_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state2, bus_res_BVALID)
+    B_0_ack_out_assign_proc : process(ap_CS_fsm_state10, ap_CS_fsm_state2, bus_res_BVALID)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state2) or ((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or ((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10)))) then 
             B_0_ack_out <= ap_const_logic_1;
         else 
             B_0_ack_out <= ap_const_logic_0;
@@ -1701,107 +1776,17 @@ begin
 
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
-    ap_CS_fsm_state11 <= ap_CS_fsm(10);
-    ap_CS_fsm_state12 <= ap_CS_fsm(11);
-    ap_CS_fsm_state13 <= ap_CS_fsm(12);
-    ap_CS_fsm_state14 <= ap_CS_fsm(13);
-    ap_CS_fsm_state15 <= ap_CS_fsm(14);
-    ap_CS_fsm_state16 <= ap_CS_fsm(15);
-    ap_CS_fsm_state17 <= ap_CS_fsm(16);
-    ap_CS_fsm_state18 <= ap_CS_fsm(17);
-    ap_CS_fsm_state19 <= ap_CS_fsm(18);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
-    ap_CS_fsm_state20 <= ap_CS_fsm(19);
-    ap_CS_fsm_state25 <= ap_CS_fsm(24);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
-    ap_ST_fsm_state10_blk <= ap_const_logic_0;
+    ap_CS_fsm_state4 <= ap_CS_fsm(3);
+    ap_CS_fsm_state5 <= ap_CS_fsm(4);
 
-    ap_ST_fsm_state11_blk_assign_proc : process(grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done, bus_res_AWREADY)
+    ap_ST_fsm_state10_blk_assign_proc : process(bus_res_BVALID)
     begin
-        if (((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done = ap_const_logic_0))) then 
-            ap_ST_fsm_state11_blk <= ap_const_logic_1;
+        if ((bus_res_BVALID = ap_const_logic_0)) then 
+            ap_ST_fsm_state10_blk <= ap_const_logic_1;
         else 
-            ap_ST_fsm_state11_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state12_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state12_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state12_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state13_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state13_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state13_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state14_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state14_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state14_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state15_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state15_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state15_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state16_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state16_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state16_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state17_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state17_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state17_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state18_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state18_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state18_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    ap_ST_fsm_state19_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state19_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state19_blk <= ap_const_logic_0;
+            ap_ST_fsm_state10_blk <= ap_const_logic_0;
         end if; 
     end process;
 
@@ -1815,35 +1800,11 @@ begin
         end if; 
     end process;
 
-
-    ap_ST_fsm_state20_blk_assign_proc : process(bus_res_WREADY)
-    begin
-        if ((bus_res_WREADY = ap_const_logic_0)) then 
-            ap_ST_fsm_state20_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state20_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    ap_ST_fsm_state21_blk <= ap_const_logic_0;
-    ap_ST_fsm_state22_blk <= ap_const_logic_0;
-    ap_ST_fsm_state23_blk <= ap_const_logic_0;
-    ap_ST_fsm_state24_blk <= ap_const_logic_0;
-
-    ap_ST_fsm_state25_blk_assign_proc : process(bus_res_BVALID)
-    begin
-        if ((bus_res_BVALID = ap_const_logic_0)) then 
-            ap_ST_fsm_state25_blk <= ap_const_logic_1;
-        else 
-            ap_ST_fsm_state25_blk <= ap_const_logic_0;
-        end if; 
-    end process;
-
     ap_ST_fsm_state2_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state3_blk_assign_proc : process(ap_block_state3_io)
+    ap_ST_fsm_state3_blk_assign_proc : process(grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done, bus_res_AWREADY)
     begin
-        if ((ap_const_boolean_1 = ap_block_state3_io)) then 
+        if (((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done = ap_const_logic_0))) then 
             ap_ST_fsm_state3_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state3_blk <= ap_const_logic_0;
@@ -1851,21 +1812,24 @@ begin
     end process;
 
     ap_ST_fsm_state4_blk <= ap_const_logic_0;
-    ap_ST_fsm_state5_blk <= ap_const_logic_0;
+
+    ap_ST_fsm_state5_blk_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done)
+    begin
+        if ((grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done = ap_const_logic_0)) then 
+            ap_ST_fsm_state5_blk <= ap_const_logic_1;
+        else 
+            ap_ST_fsm_state5_blk <= ap_const_logic_0;
+        end if; 
+    end process;
+
     ap_ST_fsm_state6_blk <= ap_const_logic_0;
     ap_ST_fsm_state7_blk <= ap_const_logic_0;
     ap_ST_fsm_state8_blk <= ap_const_logic_0;
     ap_ST_fsm_state9_blk <= ap_const_logic_0;
 
-    ap_block_state3_io_assign_proc : process(bus_A_ARREADY, bus_B_ARREADY)
+    ap_done_assign_proc : process(ap_CS_fsm_state10, bus_res_BVALID)
     begin
-                ap_block_state3_io <= ((bus_B_ARREADY = ap_const_logic_0) or (bus_A_ARREADY = ap_const_logic_0));
-    end process;
-
-
-    ap_done_assign_proc : process(ap_CS_fsm_state25, bus_res_BVALID)
-    begin
-        if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+        if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -1875,7 +1839,7 @@ begin
 
     ap_idle_assign_proc : process(ap_start, ap_CS_fsm_state1)
     begin
-        if (((ap_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_start = ap_const_logic_0))) then 
             ap_idle <= ap_const_logic_1;
         else 
             ap_idle <= ap_const_logic_0;
@@ -1883,9 +1847,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state25, bus_res_BVALID)
+    ap_ready_assign_proc : process(ap_CS_fsm_state10, bus_res_BVALID)
     begin
-        if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+        if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -1898,347 +1862,198 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    bitcast_ln30_fu_213_p1 <= grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out;
 
-    bus_A_ARADDR_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARADDR, ap_CS_fsm_state10, sext_ln13_fu_180_p1, ap_block_state3_io)
+    bus_A_ARVALID_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state2, grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARVALID)
     begin
-        if (((ap_const_boolean_0 = ap_block_state3_io) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            bus_A_ARADDR <= sext_ln13_fu_180_p1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARADDR <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARADDR;
-        else 
-            bus_A_ARADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    bus_A_ARBURST_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARBURST, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARBURST <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARBURST;
-        else 
-            bus_A_ARBURST <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARCACHE_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARCACHE, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARCACHE <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARCACHE;
-        else 
-            bus_A_ARCACHE <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARID_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARID, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARID <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARID;
-        else 
-            bus_A_ARID <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARLEN_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLEN, ap_CS_fsm_state10, ap_block_state3_io)
-    begin
-        if (((ap_const_boolean_0 = ap_block_state3_io) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            bus_A_ARLEN <= ap_const_lv32_100;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARLEN <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLEN;
-        else 
-            bus_A_ARLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    bus_A_ARLOCK_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLOCK, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARLOCK <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLOCK;
-        else 
-            bus_A_ARLOCK <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARPROT_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARPROT, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARPROT <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARPROT;
-        else 
-            bus_A_ARPROT <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARQOS_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARQOS, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARQOS <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARQOS;
-        else 
-            bus_A_ARQOS <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARREGION_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARREGION, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARREGION <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARREGION;
-        else 
-            bus_A_ARREGION <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARSIZE_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARSIZE, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARSIZE <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARSIZE;
-        else 
-            bus_A_ARSIZE <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARUSER_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARUSER, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARUSER <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARUSER;
-        else 
-            bus_A_ARUSER <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    bus_A_ARVALID_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARVALID, ap_CS_fsm_state10, ap_block_state3_io)
-    begin
-        if (((ap_const_boolean_0 = ap_block_state3_io) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            bus_A_ARVALID <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_ARVALID <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARVALID;
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            bus_A_ARVALID <= grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARVALID;
         else 
             bus_A_ARVALID <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    bus_A_RREADY_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_RREADY, ap_CS_fsm_state10)
+    bus_A_RREADY_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state2, grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_RREADY)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_A_RREADY <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_RREADY;
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            bus_A_RREADY <= grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_RREADY;
         else 
             bus_A_RREADY <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    bus_A_blk_n_AR_assign_proc : process(m_axi_bus_A_ARREADY, ap_CS_fsm_state3)
+    bus_B_ARVALID_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state2, grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARVALID)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            bus_A_blk_n_AR <= m_axi_bus_A_ARREADY;
-        else 
-            bus_A_blk_n_AR <= ap_const_logic_1;
-        end if; 
-    end process;
-
-
-    bus_B_ARADDR_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARADDR, ap_CS_fsm_state10, sext_ln13_1_fu_190_p1, ap_block_state3_io)
-    begin
-        if (((ap_const_boolean_0 = ap_block_state3_io) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            bus_B_ARADDR <= sext_ln13_1_fu_190_p1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARADDR <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARADDR;
-        else 
-            bus_B_ARADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    bus_B_ARBURST_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARBURST, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARBURST <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARBURST;
-        else 
-            bus_B_ARBURST <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARCACHE_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARCACHE, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARCACHE <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARCACHE;
-        else 
-            bus_B_ARCACHE <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARID_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARID, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARID <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARID;
-        else 
-            bus_B_ARID <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARLEN_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLEN, ap_CS_fsm_state10, ap_block_state3_io)
-    begin
-        if (((ap_const_boolean_0 = ap_block_state3_io) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            bus_B_ARLEN <= ap_const_lv32_100;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARLEN <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLEN;
-        else 
-            bus_B_ARLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    bus_B_ARLOCK_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLOCK, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARLOCK <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLOCK;
-        else 
-            bus_B_ARLOCK <= ap_const_lv2_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARPROT_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARPROT, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARPROT <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARPROT;
-        else 
-            bus_B_ARPROT <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARQOS_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARQOS, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARQOS <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARQOS;
-        else 
-            bus_B_ARQOS <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARREGION_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARREGION, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARREGION <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARREGION;
-        else 
-            bus_B_ARREGION <= ap_const_lv4_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARSIZE_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARSIZE, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARSIZE <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARSIZE;
-        else 
-            bus_B_ARSIZE <= ap_const_lv3_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARUSER_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARUSER, ap_CS_fsm_state10)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARUSER <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARUSER;
-        else 
-            bus_B_ARUSER <= ap_const_lv1_0;
-        end if; 
-    end process;
-
-
-    bus_B_ARVALID_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARVALID, ap_CS_fsm_state10, ap_block_state3_io)
-    begin
-        if (((ap_const_boolean_0 = ap_block_state3_io) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
-            bus_B_ARVALID <= ap_const_logic_1;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_ARVALID <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARVALID;
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            bus_B_ARVALID <= grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARVALID;
         else 
             bus_B_ARVALID <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    bus_B_RREADY_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_RREADY, ap_CS_fsm_state10)
+    bus_B_RREADY_assign_proc : process(ap_CS_fsm_state3, ap_CS_fsm_state2, grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_RREADY)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state11))) then 
-            bus_B_RREADY <= grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_RREADY;
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            bus_B_RREADY <= grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_RREADY;
         else 
             bus_B_RREADY <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    bus_B_blk_n_AR_assign_proc : process(m_axi_bus_B_ARREADY, ap_CS_fsm_state3)
+    bus_res_AWADDR_assign_proc : process(ap_CS_fsm_state3, grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done, grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWADDR, bus_res_AWREADY, ap_CS_fsm_state4, ap_CS_fsm_state5, sext_ln31_fu_129_p1)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            bus_B_blk_n_AR <= m_axi_bus_B_ARREADY;
+        if ((not(((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            bus_res_AWADDR <= sext_ln31_fu_129_p1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWADDR <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWADDR;
         else 
-            bus_B_blk_n_AR <= ap_const_logic_1;
+            bus_res_AWADDR <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end if; 
     end process;
 
 
-    bus_res_AWVALID_assign_proc : process(ap_CS_fsm_state11, grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done, bus_res_AWREADY)
+    bus_res_AWBURST_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWBURST, ap_CS_fsm_state4, ap_CS_fsm_state5)
     begin
-        if ((not(((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state11))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWBURST <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWBURST;
+        else 
+            bus_res_AWBURST <= ap_const_lv2_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWCACHE_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWCACHE, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWCACHE <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWCACHE;
+        else 
+            bus_res_AWCACHE <= ap_const_lv4_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWID_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWID, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWID <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWID;
+        else 
+            bus_res_AWID <= ap_const_lv1_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWLEN_assign_proc : process(ap_CS_fsm_state3, grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done, grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLEN, bus_res_AWREADY, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if ((not(((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+            bus_res_AWLEN <= ap_const_lv32_10;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWLEN <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLEN;
+        else 
+            bus_res_AWLEN <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+        end if; 
+    end process;
+
+
+    bus_res_AWLOCK_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLOCK, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWLOCK <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLOCK;
+        else 
+            bus_res_AWLOCK <= ap_const_lv2_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWPROT_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWPROT, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWPROT <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWPROT;
+        else 
+            bus_res_AWPROT <= ap_const_lv3_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWQOS_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWQOS, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWQOS <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWQOS;
+        else 
+            bus_res_AWQOS <= ap_const_lv4_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWREGION_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWREGION, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWREGION <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWREGION;
+        else 
+            bus_res_AWREGION <= ap_const_lv4_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWSIZE_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWSIZE, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWSIZE <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWSIZE;
+        else 
+            bus_res_AWSIZE <= ap_const_lv3_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWUSER_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWUSER, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWUSER <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWUSER;
+        else 
+            bus_res_AWUSER <= ap_const_lv1_0;
+        end if; 
+    end process;
+
+
+    bus_res_AWVALID_assign_proc : process(ap_CS_fsm_state3, grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done, grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWVALID, bus_res_AWREADY, ap_CS_fsm_state4, ap_CS_fsm_state5)
+    begin
+        if ((not(((bus_res_AWREADY = ap_const_logic_0) or (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
             bus_res_AWVALID <= ap_const_logic_1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_AWVALID <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWVALID;
         else 
             bus_res_AWVALID <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    bus_res_BREADY_assign_proc : process(ap_CS_fsm_state25, bus_res_BVALID)
+    bus_res_BREADY_assign_proc : process(ap_CS_fsm_state10, grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_BREADY, bus_res_BVALID, ap_CS_fsm_state4, ap_CS_fsm_state5)
     begin
-        if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25))) then 
+        if (((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10))) then 
             bus_res_BREADY <= ap_const_logic_1;
+        elsif (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_BREADY <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_BREADY;
         else 
             bus_res_BREADY <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    bus_res_WDATA_assign_proc : process(ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, bitcast_ln30_fu_213_p1, bitcast_ln30_reg_258)
+    bus_res_WVALID_assign_proc : process(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WVALID, ap_CS_fsm_state4, ap_CS_fsm_state5)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state20)) then 
-            bus_res_WDATA <= ap_const_lv32_47008000;
-        elsif (((ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state14) or (ap_const_logic_1 = ap_CS_fsm_state13))) then 
-            bus_res_WDATA <= bitcast_ln30_reg_258;
-        elsif ((ap_const_logic_1 = ap_CS_fsm_state12)) then 
-            bus_res_WDATA <= bitcast_ln30_fu_213_p1;
-        else 
-            bus_res_WDATA <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-        end if; 
-    end process;
-
-
-    bus_res_WVALID_assign_proc : process(ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, bus_res_WREADY)
-    begin
-        if ((((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state20)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state19)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state18)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state17)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state16)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state15)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state14)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state13)) or ((bus_res_WREADY = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state12)))) then 
-            bus_res_WVALID <= ap_const_logic_1;
+        if (((ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4))) then 
+            bus_res_WVALID <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WVALID;
         else 
             bus_res_WVALID <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    bus_res_blk_n_AW_assign_proc : process(m_axi_bus_res_AWREADY, ap_CS_fsm_state11)
+    bus_res_blk_n_AW_assign_proc : process(m_axi_bus_res_AWREADY, ap_CS_fsm_state3)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state11)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
             bus_res_blk_n_AW <= m_axi_bus_res_AWREADY;
         else 
             bus_res_blk_n_AW <= ap_const_logic_1;
@@ -2246,40 +2061,71 @@ begin
     end process;
 
 
-    bus_res_blk_n_B_assign_proc : process(m_axi_bus_res_BVALID, ap_CS_fsm_state25)
+    bus_res_blk_n_B_assign_proc : process(m_axi_bus_res_BVALID, ap_CS_fsm_state10)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state25)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state10)) then 
             bus_res_blk_n_B <= m_axi_bus_res_BVALID;
         else 
             bus_res_blk_n_B <= ap_const_logic_1;
         end if; 
     end process;
 
+    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg;
+    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start <= grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg;
 
-    bus_res_blk_n_W_assign_proc : process(m_axi_bus_res_WREADY, ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20)
+    res_0_ack_out_assign_proc : process(ap_CS_fsm_state10, ap_CS_fsm_state2, bus_res_BVALID)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state14) or (ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state12))) then 
-            bus_res_blk_n_W <= m_axi_bus_res_WREADY;
-        else 
-            bus_res_blk_n_W <= ap_const_logic_1;
-        end if; 
-    end process;
-
-    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start <= grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg;
-
-    res_0_ack_out_assign_proc : process(ap_CS_fsm_state25, ap_CS_fsm_state2, bus_res_BVALID)
-    begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state2) or ((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state25)))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state2) or ((bus_res_BVALID = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state10)))) then 
             res_0_ack_out <= ap_const_logic_1;
         else 
             res_0_ack_out <= ap_const_logic_0;
         end if; 
     end process;
 
-        sext_ln13_1_fu_190_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln13_1_reg_230),32));
+        sext_ln31_fu_129_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_reg_149),32));
 
-        sext_ln13_fu_180_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_reg_224),32));
 
-        sext_ln30_fu_200_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln1_reg_236),32));
+    tmp1_address0_assign_proc : process(ap_CS_fsm_state3, grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address0, grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_address0, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            tmp1_address0 <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_address0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            tmp1_address0 <= grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address0;
+        else 
+            tmp1_address0 <= "XXXX";
+        end if; 
+    end process;
+
+
+    tmp1_ce0_assign_proc : process(ap_CS_fsm_state3, grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce0, grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_ce0, ap_CS_fsm_state5)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state5)) then 
+            tmp1_ce0 <= grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_ce0;
+        elsif ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            tmp1_ce0 <= grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce0;
+        else 
+            tmp1_ce0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    tmp1_ce1_assign_proc : process(ap_CS_fsm_state3, grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce1)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            tmp1_ce1 <= grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce1;
+        else 
+            tmp1_ce1 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    tmp1_we0_assign_proc : process(ap_CS_fsm_state3, grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_we0)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+            tmp1_we0 <= grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_we0;
+        else 
+            tmp1_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
 
 end behav;

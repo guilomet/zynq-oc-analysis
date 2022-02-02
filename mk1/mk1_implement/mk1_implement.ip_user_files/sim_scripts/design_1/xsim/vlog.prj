@@ -61,8 +61,8 @@ sv xil_defaultlib --include "C:/Xilinx/Vivado/2021.1/data/xilinx_vip/include" --
 
 verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.1/data/xilinx_vip/include" --include "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/f42d/hdl" --include "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/6dcf" --include "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/80cc/hdl/verilog" --include "../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/22b9/hdl/verilog" --include "../../../../mk1_implement.gen/sources_1/bd/design_1/ip/design_1_test_scalaire_0_3/drivers/test_scalaire_v1_1/src" \
 "../../../bd/design_1/ip/design_1_axi_smc_2_0/sim/design_1_axi_smc_2_0.v" \
-"../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.v" \
-"../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/08f6/hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v" \
+"../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/c1a5/hdl/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.v" \
+"../../../../mk1_implement.gen/sources_1/bd/design_1/ipshared/c1a5/hdl/ip/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1_ip.v" \
 "../../../bd/design_1/ip/design_1_test_scalaire_0_3/sim/design_1_test_scalaire_0_3.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_3/sim/design_1_auto_pc_3.v" \
 "../../../bd/design_1/ip/design_1_auto_pc_0_1/sim/design_1_auto_pc_0.v" \

@@ -29,13 +29,13 @@ preplace inst axi_smc_2 -pg 1 -lvl 4 -x 1420 -y 620 -defaultsOSRD
 preplace inst comp_32_0 -pg 1 -lvl 6 -x 2010 -y 700 -defaultsOSRD
 preplace inst xadc_wiz_0 -pg 1 -lvl 3 -x 1080 -y 730 -defaultsOSRD
 preplace inst test_scalaire_0 -pg 1 -lvl 3 -x 1080 -y 390 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 0 6 30 460 510 220 860 10 1270 370 1580 550 1870
+preplace netloc clk_wiz_0_clk_out1 1 0 6 30 460 500 230 910 10 1270 370 1580 550 1870
 preplace netloc clk_wiz_0_locked 1 0 4 50 860 NJ 860 NJ 860 1250
 preplace netloc comp_32_0_res 1 6 1 N 700
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 5 530 230 910 20 1260 200 1560 710 NJ
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 5 510 240 860 20 1260 200 1560 710 NJ
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 40 850 490
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 520 210 900
-preplace netloc sys_clock_1 1 0 3 20J 470 500J 240 890J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 540 260 900
+preplace netloc sys_clock_1 1 0 3 20J 470 530J 250 890J
 preplace netloc sys_clock_2 1 0 3 20J 140 NJ 140 840
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 3 NJ 100 NJ 100 N
 preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 5 1 1870 120n
@@ -43,18 +43,18 @@ preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 3 3 1250 210 1580J 220 NJ
 preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 5 1 1880 240n
 preplace netloc axi_bram_ctrl_4_BRAM_PORTA 1 3 3 NJ 540 NJ 540 N
 preplace netloc axi_bram_ctrl_5_BRAM_PORTA 1 5 1 1880 560n
-preplace netloc axi_interconnect_0_M00_AXI 1 2 1 860 420n
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 860 430n
 preplace netloc axi_interconnect_0_M01_AXI 1 2 1 870 370n
 preplace netloc axi_interconnect_0_M02_AXI 1 2 1 850 80n
 preplace netloc axi_interconnect_0_M03_AXI 1 2 1 880 220n
-preplace netloc axi_interconnect_0_M04_AXI 1 2 1 870 500n
-preplace netloc axi_interconnect_0_M05_AXI 1 2 1 850 520n
+preplace netloc axi_interconnect_0_M04_AXI 1 2 1 870 510n
+preplace netloc axi_interconnect_0_M05_AXI 1 2 1 850 530n
 preplace netloc axi_smc_1_M00_AXI 1 4 1 1570 440n
 preplace netloc axi_smc_2_M00_AXI 1 4 1 1590 610n
 preplace netloc axi_smc_M00_AXI 1 4 1 N 290
 preplace netloc processing_system7_0_DDR 1 0 2 NJ 110 500
 preplace netloc processing_system7_0_FIXED_IO 1 0 2 NJ 130 490
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 N 300
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 520 300n
 preplace netloc test_scalaire_0_m_axi_bus_A 1 3 1 1280 270n
 preplace netloc test_scalaire_0_m_axi_bus_B 1 3 1 1280 380n
 preplace netloc test_scalaire_0_m_axi_bus_res 1 3 1 1250 400n

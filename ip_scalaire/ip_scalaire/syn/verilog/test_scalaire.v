@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="test_scalaire_test_scalaire,hls_ip_2021_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010-clg400-1,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=2851,HLS_SYN_TPT=none,HLS_SYN_MEM=12,HLS_SYN_DSP=0,HLS_SYN_FF=2678,HLS_SYN_LUT=3342,HLS_VERSION=2021_1}" *)
+(* CORE_GENERATION_INFO="test_scalaire_test_scalaire,hls_ip_2021_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010-clg400-1,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=4.371000,HLS_SYN_LAT=4152,HLS_SYN_TPT=none,HLS_SYN_MEM=12,HLS_SYN_DSP=0,HLS_SYN_FF=3150,HLS_SYN_LUT=3505,HLS_VERSION=2021_1}" *)
 
 module test_scalaire (
         ap_clk,
@@ -167,31 +167,16 @@ module test_scalaire (
         interrupt
 );
 
-parameter    ap_ST_fsm_state1 = 25'd1;
-parameter    ap_ST_fsm_state2 = 25'd2;
-parameter    ap_ST_fsm_state3 = 25'd4;
-parameter    ap_ST_fsm_state4 = 25'd8;
-parameter    ap_ST_fsm_state5 = 25'd16;
-parameter    ap_ST_fsm_state6 = 25'd32;
-parameter    ap_ST_fsm_state7 = 25'd64;
-parameter    ap_ST_fsm_state8 = 25'd128;
-parameter    ap_ST_fsm_state9 = 25'd256;
-parameter    ap_ST_fsm_state10 = 25'd512;
-parameter    ap_ST_fsm_state11 = 25'd1024;
-parameter    ap_ST_fsm_state12 = 25'd2048;
-parameter    ap_ST_fsm_state13 = 25'd4096;
-parameter    ap_ST_fsm_state14 = 25'd8192;
-parameter    ap_ST_fsm_state15 = 25'd16384;
-parameter    ap_ST_fsm_state16 = 25'd32768;
-parameter    ap_ST_fsm_state17 = 25'd65536;
-parameter    ap_ST_fsm_state18 = 25'd131072;
-parameter    ap_ST_fsm_state19 = 25'd262144;
-parameter    ap_ST_fsm_state20 = 25'd524288;
-parameter    ap_ST_fsm_state21 = 25'd1048576;
-parameter    ap_ST_fsm_state22 = 25'd2097152;
-parameter    ap_ST_fsm_state23 = 25'd4194304;
-parameter    ap_ST_fsm_state24 = 25'd8388608;
-parameter    ap_ST_fsm_state25 = 25'd16777216;
+parameter    ap_ST_fsm_state1 = 10'd1;
+parameter    ap_ST_fsm_state2 = 10'd2;
+parameter    ap_ST_fsm_state3 = 10'd4;
+parameter    ap_ST_fsm_state4 = 10'd8;
+parameter    ap_ST_fsm_state5 = 10'd16;
+parameter    ap_ST_fsm_state6 = 10'd32;
+parameter    ap_ST_fsm_state7 = 10'd64;
+parameter    ap_ST_fsm_state8 = 10'd128;
+parameter    ap_ST_fsm_state9 = 10'd256;
+parameter    ap_ST_fsm_state10 = 10'd512;
 parameter    C_S_AXI_CONTROL_DATA_WIDTH = 32;
 parameter    C_S_AXI_CONTROL_ADDR_WIDTH = 6;
 parameter    C_S_AXI_DATA_WIDTH = 32;
@@ -397,7 +382,7 @@ output   interrupt;
 wire    ap_start;
 reg    ap_done;
 reg    ap_idle;
-(* fsm_encoding = "none" *) reg   [24:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [9:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    ap_ready;
 wire   [31:0] A;
@@ -412,114 +397,136 @@ wire   [31:0] res;
 reg   [31:0] res_0_data_reg;
 reg    res_0_vld_reg;
 reg    res_0_ack_out;
-reg    bus_A_blk_n_AR;
-wire    ap_CS_fsm_state3;
-reg    bus_B_blk_n_AR;
 reg    bus_res_blk_n_AW;
-wire    ap_CS_fsm_state11;
-reg    bus_res_blk_n_W;
-wire    ap_CS_fsm_state12;
-wire    ap_CS_fsm_state13;
-wire    ap_CS_fsm_state14;
-wire    ap_CS_fsm_state15;
-wire    ap_CS_fsm_state16;
-wire    ap_CS_fsm_state17;
-wire    ap_CS_fsm_state18;
-wire    ap_CS_fsm_state19;
-wire    ap_CS_fsm_state20;
+wire    ap_CS_fsm_state3;
 reg    bus_res_blk_n_B;
-wire    ap_CS_fsm_state25;
-reg   [29:0] trunc_ln_reg_224;
+wire    ap_CS_fsm_state10;
+reg   [31:0] B_read_reg_139;
 wire    ap_CS_fsm_state2;
-reg   [29:0] trunc_ln13_1_reg_230;
-reg   [29:0] trunc_ln1_reg_236;
-wire   [31:0] bitcast_ln30_fu_213_p1;
-reg   [31:0] bitcast_ln30_reg_258;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_idle;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_ready;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWVALID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWADDR;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLEN;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWSIZE;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWBURST;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLOCK;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWCACHE;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWPROT;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWQOS;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWREGION;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWUSER;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WVALID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WDATA;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WSTRB;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WLAST;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WID;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WUSER;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARVALID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARADDR;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLEN;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARSIZE;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARBURST;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLOCK;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARCACHE;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARPROT;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARQOS;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARREGION;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARUSER;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_RREADY;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_BREADY;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWVALID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWADDR;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLEN;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWSIZE;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWBURST;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLOCK;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWCACHE;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWPROT;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWQOS;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWREGION;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWUSER;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WVALID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WDATA;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WSTRB;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WLAST;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WID;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WUSER;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARVALID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARADDR;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARID;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLEN;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARSIZE;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARBURST;
-wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLOCK;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARCACHE;
-wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARPROT;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARQOS;
-wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARREGION;
-wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARUSER;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_RREADY;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_BREADY;
-wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out;
-wire    grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out_ap_vld;
+reg   [31:0] A_read_reg_144;
+reg   [29:0] trunc_ln_reg_149;
+reg   [3:0] tmp1_address0;
+reg    tmp1_ce0;
+reg    tmp1_we0;
+wire   [31:0] tmp1_q0;
+reg    tmp1_ce1;
+wire   [31:0] tmp1_q1;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_idle;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_ready;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWADDR;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLEN;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWSIZE;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWBURST;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLOCK;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWCACHE;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWPROT;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWQOS;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWREGION;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWUSER;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WDATA;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WSTRB;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WLAST;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WID;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WUSER;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARADDR;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLEN;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARSIZE;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARBURST;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLOCK;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARCACHE;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARPROT;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARQOS;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARREGION;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARUSER;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_RREADY;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_BREADY;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWADDR;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLEN;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWSIZE;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWBURST;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLOCK;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWCACHE;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWPROT;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWQOS;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWREGION;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWUSER;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WDATA;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WSTRB;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WLAST;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WID;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WUSER;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARADDR;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARID;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLEN;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARSIZE;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARBURST;
+wire   [1:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLOCK;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARCACHE;
+wire   [2:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARPROT;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARQOS;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARREGION;
+wire   [0:0] grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARUSER;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_RREADY;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_BREADY;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address0;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce0;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_we0;
+wire   [31:0] grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_d0;
+wire   [3:0] grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address1;
+wire    grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce1;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_idle;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_ready;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWADDR;
+wire   [0:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWID;
+wire   [31:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLEN;
+wire   [2:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWSIZE;
+wire   [1:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWBURST;
+wire   [1:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLOCK;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWCACHE;
+wire   [2:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWPROT;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWQOS;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWREGION;
+wire   [0:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWUSER;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WDATA;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WSTRB;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WLAST;
+wire   [0:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WID;
+wire   [0:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WUSER;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARVALID;
+wire   [31:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARADDR;
+wire   [0:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARID;
+wire   [31:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLEN;
+wire   [2:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARSIZE;
+wire   [1:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARBURST;
+wire   [1:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLOCK;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARCACHE;
+wire   [2:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARPROT;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARQOS;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARREGION;
+wire   [0:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARUSER;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_RREADY;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_BREADY;
+wire   [3:0] grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_address0;
+wire    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_ce0;
 wire    bus_A_AWREADY;
 wire    bus_A_WREADY;
 reg    bus_A_ARVALID;
 wire    bus_A_ARREADY;
-reg   [31:0] bus_A_ARADDR;
-reg   [0:0] bus_A_ARID;
-reg   [31:0] bus_A_ARLEN;
-reg   [2:0] bus_A_ARSIZE;
-reg   [1:0] bus_A_ARBURST;
-reg   [1:0] bus_A_ARLOCK;
-reg   [3:0] bus_A_ARCACHE;
-reg   [2:0] bus_A_ARPROT;
-reg   [3:0] bus_A_ARQOS;
-reg   [3:0] bus_A_ARREGION;
-reg   [0:0] bus_A_ARUSER;
 wire    bus_A_RVALID;
 reg    bus_A_RREADY;
 wire   [31:0] bus_A_RDATA;
@@ -535,17 +542,6 @@ wire    bus_B_AWREADY;
 wire    bus_B_WREADY;
 reg    bus_B_ARVALID;
 wire    bus_B_ARREADY;
-reg   [31:0] bus_B_ARADDR;
-reg   [0:0] bus_B_ARID;
-reg   [31:0] bus_B_ARLEN;
-reg   [2:0] bus_B_ARSIZE;
-reg   [1:0] bus_B_ARBURST;
-reg   [1:0] bus_B_ARLOCK;
-reg   [3:0] bus_B_ARCACHE;
-reg   [2:0] bus_B_ARPROT;
-reg   [3:0] bus_B_ARQOS;
-reg   [3:0] bus_B_ARREGION;
-reg   [0:0] bus_B_ARUSER;
 wire    bus_B_RVALID;
 reg    bus_B_RREADY;
 wire   [31:0] bus_B_RDATA;
@@ -559,9 +555,19 @@ wire   [0:0] bus_B_BID;
 wire   [0:0] bus_B_BUSER;
 reg    bus_res_AWVALID;
 wire    bus_res_AWREADY;
+reg   [31:0] bus_res_AWADDR;
+reg   [0:0] bus_res_AWID;
+reg   [31:0] bus_res_AWLEN;
+reg   [2:0] bus_res_AWSIZE;
+reg   [1:0] bus_res_AWBURST;
+reg   [1:0] bus_res_AWLOCK;
+reg   [3:0] bus_res_AWCACHE;
+reg   [2:0] bus_res_AWPROT;
+reg   [3:0] bus_res_AWQOS;
+reg   [3:0] bus_res_AWREGION;
+reg   [0:0] bus_res_AWUSER;
 reg    bus_res_WVALID;
 wire    bus_res_WREADY;
-reg   [31:0] bus_res_WDATA;
 wire    bus_res_ARREADY;
 wire    bus_res_RVALID;
 wire   [31:0] bus_res_RDATA;
@@ -574,153 +580,218 @@ reg    bus_res_BREADY;
 wire   [1:0] bus_res_BRESP;
 wire   [0:0] bus_res_BID;
 wire   [0:0] bus_res_BUSER;
-reg    grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg;
-wire    ap_CS_fsm_state10;
-wire  signed [31:0] sext_ln13_fu_180_p1;
-wire  signed [31:0] sext_ln13_1_fu_190_p1;
-wire   [31:0] sext_ln30_fu_200_p1;
-reg    ap_block_state3_io;
-reg   [24:0] ap_NS_fsm;
+reg    grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg;
+reg    grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg;
+wire    ap_CS_fsm_state4;
+wire    ap_CS_fsm_state5;
+wire  signed [31:0] sext_ln31_fu_129_p1;
+reg   [9:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
 wire    ap_ST_fsm_state4_blk;
-wire    ap_ST_fsm_state5_blk;
+reg    ap_ST_fsm_state5_blk;
 wire    ap_ST_fsm_state6_blk;
 wire    ap_ST_fsm_state7_blk;
 wire    ap_ST_fsm_state8_blk;
 wire    ap_ST_fsm_state9_blk;
-wire    ap_ST_fsm_state10_blk;
-reg    ap_ST_fsm_state11_blk;
-reg    ap_ST_fsm_state12_blk;
-reg    ap_ST_fsm_state13_blk;
-reg    ap_ST_fsm_state14_blk;
-reg    ap_ST_fsm_state15_blk;
-reg    ap_ST_fsm_state16_blk;
-reg    ap_ST_fsm_state17_blk;
-reg    ap_ST_fsm_state18_blk;
-reg    ap_ST_fsm_state19_blk;
-reg    ap_ST_fsm_state20_blk;
-wire    ap_ST_fsm_state21_blk;
-wire    ap_ST_fsm_state22_blk;
-wire    ap_ST_fsm_state23_blk;
-wire    ap_ST_fsm_state24_blk;
-reg    ap_ST_fsm_state25_blk;
+reg    ap_ST_fsm_state10_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
-#0 ap_CS_fsm = 25'd1;
+#0 ap_CS_fsm = 10'd1;
 #0 A_0_data_reg = 32'd0;
 #0 A_0_vld_reg = 1'b0;
 #0 B_0_data_reg = 32'd0;
 #0 B_0_vld_reg = 1'b0;
 #0 res_0_data_reg = 32'd0;
 #0 res_0_vld_reg = 1'b0;
-#0 grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg = 1'b0;
+#0 grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg = 1'b0;
+#0 grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg = 1'b0;
 end
 
-test_scalaire_test_scalaire_Pipeline_loop_1 grp_test_scalaire_Pipeline_loop_1_fu_139(
+test_scalaire_tmp1 #(
+    .DataWidth( 32 ),
+    .AddressRange( 16 ),
+    .AddressWidth( 4 ))
+tmp1_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(tmp1_address0),
+    .ce0(tmp1_ce0),
+    .we0(tmp1_we0),
+    .d0(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_d0),
+    .q0(tmp1_q0),
+    .address1(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address1),
+    .ce1(tmp1_ce1),
+    .q1(tmp1_q1)
+);
+
+test_scalaire_test_scalaire_Pipeline_loop_1 grp_test_scalaire_Pipeline_loop_1_fu_98(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start),
-    .ap_done(grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done),
-    .ap_idle(grp_test_scalaire_Pipeline_loop_1_fu_139_ap_idle),
-    .ap_ready(grp_test_scalaire_Pipeline_loop_1_fu_139_ap_ready),
-    .m_axi_bus_B_AWVALID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWVALID),
-    .m_axi_bus_B_AWREADY(1'b0),
-    .m_axi_bus_B_AWADDR(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWADDR),
-    .m_axi_bus_B_AWID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWID),
-    .m_axi_bus_B_AWLEN(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLEN),
-    .m_axi_bus_B_AWSIZE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWSIZE),
-    .m_axi_bus_B_AWBURST(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWBURST),
-    .m_axi_bus_B_AWLOCK(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWLOCK),
-    .m_axi_bus_B_AWCACHE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWCACHE),
-    .m_axi_bus_B_AWPROT(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWPROT),
-    .m_axi_bus_B_AWQOS(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWQOS),
-    .m_axi_bus_B_AWREGION(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWREGION),
-    .m_axi_bus_B_AWUSER(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_AWUSER),
-    .m_axi_bus_B_WVALID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WVALID),
-    .m_axi_bus_B_WREADY(1'b0),
-    .m_axi_bus_B_WDATA(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WDATA),
-    .m_axi_bus_B_WSTRB(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WSTRB),
-    .m_axi_bus_B_WLAST(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WLAST),
-    .m_axi_bus_B_WID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WID),
-    .m_axi_bus_B_WUSER(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_WUSER),
-    .m_axi_bus_B_ARVALID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARVALID),
-    .m_axi_bus_B_ARREADY(bus_B_ARREADY),
-    .m_axi_bus_B_ARADDR(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARADDR),
-    .m_axi_bus_B_ARID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARID),
-    .m_axi_bus_B_ARLEN(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLEN),
-    .m_axi_bus_B_ARSIZE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARSIZE),
-    .m_axi_bus_B_ARBURST(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARBURST),
-    .m_axi_bus_B_ARLOCK(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLOCK),
-    .m_axi_bus_B_ARCACHE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARCACHE),
-    .m_axi_bus_B_ARPROT(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARPROT),
-    .m_axi_bus_B_ARQOS(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARQOS),
-    .m_axi_bus_B_ARREGION(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARREGION),
-    .m_axi_bus_B_ARUSER(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARUSER),
-    .m_axi_bus_B_RVALID(bus_B_RVALID),
-    .m_axi_bus_B_RREADY(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_RREADY),
-    .m_axi_bus_B_RDATA(bus_B_RDATA),
-    .m_axi_bus_B_RLAST(bus_B_RLAST),
-    .m_axi_bus_B_RID(bus_B_RID),
-    .m_axi_bus_B_RUSER(bus_B_RUSER),
-    .m_axi_bus_B_RRESP(bus_B_RRESP),
-    .m_axi_bus_B_BVALID(1'b0),
-    .m_axi_bus_B_BREADY(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_BREADY),
-    .m_axi_bus_B_BRESP(2'd0),
-    .m_axi_bus_B_BID(1'd0),
-    .m_axi_bus_B_BUSER(1'd0),
-    .sext_ln13_1(trunc_ln13_1_reg_230),
-    .m_axi_bus_A_AWVALID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWVALID),
+    .ap_start(grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start),
+    .ap_done(grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done),
+    .ap_idle(grp_test_scalaire_Pipeline_loop_1_fu_98_ap_idle),
+    .ap_ready(grp_test_scalaire_Pipeline_loop_1_fu_98_ap_ready),
+    .A(A_read_reg_144),
+    .m_axi_bus_A_AWVALID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWVALID),
     .m_axi_bus_A_AWREADY(1'b0),
-    .m_axi_bus_A_AWADDR(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWADDR),
-    .m_axi_bus_A_AWID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWID),
-    .m_axi_bus_A_AWLEN(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLEN),
-    .m_axi_bus_A_AWSIZE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWSIZE),
-    .m_axi_bus_A_AWBURST(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWBURST),
-    .m_axi_bus_A_AWLOCK(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWLOCK),
-    .m_axi_bus_A_AWCACHE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWCACHE),
-    .m_axi_bus_A_AWPROT(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWPROT),
-    .m_axi_bus_A_AWQOS(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWQOS),
-    .m_axi_bus_A_AWREGION(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWREGION),
-    .m_axi_bus_A_AWUSER(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_AWUSER),
-    .m_axi_bus_A_WVALID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WVALID),
+    .m_axi_bus_A_AWADDR(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWADDR),
+    .m_axi_bus_A_AWID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWID),
+    .m_axi_bus_A_AWLEN(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLEN),
+    .m_axi_bus_A_AWSIZE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWSIZE),
+    .m_axi_bus_A_AWBURST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWBURST),
+    .m_axi_bus_A_AWLOCK(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWLOCK),
+    .m_axi_bus_A_AWCACHE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWCACHE),
+    .m_axi_bus_A_AWPROT(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWPROT),
+    .m_axi_bus_A_AWQOS(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWQOS),
+    .m_axi_bus_A_AWREGION(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWREGION),
+    .m_axi_bus_A_AWUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_AWUSER),
+    .m_axi_bus_A_WVALID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WVALID),
     .m_axi_bus_A_WREADY(1'b0),
-    .m_axi_bus_A_WDATA(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WDATA),
-    .m_axi_bus_A_WSTRB(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WSTRB),
-    .m_axi_bus_A_WLAST(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WLAST),
-    .m_axi_bus_A_WID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WID),
-    .m_axi_bus_A_WUSER(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_WUSER),
-    .m_axi_bus_A_ARVALID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARVALID),
+    .m_axi_bus_A_WDATA(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WDATA),
+    .m_axi_bus_A_WSTRB(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WSTRB),
+    .m_axi_bus_A_WLAST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WLAST),
+    .m_axi_bus_A_WID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WID),
+    .m_axi_bus_A_WUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_WUSER),
+    .m_axi_bus_A_ARVALID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARVALID),
     .m_axi_bus_A_ARREADY(bus_A_ARREADY),
-    .m_axi_bus_A_ARADDR(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARADDR),
-    .m_axi_bus_A_ARID(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARID),
-    .m_axi_bus_A_ARLEN(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLEN),
-    .m_axi_bus_A_ARSIZE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARSIZE),
-    .m_axi_bus_A_ARBURST(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARBURST),
-    .m_axi_bus_A_ARLOCK(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLOCK),
-    .m_axi_bus_A_ARCACHE(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARCACHE),
-    .m_axi_bus_A_ARPROT(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARPROT),
-    .m_axi_bus_A_ARQOS(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARQOS),
-    .m_axi_bus_A_ARREGION(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARREGION),
-    .m_axi_bus_A_ARUSER(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARUSER),
+    .m_axi_bus_A_ARADDR(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARADDR),
+    .m_axi_bus_A_ARID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARID),
+    .m_axi_bus_A_ARLEN(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLEN),
+    .m_axi_bus_A_ARSIZE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARSIZE),
+    .m_axi_bus_A_ARBURST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARBURST),
+    .m_axi_bus_A_ARLOCK(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLOCK),
+    .m_axi_bus_A_ARCACHE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARCACHE),
+    .m_axi_bus_A_ARPROT(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARPROT),
+    .m_axi_bus_A_ARQOS(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARQOS),
+    .m_axi_bus_A_ARREGION(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARREGION),
+    .m_axi_bus_A_ARUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARUSER),
     .m_axi_bus_A_RVALID(bus_A_RVALID),
-    .m_axi_bus_A_RREADY(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_RREADY),
+    .m_axi_bus_A_RREADY(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_RREADY),
     .m_axi_bus_A_RDATA(bus_A_RDATA),
     .m_axi_bus_A_RLAST(bus_A_RLAST),
     .m_axi_bus_A_RID(bus_A_RID),
     .m_axi_bus_A_RUSER(bus_A_RUSER),
     .m_axi_bus_A_RRESP(bus_A_RRESP),
     .m_axi_bus_A_BVALID(1'b0),
-    .m_axi_bus_A_BREADY(grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_BREADY),
+    .m_axi_bus_A_BREADY(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_BREADY),
     .m_axi_bus_A_BRESP(2'd0),
     .m_axi_bus_A_BID(1'd0),
     .m_axi_bus_A_BUSER(1'd0),
-    .sext_ln13(trunc_ln_reg_224),
-    .tmp1_out(grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out),
-    .tmp1_out_ap_vld(grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out_ap_vld)
+    .B(B_read_reg_139),
+    .m_axi_bus_B_AWVALID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWVALID),
+    .m_axi_bus_B_AWREADY(1'b0),
+    .m_axi_bus_B_AWADDR(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWADDR),
+    .m_axi_bus_B_AWID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWID),
+    .m_axi_bus_B_AWLEN(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLEN),
+    .m_axi_bus_B_AWSIZE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWSIZE),
+    .m_axi_bus_B_AWBURST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWBURST),
+    .m_axi_bus_B_AWLOCK(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWLOCK),
+    .m_axi_bus_B_AWCACHE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWCACHE),
+    .m_axi_bus_B_AWPROT(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWPROT),
+    .m_axi_bus_B_AWQOS(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWQOS),
+    .m_axi_bus_B_AWREGION(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWREGION),
+    .m_axi_bus_B_AWUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_AWUSER),
+    .m_axi_bus_B_WVALID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WVALID),
+    .m_axi_bus_B_WREADY(1'b0),
+    .m_axi_bus_B_WDATA(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WDATA),
+    .m_axi_bus_B_WSTRB(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WSTRB),
+    .m_axi_bus_B_WLAST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WLAST),
+    .m_axi_bus_B_WID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WID),
+    .m_axi_bus_B_WUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_WUSER),
+    .m_axi_bus_B_ARVALID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARVALID),
+    .m_axi_bus_B_ARREADY(bus_B_ARREADY),
+    .m_axi_bus_B_ARADDR(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARADDR),
+    .m_axi_bus_B_ARID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARID),
+    .m_axi_bus_B_ARLEN(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLEN),
+    .m_axi_bus_B_ARSIZE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARSIZE),
+    .m_axi_bus_B_ARBURST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARBURST),
+    .m_axi_bus_B_ARLOCK(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLOCK),
+    .m_axi_bus_B_ARCACHE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARCACHE),
+    .m_axi_bus_B_ARPROT(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARPROT),
+    .m_axi_bus_B_ARQOS(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARQOS),
+    .m_axi_bus_B_ARREGION(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARREGION),
+    .m_axi_bus_B_ARUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARUSER),
+    .m_axi_bus_B_RVALID(bus_B_RVALID),
+    .m_axi_bus_B_RREADY(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_RREADY),
+    .m_axi_bus_B_RDATA(bus_B_RDATA),
+    .m_axi_bus_B_RLAST(bus_B_RLAST),
+    .m_axi_bus_B_RID(bus_B_RID),
+    .m_axi_bus_B_RUSER(bus_B_RUSER),
+    .m_axi_bus_B_RRESP(bus_B_RRESP),
+    .m_axi_bus_B_BVALID(1'b0),
+    .m_axi_bus_B_BREADY(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_BREADY),
+    .m_axi_bus_B_BRESP(2'd0),
+    .m_axi_bus_B_BID(1'd0),
+    .m_axi_bus_B_BUSER(1'd0),
+    .tmp1_address0(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address0),
+    .tmp1_ce0(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce0),
+    .tmp1_we0(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_we0),
+    .tmp1_d0(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_d0),
+    .tmp1_address1(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address1),
+    .tmp1_ce1(grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce1),
+    .tmp1_q1(tmp1_q1)
+);
+
+test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1 grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .ap_start(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start),
+    .ap_done(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done),
+    .ap_idle(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_idle),
+    .ap_ready(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_ready),
+    .m_axi_bus_res_AWVALID(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWVALID),
+    .m_axi_bus_res_AWREADY(bus_res_AWREADY),
+    .m_axi_bus_res_AWADDR(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWADDR),
+    .m_axi_bus_res_AWID(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWID),
+    .m_axi_bus_res_AWLEN(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLEN),
+    .m_axi_bus_res_AWSIZE(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWSIZE),
+    .m_axi_bus_res_AWBURST(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWBURST),
+    .m_axi_bus_res_AWLOCK(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLOCK),
+    .m_axi_bus_res_AWCACHE(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWCACHE),
+    .m_axi_bus_res_AWPROT(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWPROT),
+    .m_axi_bus_res_AWQOS(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWQOS),
+    .m_axi_bus_res_AWREGION(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWREGION),
+    .m_axi_bus_res_AWUSER(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWUSER),
+    .m_axi_bus_res_WVALID(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WVALID),
+    .m_axi_bus_res_WREADY(bus_res_WREADY),
+    .m_axi_bus_res_WDATA(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WDATA),
+    .m_axi_bus_res_WSTRB(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WSTRB),
+    .m_axi_bus_res_WLAST(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WLAST),
+    .m_axi_bus_res_WID(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WID),
+    .m_axi_bus_res_WUSER(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WUSER),
+    .m_axi_bus_res_ARVALID(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARVALID),
+    .m_axi_bus_res_ARREADY(1'b0),
+    .m_axi_bus_res_ARADDR(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARADDR),
+    .m_axi_bus_res_ARID(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARID),
+    .m_axi_bus_res_ARLEN(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLEN),
+    .m_axi_bus_res_ARSIZE(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARSIZE),
+    .m_axi_bus_res_ARBURST(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARBURST),
+    .m_axi_bus_res_ARLOCK(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARLOCK),
+    .m_axi_bus_res_ARCACHE(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARCACHE),
+    .m_axi_bus_res_ARPROT(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARPROT),
+    .m_axi_bus_res_ARQOS(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARQOS),
+    .m_axi_bus_res_ARREGION(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARREGION),
+    .m_axi_bus_res_ARUSER(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_ARUSER),
+    .m_axi_bus_res_RVALID(1'b0),
+    .m_axi_bus_res_RREADY(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_RREADY),
+    .m_axi_bus_res_RDATA(32'd0),
+    .m_axi_bus_res_RLAST(1'b0),
+    .m_axi_bus_res_RID(1'd0),
+    .m_axi_bus_res_RUSER(1'd0),
+    .m_axi_bus_res_RRESP(2'd0),
+    .m_axi_bus_res_BVALID(bus_res_BVALID),
+    .m_axi_bus_res_BREADY(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_BREADY),
+    .m_axi_bus_res_BRESP(bus_res_BRESP),
+    .m_axi_bus_res_BID(bus_res_BID),
+    .m_axi_bus_res_BUSER(bus_res_BUSER),
+    .sext_ln31(trunc_ln_reg_149),
+    .tmp1_address0(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_address0),
+    .tmp1_ce0(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_ce0),
+    .tmp1_q0(tmp1_q0)
 );
 
 test_scalaire_control_s_axi #(
@@ -828,17 +899,17 @@ bus_A_m_axi_U(
     .ACLK_EN(1'b1),
     .I_ARVALID(bus_A_ARVALID),
     .I_ARREADY(bus_A_ARREADY),
-    .I_ARADDR(bus_A_ARADDR),
-    .I_ARID(bus_A_ARID),
-    .I_ARLEN(bus_A_ARLEN),
-    .I_ARSIZE(bus_A_ARSIZE),
-    .I_ARLOCK(bus_A_ARLOCK),
-    .I_ARCACHE(bus_A_ARCACHE),
-    .I_ARQOS(bus_A_ARQOS),
-    .I_ARPROT(bus_A_ARPROT),
-    .I_ARUSER(bus_A_ARUSER),
-    .I_ARBURST(bus_A_ARBURST),
-    .I_ARREGION(bus_A_ARREGION),
+    .I_ARADDR(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARADDR),
+    .I_ARID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARID),
+    .I_ARLEN(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLEN),
+    .I_ARSIZE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARSIZE),
+    .I_ARLOCK(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARLOCK),
+    .I_ARCACHE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARCACHE),
+    .I_ARQOS(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARQOS),
+    .I_ARPROT(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARPROT),
+    .I_ARUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARUSER),
+    .I_ARBURST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARBURST),
+    .I_ARREGION(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARREGION),
     .I_RVALID(bus_A_RVALID),
     .I_RREADY(bus_A_RREADY),
     .I_RDATA(bus_A_RDATA),
@@ -944,17 +1015,17 @@ bus_B_m_axi_U(
     .ACLK_EN(1'b1),
     .I_ARVALID(bus_B_ARVALID),
     .I_ARREADY(bus_B_ARREADY),
-    .I_ARADDR(bus_B_ARADDR),
-    .I_ARID(bus_B_ARID),
-    .I_ARLEN(bus_B_ARLEN),
-    .I_ARSIZE(bus_B_ARSIZE),
-    .I_ARLOCK(bus_B_ARLOCK),
-    .I_ARCACHE(bus_B_ARCACHE),
-    .I_ARQOS(bus_B_ARQOS),
-    .I_ARPROT(bus_B_ARPROT),
-    .I_ARUSER(bus_B_ARUSER),
-    .I_ARBURST(bus_B_ARBURST),
-    .I_ARREGION(bus_B_ARREGION),
+    .I_ARADDR(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARADDR),
+    .I_ARID(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARID),
+    .I_ARLEN(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLEN),
+    .I_ARSIZE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARSIZE),
+    .I_ARLOCK(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARLOCK),
+    .I_ARCACHE(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARCACHE),
+    .I_ARQOS(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARQOS),
+    .I_ARPROT(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARPROT),
+    .I_ARUSER(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARUSER),
+    .I_ARBURST(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARBURST),
+    .I_ARREGION(grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARREGION),
     .I_RVALID(bus_B_RVALID),
     .I_RREADY(bus_B_RREADY),
     .I_RDATA(bus_B_RDATA),
@@ -1080,24 +1151,24 @@ bus_res_m_axi_U(
     .I_RLAST(bus_res_RLAST),
     .I_AWVALID(bus_res_AWVALID),
     .I_AWREADY(bus_res_AWREADY),
-    .I_AWADDR(sext_ln30_fu_200_p1),
-    .I_AWID(1'd0),
-    .I_AWLEN(32'd9),
-    .I_AWSIZE(3'd0),
-    .I_AWLOCK(2'd0),
-    .I_AWCACHE(4'd0),
-    .I_AWQOS(4'd0),
-    .I_AWPROT(3'd0),
-    .I_AWUSER(1'd0),
-    .I_AWBURST(2'd0),
-    .I_AWREGION(4'd0),
+    .I_AWADDR(bus_res_AWADDR),
+    .I_AWID(bus_res_AWID),
+    .I_AWLEN(bus_res_AWLEN),
+    .I_AWSIZE(bus_res_AWSIZE),
+    .I_AWLOCK(bus_res_AWLOCK),
+    .I_AWCACHE(bus_res_AWCACHE),
+    .I_AWQOS(bus_res_AWQOS),
+    .I_AWPROT(bus_res_AWPROT),
+    .I_AWUSER(bus_res_AWUSER),
+    .I_AWBURST(bus_res_AWBURST),
+    .I_AWREGION(bus_res_AWREGION),
     .I_WVALID(bus_res_WVALID),
     .I_WREADY(bus_res_WREADY),
-    .I_WDATA(bus_res_WDATA),
-    .I_WID(1'd0),
-    .I_WUSER(1'd0),
-    .I_WLAST(1'b0),
-    .I_WSTRB(4'd15),
+    .I_WDATA(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WDATA),
+    .I_WID(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WID),
+    .I_WUSER(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WUSER),
+    .I_WLAST(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WLAST),
+    .I_WSTRB(grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WSTRB),
     .I_BVALID(bus_res_BVALID),
     .I_BREADY(bus_res_BREADY),
     .I_BRESP(bus_res_BRESP),
@@ -1115,50 +1186,56 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg <= 1'b0;
+        grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state10)) begin
-            grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg <= 1'b1;
-        end else if ((grp_test_scalaire_Pipeline_loop_1_fu_139_ap_ready == 1'b1)) begin
-            grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state4)) begin
+            grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg <= 1'b1;
+        end else if ((grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_ready == 1'b1)) begin
+            grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((~((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) & (1'b1 == A_0_ack_out) & (1'b1 == 1'b1) & (1'b1 == A_0_vld_reg)) | (~((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) & (1'b0 == A_0_vld_reg) & (1'b1 == 1'b1)))) begin
+    if (ap_rst_n_inv == 1'b1) begin
+        grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg <= 1'b0;
+    end else begin
+        if ((1'b1 == ap_CS_fsm_state2)) begin
+            grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg <= 1'b1;
+        end else if ((grp_test_scalaire_Pipeline_loop_1_fu_98_ap_ready == 1'b1)) begin
+            grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((~((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) & (1'b1 == A_0_ack_out) & (1'b1 == 1'b1) & (1'b1 == A_0_vld_reg)) | (~((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) & (1'b0 == A_0_vld_reg) & (1'b1 == 1'b1)))) begin
         A_0_data_reg <= A;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((~((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) & (1'b1 == B_0_ack_out) & (1'b1 == 1'b1) & (1'b1 == B_0_vld_reg)) | (~((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) & (1'b0 == B_0_vld_reg) & (1'b1 == 1'b1)))) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        A_read_reg_144 <= A_0_data_reg;
+        B_read_reg_139 <= B_0_data_reg;
+        trunc_ln_reg_149 <= {{res_0_data_reg[31:2]}};
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((~((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) & (1'b1 == B_0_ack_out) & (1'b1 == 1'b1) & (1'b1 == B_0_vld_reg)) | (~((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) & (1'b0 == B_0_vld_reg) & (1'b1 == 1'b1)))) begin
         B_0_data_reg <= B;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state12)) begin
-        bitcast_ln30_reg_258 <= bitcast_ln30_fu_213_p1;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((~((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) & (res_0_ack_out == 1'b1) & (1'b1 == 1'b1) & (res_0_vld_reg == 1'b1)) | (~((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1)) & (1'b1 == 1'b1) & (res_0_vld_reg == 1'b0)))) begin
+    if (((~((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) & (res_0_ack_out == 1'b1) & (1'b1 == 1'b1) & (res_0_vld_reg == 1'b1)) | (~((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0)) & (1'b1 == 1'b1) & (res_0_vld_reg == 1'b0)))) begin
         res_0_data_reg <= res;
     end
 end
 
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        trunc_ln13_1_reg_230 <= {{B_0_data_reg[31:2]}};
-        trunc_ln1_reg_236 <= {{res_0_data_reg[31:2]}};
-        trunc_ln_reg_224 <= {{A_0_data_reg[31:2]}};
-    end
-end
-
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state2) | ((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state25)))) begin
+    if (((1'b1 == ap_CS_fsm_state2) | ((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state10)))) begin
         A_0_ack_out = 1'b1;
     end else begin
         A_0_ack_out = 1'b0;
@@ -1166,84 +1243,18 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state2) | ((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state25)))) begin
+    if (((1'b1 == ap_CS_fsm_state2) | ((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state10)))) begin
         B_0_ack_out = 1'b1;
     end else begin
         B_0_ack_out = 1'b0;
     end
 end
 
-assign ap_ST_fsm_state10_blk = 1'b0;
-
 always @ (*) begin
-    if (((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done == 1'b0))) begin
-        ap_ST_fsm_state11_blk = 1'b1;
+    if ((bus_res_BVALID == 1'b0)) begin
+        ap_ST_fsm_state10_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state11_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state12_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state12_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state13_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state13_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state14_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state14_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state15_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state15_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state16_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state16_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state17_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state17_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state18_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state18_blk = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state19_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state19_blk = 1'b0;
+        ap_ST_fsm_state10_blk = 1'b0;
     end
 end
 
@@ -1255,34 +1266,10 @@ always @ (*) begin
     end
 end
 
-always @ (*) begin
-    if ((bus_res_WREADY == 1'b0)) begin
-        ap_ST_fsm_state20_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state20_blk = 1'b0;
-    end
-end
-
-assign ap_ST_fsm_state21_blk = 1'b0;
-
-assign ap_ST_fsm_state22_blk = 1'b0;
-
-assign ap_ST_fsm_state23_blk = 1'b0;
-
-assign ap_ST_fsm_state24_blk = 1'b0;
-
-always @ (*) begin
-    if ((bus_res_BVALID == 1'b0)) begin
-        ap_ST_fsm_state25_blk = 1'b1;
-    end else begin
-        ap_ST_fsm_state25_blk = 1'b0;
-    end
-end
-
 assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((1'b1 == ap_block_state3_io)) begin
+    if (((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done == 1'b0))) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -1291,7 +1278,13 @@ end
 
 assign ap_ST_fsm_state4_blk = 1'b0;
 
-assign ap_ST_fsm_state5_blk = 1'b0;
+always @ (*) begin
+    if ((grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done == 1'b0)) begin
+        ap_ST_fsm_state5_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state5_blk = 1'b0;
+    end
+end
 
 assign ap_ST_fsm_state6_blk = 1'b0;
 
@@ -1302,7 +1295,7 @@ assign ap_ST_fsm_state8_blk = 1'b0;
 assign ap_ST_fsm_state9_blk = 1'b0;
 
 always @ (*) begin
-    if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state25))) begin
+    if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state10))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -1310,7 +1303,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -1318,7 +1311,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state25))) begin
+    if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state10))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -1326,279 +1319,159 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state3_io) & (1'b1 == ap_CS_fsm_state3))) begin
-        bus_A_ARADDR = sext_ln13_fu_180_p1;
-    end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARADDR = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARADDR;
-    end else begin
-        bus_A_ARADDR = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARBURST = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARBURST;
-    end else begin
-        bus_A_ARBURST = 2'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARCACHE = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARCACHE;
-    end else begin
-        bus_A_ARCACHE = 4'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARID = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARID;
-    end else begin
-        bus_A_ARID = 1'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_state3_io) & (1'b1 == ap_CS_fsm_state3))) begin
-        bus_A_ARLEN = 32'd256;
-    end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARLEN = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLEN;
-    end else begin
-        bus_A_ARLEN = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARLOCK = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARLOCK;
-    end else begin
-        bus_A_ARLOCK = 2'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARPROT = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARPROT;
-    end else begin
-        bus_A_ARPROT = 3'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARQOS = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARQOS;
-    end else begin
-        bus_A_ARQOS = 4'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARREGION = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARREGION;
-    end else begin
-        bus_A_ARREGION = 4'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARSIZE = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARSIZE;
-    end else begin
-        bus_A_ARSIZE = 3'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARUSER = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARUSER;
-    end else begin
-        bus_A_ARUSER = 1'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_state3_io) & (1'b1 == ap_CS_fsm_state3))) begin
-        bus_A_ARVALID = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_ARVALID = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_ARVALID;
+    if (((1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state3))) begin
+        bus_A_ARVALID = grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_ARVALID;
     end else begin
         bus_A_ARVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_A_RREADY = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_A_RREADY;
+    if (((1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state3))) begin
+        bus_A_RREADY = grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_A_RREADY;
     end else begin
         bus_A_RREADY = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        bus_A_blk_n_AR = m_axi_bus_A_ARREADY;
-    end else begin
-        bus_A_blk_n_AR = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_state3_io) & (1'b1 == ap_CS_fsm_state3))) begin
-        bus_B_ARADDR = sext_ln13_1_fu_190_p1;
-    end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARADDR = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARADDR;
-    end else begin
-        bus_B_ARADDR = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARBURST = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARBURST;
-    end else begin
-        bus_B_ARBURST = 2'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARCACHE = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARCACHE;
-    end else begin
-        bus_B_ARCACHE = 4'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARID = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARID;
-    end else begin
-        bus_B_ARID = 1'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_state3_io) & (1'b1 == ap_CS_fsm_state3))) begin
-        bus_B_ARLEN = 32'd256;
-    end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARLEN = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLEN;
-    end else begin
-        bus_B_ARLEN = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARLOCK = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARLOCK;
-    end else begin
-        bus_B_ARLOCK = 2'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARPROT = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARPROT;
-    end else begin
-        bus_B_ARPROT = 3'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARQOS = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARQOS;
-    end else begin
-        bus_B_ARQOS = 4'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARREGION = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARREGION;
-    end else begin
-        bus_B_ARREGION = 4'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARSIZE = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARSIZE;
-    end else begin
-        bus_B_ARSIZE = 3'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARUSER = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARUSER;
-    end else begin
-        bus_B_ARUSER = 1'd0;
-    end
-end
-
-always @ (*) begin
-    if (((1'b0 == ap_block_state3_io) & (1'b1 == ap_CS_fsm_state3))) begin
-        bus_B_ARVALID = 1'b1;
-    end else if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_ARVALID = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_ARVALID;
+    if (((1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state3))) begin
+        bus_B_ARVALID = grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_ARVALID;
     end else begin
         bus_B_ARVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state11))) begin
-        bus_B_RREADY = grp_test_scalaire_Pipeline_loop_1_fu_139_m_axi_bus_B_RREADY;
+    if (((1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state3))) begin
+        bus_B_RREADY = grp_test_scalaire_Pipeline_loop_1_fu_98_m_axi_bus_B_RREADY;
     end else begin
         bus_B_RREADY = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        bus_B_blk_n_AR = m_axi_bus_B_ARREADY;
+    if ((~((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state3))) begin
+        bus_res_AWADDR = sext_ln31_fu_129_p1;
+    end else if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWADDR = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWADDR;
     end else begin
-        bus_B_blk_n_AR = 1'b1;
+        bus_res_AWADDR = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((~((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state11))) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWBURST = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWBURST;
+    end else begin
+        bus_res_AWBURST = 2'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWCACHE = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWCACHE;
+    end else begin
+        bus_res_AWCACHE = 4'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWID = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWID;
+    end else begin
+        bus_res_AWID = 1'd0;
+    end
+end
+
+always @ (*) begin
+    if ((~((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state3))) begin
+        bus_res_AWLEN = 32'd16;
+    end else if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWLEN = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLEN;
+    end else begin
+        bus_res_AWLEN = 'bx;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWLOCK = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWLOCK;
+    end else begin
+        bus_res_AWLOCK = 2'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWPROT = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWPROT;
+    end else begin
+        bus_res_AWPROT = 3'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWQOS = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWQOS;
+    end else begin
+        bus_res_AWQOS = 4'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWREGION = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWREGION;
+    end else begin
+        bus_res_AWREGION = 4'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWSIZE = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWSIZE;
+    end else begin
+        bus_res_AWSIZE = 3'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWUSER = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWUSER;
+    end else begin
+        bus_res_AWUSER = 1'd0;
+    end
+end
+
+always @ (*) begin
+    if ((~((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state3))) begin
         bus_res_AWVALID = 1'b1;
+    end else if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_AWVALID = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_AWVALID;
     end else begin
         bus_res_AWVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state25))) begin
+    if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state10))) begin
         bus_res_BREADY = 1'b1;
+    end else if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_BREADY = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_BREADY;
     end else begin
         bus_res_BREADY = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state20)) begin
-        bus_res_WDATA = 32'd1191215104;
-    end else if (((1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13))) begin
-        bus_res_WDATA = bitcast_ln30_reg_258;
-    end else if ((1'b1 == ap_CS_fsm_state12)) begin
-        bus_res_WDATA = bitcast_ln30_fu_213_p1;
-    end else begin
-        bus_res_WDATA = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state20)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state19)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state18)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state17)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state16)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state15)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state14)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state13)) | ((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state12)))) begin
-        bus_res_WVALID = 1'b1;
+    if (((1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4))) begin
+        bus_res_WVALID = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_m_axi_bus_res_WVALID;
     end else begin
         bus_res_WVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state11)) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
         bus_res_blk_n_AW = m_axi_bus_res_AWREADY;
     end else begin
         bus_res_blk_n_AW = 1'b1;
@@ -1606,7 +1479,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state25)) begin
+    if ((1'b1 == ap_CS_fsm_state10)) begin
         bus_res_blk_n_B = m_axi_bus_res_BVALID;
     end else begin
         bus_res_blk_n_B = 1'b1;
@@ -1614,15 +1487,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12))) begin
-        bus_res_blk_n_W = m_axi_bus_res_WREADY;
-    end else begin
-        bus_res_blk_n_W = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state2) | ((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state25)))) begin
+    if (((1'b1 == ap_CS_fsm_state2) | ((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state10)))) begin
         res_0_ack_out = 1'b1;
     end else begin
         res_0_ack_out = 1'b0;
@@ -1630,9 +1495,45 @@ always @ (*) begin
 end
 
 always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        tmp1_address0 = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        tmp1_address0 = grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_address0;
+    end else begin
+        tmp1_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state5)) begin
+        tmp1_ce0 = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_tmp1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state3)) begin
+        tmp1_ce0 = grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce0;
+    end else begin
+        tmp1_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        tmp1_ce1 = grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_ce1;
+    end else begin
+        tmp1_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        tmp1_we0 = grp_test_scalaire_Pipeline_loop_1_fu_98_tmp1_we0;
+    end else begin
+        tmp1_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+            if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
@@ -1642,7 +1543,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b0 == ap_block_state3_io) & (1'b1 == ap_CS_fsm_state3))) begin
+            if ((~((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_98_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -1652,7 +1553,11 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state5;
         end
         ap_ST_fsm_state5 : begin
-            ap_NS_fsm = ap_ST_fsm_state6;
+            if (((grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+                ap_NS_fsm = ap_ST_fsm_state6;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state5;
+            end
         end
         ap_ST_fsm_state6 : begin
             ap_NS_fsm = ap_ST_fsm_state7;
@@ -1667,95 +1572,10 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state10;
         end
         ap_ST_fsm_state10 : begin
-            ap_NS_fsm = ap_ST_fsm_state11;
-        end
-        ap_ST_fsm_state11 : begin
-            if ((~((bus_res_AWREADY == 1'b0) | (grp_test_scalaire_Pipeline_loop_1_fu_139_ap_done == 1'b0)) & (1'b1 == ap_CS_fsm_state11))) begin
-                ap_NS_fsm = ap_ST_fsm_state12;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state11;
-            end
-        end
-        ap_ST_fsm_state12 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state12))) begin
-                ap_NS_fsm = ap_ST_fsm_state13;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state12;
-            end
-        end
-        ap_ST_fsm_state13 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state13))) begin
-                ap_NS_fsm = ap_ST_fsm_state14;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state13;
-            end
-        end
-        ap_ST_fsm_state14 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state14))) begin
-                ap_NS_fsm = ap_ST_fsm_state15;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state14;
-            end
-        end
-        ap_ST_fsm_state15 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state15))) begin
-                ap_NS_fsm = ap_ST_fsm_state16;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state15;
-            end
-        end
-        ap_ST_fsm_state16 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state16))) begin
-                ap_NS_fsm = ap_ST_fsm_state17;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state16;
-            end
-        end
-        ap_ST_fsm_state17 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state17))) begin
-                ap_NS_fsm = ap_ST_fsm_state18;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state17;
-            end
-        end
-        ap_ST_fsm_state18 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state18))) begin
-                ap_NS_fsm = ap_ST_fsm_state19;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state18;
-            end
-        end
-        ap_ST_fsm_state19 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state19))) begin
-                ap_NS_fsm = ap_ST_fsm_state20;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state19;
-            end
-        end
-        ap_ST_fsm_state20 : begin
-            if (((bus_res_WREADY == 1'b1) & (1'b1 == ap_CS_fsm_state20))) begin
-                ap_NS_fsm = ap_ST_fsm_state21;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state20;
-            end
-        end
-        ap_ST_fsm_state21 : begin
-            ap_NS_fsm = ap_ST_fsm_state22;
-        end
-        ap_ST_fsm_state22 : begin
-            ap_NS_fsm = ap_ST_fsm_state23;
-        end
-        ap_ST_fsm_state23 : begin
-            ap_NS_fsm = ap_ST_fsm_state24;
-        end
-        ap_ST_fsm_state24 : begin
-            ap_NS_fsm = ap_ST_fsm_state25;
-        end
-        ap_ST_fsm_state25 : begin
-            if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state25))) begin
+            if (((bus_res_BVALID == 1'b1) & (1'b1 == ap_CS_fsm_state10))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state25;
+                ap_NS_fsm = ap_ST_fsm_state10;
             end
         end
         default : begin
@@ -1768,48 +1588,22 @@ assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state10 = ap_CS_fsm[32'd9];
 
-assign ap_CS_fsm_state11 = ap_CS_fsm[32'd10];
-
-assign ap_CS_fsm_state12 = ap_CS_fsm[32'd11];
-
-assign ap_CS_fsm_state13 = ap_CS_fsm[32'd12];
-
-assign ap_CS_fsm_state14 = ap_CS_fsm[32'd13];
-
-assign ap_CS_fsm_state15 = ap_CS_fsm[32'd14];
-
-assign ap_CS_fsm_state16 = ap_CS_fsm[32'd15];
-
-assign ap_CS_fsm_state17 = ap_CS_fsm[32'd16];
-
-assign ap_CS_fsm_state18 = ap_CS_fsm[32'd17];
-
-assign ap_CS_fsm_state19 = ap_CS_fsm[32'd18];
-
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
-
-assign ap_CS_fsm_state20 = ap_CS_fsm[32'd19];
-
-assign ap_CS_fsm_state25 = ap_CS_fsm[32'd24];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
-always @ (*) begin
-    ap_block_state3_io = ((bus_B_ARREADY == 1'b0) | (bus_A_ARREADY == 1'b0));
-end
+assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
+
+assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign bitcast_ln30_fu_213_p1 = grp_test_scalaire_Pipeline_loop_1_fu_139_tmp1_out;
+assign grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start = grp_test_scalaire_Pipeline_VITIS_LOOP_31_1_fu_111_ap_start_reg;
 
-assign grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start = grp_test_scalaire_Pipeline_loop_1_fu_139_ap_start_reg;
+assign grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start = grp_test_scalaire_Pipeline_loop_1_fu_98_ap_start_reg;
 
-assign sext_ln13_1_fu_190_p1 = $signed(trunc_ln13_1_reg_230);
-
-assign sext_ln13_fu_180_p1 = $signed(trunc_ln_reg_224);
-
-assign sext_ln30_fu_200_p1 = $signed(trunc_ln1_reg_236);
+assign sext_ln31_fu_129_p1 = $signed(trunc_ln_reg_149);
 
 endmodule //test_scalaire

@@ -2850,11 +2850,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 27 10:12:16 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 02 17:01:18 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:75364922</spirit:value>
+            <spirit:value>9:33fb203a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2865,7 +2865,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:75364922</spirit:value>
+            <spirit:value>9:33fb203a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2881,11 +2881,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 27 10:12:16 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 02 17:01:18 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:75364922</spirit:value>
+            <spirit:value>9:33fb203a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2928,11 +2928,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 27 10:12:16 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 02 17:01:18 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4159d5a7</spirit:value>
+            <spirit:value>9:b4937dce</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2948,11 +2948,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 27 10:12:16 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 02 17:01:18 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4159d5a7</spirit:value>
+            <spirit:value>9:b4937dce</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2966,11 +2966,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 27 10:12:16 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 02 17:01:18 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:75364922</spirit:value>
+            <spirit:value>9:33fb203a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2984,11 +2984,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 27 10:14:46 UTC 2022</spirit:value>
+            <spirit:value>Wed Feb 02 17:02:43 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:75364922</spirit:value>
+            <spirit:value>9:33fb203a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -6107,11 +6107,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/ip/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -6120,39 +6120,47 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_bus_A_m_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_bus_A_m_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_bus_B_m_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_bus_B_m_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_bus_res_m_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_bus_res_m_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_control_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_control_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_flow_control_loop_pipe_sequential_init.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_flow_control_loop_pipe_sequential_init.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_loop_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_loop_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_tmp1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -6317,57 +6325,67 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_bus_A_m_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_bus_A_m_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_bus_B_m_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_bus_B_m_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_bus_res_m_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_bus_res_m_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_control_s_axi.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_control_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_flow_control_loop_pipe_sequential_init.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_flow_control_loop_pipe_sequential_init.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_loop_1.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_loop_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/vhdl/test_scalaire.vhd</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_test_scalaire_Pipeline_VITIS_LOOP_31_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire_tmp1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/c1a5/hdl/vhdl/test_scalaire.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/c1a5/hdl/ip/test_scalaire_fadd_32ns_32ns_32_10_full_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/08f6/hdl/ip/test_scalaire_fmul_32ns_32ns_32_8_max_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/c1a5/hdl/ip/test_scalaire_fmul_32ns_32ns_32_7_max_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -6820,7 +6838,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="41">2851</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="41">4152</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -6845,7 +6863,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>ip_scal</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112350470</xilinx:coreRevision>
+      <xilinx:coreRevision>2112359519</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -6995,10 +7013,10 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8b47b986"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="8b4b7dad"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="b258013b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3d3c8fe1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8e4bafaa"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="649a87da"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="3b5337a5"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="df292372"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0a263d98"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

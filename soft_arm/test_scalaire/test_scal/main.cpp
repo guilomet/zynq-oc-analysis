@@ -25,30 +25,27 @@ int main(int argc, char* argv[])
     float result;
     float error[10000];
     float temperature;
-    int count_iteration[256] = {0};
-    long int test_iteration;
-    int indic_iteration;
     float moy_A = 0;
     float moy_B = 0;
     float var_A = 10;
     float var_B = 2;
 
-    unsigned int bram_size = 0x2000;
+    unsigned int bram_size = 0x8000;
     unsigned int scal_size = 0x10000;
     unsigned int clkwiz_size = 0x10000;
     unsigned int xadc_size = 0x10000;
 
     off_t scal_pbase = 0x40000000;
     off_t bram0_pbase = 0x40010000;
-    off_t bram1_pbase = 0x40012000;
-    off_t bram2_pbase = 0x40014000;
+    off_t bram1_pbase = 0x40018000;
+    off_t bram2_pbase = 0x40020000;
     off_t clkwiz_pbase = 0x44a00000;
     off_t xadc_pbase = 0x44a10000;
 
     u32 mask, temp_reg, xadc_conf_0, xadc_conf_1, xadc_conf_2;
     u32* scal_bptr, *clkwiz_bptr, *xadc_bptr;
     float * bram0_vptr, * bram1_vptr;
-    float A[256], B[256];
+    float A[256][16], B[256][16];
     float* bram2_vptr;
     int fd;
     u32 nb_traitement;
@@ -82,11 +79,11 @@ int main(int argc, char* argv[])
 
         //gestion des paramètres d'entrée
 
-        min_freq = 360;
-        max_freq = 380;
+        min_freq = 345;
+        max_freq = 368;
         nb_traitement = 10000;
 
-        if (argv[1] = "-json")
+        if (argv[1] == "-json")
         {
             f_in_json = fopen(argv[2], "r");
             fread(json_string, sizeof(char), 1000, f_in_json);
@@ -112,15 +109,33 @@ int main(int argc, char* argv[])
         std::normal_distribution<float> distributionB(moy_B, var_B);
 
         //initialise les BRAM et le résultat attendu
-        for (int i = 0; i < 256; i++)
+        for (int cpt = 0; cpt < 256*16; cpt++)
         {
+            int i, j;
+            float tmpA, tmpB;
+
+            i = cpt >> 4;
+            j = cpt % 16;
+        
             //bram0_vptr[i] = ((float)(i)+1)/2;
-            bram0_vptr[i] = distributionA(engine);
-            A[i] = bram0_vptr[i];
+            if (j == 0)
+            {
+                tmpA = distributionA(engine);
+                tmpB = distributionB(engine);
+            }
+
+            *(bram0_vptr + i * j) = tmpA;
+            *(bram1_vptr + i * j) = tmpB;
+            
+            A[i][j] = *(bram0_vptr + i * j);
             //bram1_vptr[i] = 1;
-            bram1_vptr[i] = distributionB(engine);
-            B[i] = bram1_vptr[i];
-            predicted_result += bram0_vptr[i] * bram1_vptr[i];
+            
+            B[i][j] = *(bram1_vptr + i * j);
+            if (j == 15)
+            {
+                predicted_result += (*(bram0_vptr + i * j)) * (*(bram1_vptr + i * j));
+            }
+            
         }
 
         printf("Resultat attendu : %f\n\n", predicted_result);
@@ -129,10 +144,23 @@ int main(int argc, char* argv[])
 
         
 
-        for (freq = min_freq; freq <= max_freq; freq += 0.25)
+        for (freq = min_freq; freq <= max_freq; freq += 0.5)
         {
 
             set_freq(clkwiz_bptr, freq);
+
+            if (freq == min_freq)
+            {
+                mask = 0x0001;
+                scal_bptr[0] = scal_bptr[0] | mask;
+
+                while (scal_bptr[0] & 1 == 1)
+                {
+                    ;
+                }
+                result = bram2_vptr[15];
+                predicted_result = result;
+            }
 
             //lance le traitement
             for (int k = 0; k < nb_traitement; k++)
@@ -144,22 +172,17 @@ int main(int argc, char* argv[])
                 {
                     ;
                 }
-                result = bram2_vptr[7];
-                test_iteration = bram2_vptr[8];
+                result = bram2_vptr[15];
+
+                
 
                 if (result != predicted_result)
                 {
                     error[indic_err] = result;
                     indic_err++;
-                    if (test_iteration != 32896)
-                    {
-                        indic_iteration = 32896 - test_iteration;
-                        count_iteration[indic_iteration]++;
-                    }
                 }
-
-                bram2_vptr[7] = 0;
             }
+
             variance[indic_traitement] = 0;
             mean[indic_traitement] = 0;
             if (indic_err != 0)
@@ -174,11 +197,6 @@ int main(int argc, char* argv[])
                 {
                     variance[indic_traitement] += (error[j] - mean[indic_traitement]) * (error[j] - mean[indic_traitement]);
                     error[j] = 0;
-                }
-
-                for (int j = 0; j < 256; j++)
-                {
-                    count_iteration[j] = 0;
                 }
 
                 variance[indic_traitement] = sqrtf(variance[indic_traitement]);

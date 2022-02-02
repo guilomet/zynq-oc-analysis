@@ -1,11 +1,11 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
--- Date        : Tue Oct 26 00:04:13 2021
+-- Date        : Wed Feb  2 18:43:09 2022
 -- Host        : glomet-fixe running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_blk_mem_gen_0_0 -prefix
---               design_1_blk_mem_gen_0_0_ design_1_axi_bram_ctrl_0_bram_0_stub.vhdl
--- Design      : design_1_axi_bram_ctrl_0_bram_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               f:/projet_m2/git/zynq-oc-analysis/mk1/mk1_implement/mk1_implement.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_stub.vhdl
+-- Design      : design_1_blk_mem_gen_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------
