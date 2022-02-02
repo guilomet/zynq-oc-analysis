@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan 27 11:12:17 2022" VIVADOVERSION="2021.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Feb  2 21:54:14 2022" VIVADOVERSION="2021.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -3379,7 +3379,7 @@
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="NUM_SI" VALUE="1"/>
-        <PARAMETER NAME="NUM_MI" VALUE="7"/>
+        <PARAMETER NAME="NUM_MI" VALUE="6"/>
         <PARAMETER NAME="STRATEGY" VALUE="0"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="0"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
@@ -3772,16 +3772,6 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M05_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M06_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M06_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
@@ -4714,41 +4704,6 @@
             <CONNECTION INSTANCE="axi_bram_ctrl_4" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_awaddr" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awqos" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_wdata" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_wstrb" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_wlast" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_bresp" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_araddr" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arqos" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_rdata" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_rresp" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_rlast" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="processing_system7_0_M_AXI_GP0" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -4977,45 +4932,6 @@
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M05_AXI_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M05_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M05_AXI_rready"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="M06_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
-          <PORTMAPS>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M06_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M06_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M06_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M06_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M06_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M06_AXI_awcache"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M06_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M06_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M06_AXI_awqos"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M06_AXI_awvalid"/>
-            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M06_AXI_awready"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="M06_AXI_wdata"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M06_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M06_AXI_wlast"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="M06_AXI_wvalid"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="M06_AXI_wready"/>
-            <PORTMAP LOGICAL="BRESP" PHYSICAL="M06_AXI_bresp"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="M06_AXI_bvalid"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="M06_AXI_bready"/>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M06_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M06_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M06_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M06_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M06_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M06_AXI_arcache"/>
-            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M06_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M06_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M06_AXI_arqos"/>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M06_AXI_arvalid"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M06_AXI_arready"/>
-            <PORTMAP LOGICAL="RDATA" PHYSICAL="M06_AXI_rdata"/>
-            <PORTMAP LOGICAL="RRESP" PHYSICAL="M06_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M06_AXI_rlast"/>
-            <PORTMAP LOGICAL="RVALID" PHYSICAL="M06_AXI_rvalid"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="M06_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -9283,7 +9199,6 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="xadc_wiz_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M05_ACLK"/>
-            <CONNECTION INSTANCE="axi_interconnect_0" PORT="M06_ACLK"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -9606,7 +9521,6 @@
             <CONNECTION INSTANCE="xadc_wiz_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M05_ARESETN"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="s_axi_aresetn"/>
-            <CONNECTION INSTANCE="axi_interconnect_0" PORT="M06_ARESETN"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

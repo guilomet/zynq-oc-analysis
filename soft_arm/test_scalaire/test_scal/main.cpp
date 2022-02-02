@@ -82,11 +82,11 @@ int main(int argc, char* argv[])
 
         //gestion des paramètres d'entrée
 
-        min_freq = 360;
-        max_freq = 380;
+        min_freq = 340;
+        max_freq = 368;
         nb_traitement = 10000;
 
-        if (argv[1] = "-json")
+        if (argv[1] == "-json")
         {
             f_in_json = fopen(argv[2], "r");
             fread(json_string, sizeof(char), 1000, f_in_json);
@@ -145,17 +145,11 @@ int main(int argc, char* argv[])
                     ;
                 }
                 result = bram2_vptr[7];
-                test_iteration = bram2_vptr[8];
 
                 if (result != predicted_result)
                 {
                     error[indic_err] = result;
                     indic_err++;
-                    if (test_iteration != 32896)
-                    {
-                        indic_iteration = 32896 - test_iteration;
-                        count_iteration[indic_iteration]++;
-                    }
                 }
 
                 bram2_vptr[7] = 0;
@@ -174,11 +168,6 @@ int main(int argc, char* argv[])
                 {
                     variance[indic_traitement] += (error[j] - mean[indic_traitement]) * (error[j] - mean[indic_traitement]);
                     error[j] = 0;
-                }
-
-                for (int j = 0; j < 256; j++)
-                {
-                    count_iteration[j] = 0;
                 }
 
                 variance[indic_traitement] = sqrtf(variance[indic_traitement]);
