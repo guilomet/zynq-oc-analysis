@@ -1,9 +1,30 @@
-﻿  Validation des sources
+﻿  Nettoyage du répertoire de projet distant
+  Validation des sources
   Copie des sources à distance vers '192.168.1.23'
   Validation de l'architecture
   Validation de l'architecture
   Démarrage de la build distante
   Compilation des sources :
+  clk_wizard.cpp
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(10,17): warning : conversion from 'double' to 'float' changes value from '1.0000000000000001e-1' to '1.00000001e-1f' [-Wfloat-conversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(10,17): warning :    10 |  float minerr = 0.1;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(10,17): warning :       |                 ^~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(12,32): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(12,32): warning :    12 |  for (m = M_MIN; m <= M_MAX; m += 0.125)
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(12,32): warning :       |                              ~~^~~~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(20,35): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(20,35): warning :    20 |     for (o = O_MIN; o <= O_MAX; o += 0.125)
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(20,35): warning :       |                                 ~~^~~~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(121,23): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(121,23): warning :   121 |  d = clk_config_reg_0 & 0x000000FF;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(121,23): warning :       |      ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(122,38): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(122,38): warning :   122 |  m = (clk_config_reg_0 & 0x0000FF00) >> 2*4;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(122,38): warning :       |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(124,23): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(124,23): warning :   124 |  o = clk_config_reg_2 & 0x000000FF;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(124,23): warning :       |      ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+  gestion_json.cpp
   main.cpp
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(89,21): warning : comparison with string literal results in unspecified behavior [-Waddress]
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(89,21): warning :    89 |         if (argv[1] == "-json")

@@ -82,7 +82,7 @@ int main(int argc, char* argv[])
 
         //gestion des paramètres d'entrée
 
-        min_freq = 340;
+        min_freq = 300;
         max_freq = 368;
         nb_traitement = 10000;
 
@@ -195,7 +195,7 @@ int main(int argc, char* argv[])
 
         for (int j = 0; j < indic_traitement; j++)
         {
-            buffer_size = sprintf(buffer_out, "  {\"freq\":%f, \"error_rate\":%f},\n", out_freq[j], out_error_rate[j]);
+            buffer_size = sprintf(buffer_out, "  {\"freq\":%f, \"error_rate\":%f, \"mean\":%f, \"var\":%f}\n", out_freq[j], out_error_rate[j], mean[j], variance[j]);
             fwrite(buffer_out, sizeof(char), buffer_size, f_out_json);
         }
 
