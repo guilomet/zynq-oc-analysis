@@ -4,26 +4,6 @@
   Validation de l'architecture
   Démarrage de la build distante
   Compilation des sources :
-  clk_wizard.cpp
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(10,17): warning : conversion from 'double' to 'float' changes value from '1.0000000000000001e-1' to '1.00000001e-1f' [-Wfloat-conversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(10,17): warning :    10 |  float minerr = 0.1;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(10,17): warning :       |                 ^~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(12,32): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(12,32): warning :    12 |  for (m = M_MIN; m <= M_MAX; m += 0.125)
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(12,32): warning :       |                              ~~^~~~~~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(20,35): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(20,35): warning :    20 |     for (o = O_MIN; o <= O_MAX; o += 0.125)
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(20,35): warning :       |                                 ~~^~~~~~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(121,23): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(121,23): warning :   121 |  d = clk_config_reg_0 & 0x000000FF;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(121,23): warning :       |      ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(122,38): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(122,38): warning :   122 |  m = (clk_config_reg_0 & 0x0000FF00) >> 2*4;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(122,38): warning :       |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(124,23): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(124,23): warning :   124 |  o = clk_config_reg_2 & 0x000000FF;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\clk_wizard.cpp(124,23): warning :       |      ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
-  gestion_json.cpp
   main.cpp
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(86,21): warning : comparison with string literal results in unspecified behavior [-Waddress]
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(86,21): warning :    86 |         if (argv[1] == "-json")
@@ -35,26 +15,26 @@ F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(106,
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(106,21): warning :   106 |         temperature -= 273.15;
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(106,21): warning :       |         ~~~~~~~~~~~~^~~~~~~~~
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(147,54): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(147,54): warning :   147 |         for (freq = min_freq; freq <= max_freq; freq += 0.5)
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(147,54): warning :       |                                                 ~~~~~^~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(147,54): warning :   147 |         for (freq = min_freq; freq <= max_freq; freq += 0.25)
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(147,54): warning :       |                                                 ~~~~~^~~~~~~
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(157,41): warning : suggest parentheses around comparison in operand of '&' [-Wparentheses]
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(157,41): warning :   157 |                 while (scal_bptr[0] & 1 == 1)
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(157,41): warning :       |                                       ~~^~~~
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(171,41): warning : suggest parentheses around comparison in operand of '&' [-Wparentheses]
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(171,41): warning :   171 |                 while (scal_bptr[0] & 1 == 1)
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(171,41): warning :       |                                       ~~^~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(194,43): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(194,43): warning :   194 |                 mean[indic_traitement] /= indic_err;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(194,43): warning :       |                                           ^~~~~~~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(204,47): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(204,47): warning :   204 |                 variance[indic_traitement] /= indic_err;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(204,47): warning :       |                                               ^~~~~~~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(207,48): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(207,48): warning :   207 |             out_error_rate[indic_traitement] = indic_err;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(207,48): warning :       |                                                ^~~~~~~~~
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(209,83): warning : conversion from 'u32' {aka 'long int'} to 'float' may change value [-Wconversion]
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(209,83): warning :   209 |             out_error_rate[indic_traitement] = out_error_rate[indic_traitement] / nb_traitement;
-F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(209,83): warning :       |                                                                                   ^~~~~~~~~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(195,43): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(195,43): warning :   195 |                 mean[indic_traitement] /= indic_err;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(195,43): warning :       |                                           ^~~~~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(205,47): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(205,47): warning :   205 |                 variance[indic_traitement] /= indic_err;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(205,47): warning :       |                                               ^~~~~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(208,48): warning : conversion from 'long int' to 'float' may change value [-Wconversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(208,48): warning :   208 |             out_error_rate[indic_traitement] = indic_err;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(208,48): warning :       |                                                ^~~~~~~~~
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(210,83): warning : conversion from 'u32' {aka 'long int'} to 'float' may change value [-Wconversion]
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(210,83): warning :   210 |             out_error_rate[indic_traitement] = out_error_rate[indic_traitement] / nb_traitement;
+F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(210,83): warning :       |                                                                                   ^~~~~~~~~~~~~
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(45,25): warning : variable 'xadc_conf_0' set but not used [-Wunused-but-set-variable]
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(45,25): warning :    45 |     u32 mask, temp_reg, xadc_conf_0, xadc_conf_1, xadc_conf_2;
 F:\projet_m2\git\zynq-oc-analysis\soft_arm\test_scalaire\test_scal\main.cpp(45,25): warning :       |                         ^~~~~~~~~~~

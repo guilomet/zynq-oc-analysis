@@ -27,8 +27,8 @@ int main(int argc, char* argv[])
     float temperature;
     float moy_A = 0;
     float moy_B = 0;
-    float var_A = 10;
-    float var_B = 2;
+    float var_A = 1000;
+    float var_B = 1000;
 
     unsigned int bram_size = 0x8000;
     unsigned int scal_size = 0x10000;
@@ -79,7 +79,7 @@ int main(int argc, char* argv[])
 
         //gestion des paramètres d'entrée
 
-        min_freq = 345;
+        min_freq = 350;
         max_freq = 368;
         nb_traitement = 10000;
 
@@ -144,7 +144,7 @@ int main(int argc, char* argv[])
 
         
 
-        for (freq = min_freq; freq <= max_freq; freq += 0.5)
+        for (freq = min_freq; freq <= max_freq; freq += 0.25)
         {
 
             set_freq(clkwiz_bptr, freq);
@@ -178,7 +178,8 @@ int main(int argc, char* argv[])
 
                 if (result != predicted_result)
                 {
-                    error[indic_err] = result;
+                    error[indic_err] = result - predicted_result;
+                    error[indic_err] /= predicted_result;
                     indic_err++;
                 }
             }
@@ -211,7 +212,8 @@ int main(int argc, char* argv[])
 
             out_freq[indic_traitement] = get_freq(clkwiz_bptr);
 
-            printf("Taux d'erreur pour %3.3fMHz : %3.3f %% | Moyenne : %3.3f | Variance : %3.3f\n\n", out_freq[indic_traitement], out_error_rate[indic_traitement], mean[indic_traitement], variance[indic_traitement]);
+            //printf("Taux d'erreur pour %3.3fMHz : %3.3f %% | Moyenne : %e | Variance : %e\n\n", out_freq[indic_traitement], out_error_rate[indic_traitement], mean[indic_traitement], variance[indic_traitement]);
+            printf(".");
             indic_err = 0;
 
             indic_traitement++;
@@ -224,7 +226,7 @@ int main(int argc, char* argv[])
 
         for (int j = 0; j < indic_traitement; j++)
         {
-            buffer_size = sprintf(buffer_out, "  {\"freq\":%f, \"error_rate\":%f},\n", out_freq[j], out_error_rate[j]);
+            buffer_size = sprintf(buffer_out, "  {\"freq\":%f, \"error_rate\":%f, \"mean\":%e, \"var\":%e},\n", out_freq[j], out_error_rate[j], mean[j], variance[j]);
             fwrite(buffer_out, sizeof(char), buffer_size, f_out_json);
         }
 
