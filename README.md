@@ -1,5 +1,5 @@
 # zynq-oc-analysis
- Analysis hardware error in a scalar multiplier with a overclocked Zynq FPGA
+ Analysis hardware error in a dot product with a overclocked Zynq FPGA
 
 <h2>Introduction</h2>
 
