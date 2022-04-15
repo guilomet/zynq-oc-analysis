@@ -13,7 +13,7 @@
 
 <h2>HLS Design</h2>
 
-Go to [the HLS directory](/mk1/mk1/)
+Go to [the HLS directory](/ip_scalaire/)
 
 <h2>Hardware Design</h2>
 
